@@ -1,0 +1,2530 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Brand Fonts: Somar Arabic & Madani */
+/* Note: Font files should be placed in /public/fonts/ directory */
+
+/* Somar Arabic Font Family - for Arabic text */
+@font-face {
+  font-family: "Somar Arabic";
+  src:
+    url("/fonts/SomarArabic-Regular.woff2") format("woff2"),
+    url("/fonts/SomarArabic-Regular.woff") format("woff"),
+    url("/fonts/SomarArabic-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Somar Arabic";
+  src:
+    url("/fonts/SomarArabic-Medium.woff2") format("woff2"),
+    url("/fonts/SomarArabic-Medium.woff") format("woff"),
+    url("/fonts/SomarArabic-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Somar Arabic";
+  src:
+    url("/fonts/SomarArabic-SemiBold.woff2") format("woff2"),
+    url("/fonts/SomarArabic-SemiBold.woff") format("woff"),
+    url("/fonts/SomarArabic-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Somar Arabic";
+  src:
+    url("/fonts/SomarArabic-Bold.woff2") format("woff2"),
+    url("/fonts/SomarArabic-Bold.woff") format("woff"),
+    url("/fonts/SomarArabic-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Madani Font Family - for English text */
+@font-face {
+  font-family: "Madani";
+  src:
+    url("/fonts/Madani-Regular.woff2") format("woff2"),
+    url("/fonts/Madani-Regular.woff") format("woff"),
+    url("/fonts/Madani-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Madani";
+  src:
+    url("/fonts/Madani-Medium.woff2") format("woff2"),
+    url("/fonts/Madani-Medium.woff") format("woff"),
+    url("/fonts/Madani-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Madani";
+  src:
+    url("/fonts/Madani-SemiBold.woff2") format("woff2"),
+    url("/fonts/Madani-SemiBold.woff") format("woff"),
+    url("/fonts/Madani-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Madani";
+  src:
+    url("/fonts/Madani-Bold.woff2") format("woff2"),
+    url("/fonts/Madani-Bold.woff") format("woff"),
+    url("/fonts/Madani-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #ffffff;
+  --primary: #27374e;
+  --light: #e9eff2;
+  --secondary: #5b6e80;
+  --dark: #27374d;
+  --light: #9db2bf;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #ededed;
+  }
+}
+html,
+body {
+  /* width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; */
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family:
+    "Madani",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
+
+/* Arabic font support */
+[dir="rtl"] body,
+[dir="rtl"] * {
+  font-family:
+    "Somar Arabic",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+}
+
+@layer utilities {
+  /* Formal Typography Classes */
+  .font-formal {
+    font-family:
+      "Madani",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  .font-formal-bold {
+    font-family:
+      "Madani",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  .font-formal-heading {
+    font-family:
+      "Madani",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  .font-formal-arabic {
+    font-family:
+      "Somar Arabic",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+
+  .font-formal-arabic-bold {
+    font-family:
+      "Somar Arabic",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      sans-serif;
+    font-weight: 600;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+
+  /* Force exact same positioning for all Arabic nav items */
+  [dir="rtl"] nav > div {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  [dir="rtl"] nav > div > a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 8px 12px !important;
+  }
+
+  [dir="rtl"] nav > div > a > span {
+    display: block !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .font-formal-arabic-heading {
+    font-family:
+      "Somar Arabic",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      sans-serif;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+  }
+
+  .font-formal-arabic-elegant {
+    font-family:
+      "Somar Arabic",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+  }
+
+  /* Background primary */
+  .bg-primary {
+    background-color: var(--primary);
+  }
+  .bg-light {
+    background-color: var(--light);
+  }
+  .hover\:bg-primary:hover {
+    background-color: var(--primary); /* Hover background-primary */
+  }
+
+  /* Background secondary */
+  .bg-secondary {
+    background-color: var(--secondary);
+  }
+  .hover\:bg-secondary:hover {
+    background-color: var(--secondary); /* Hover background-secondary */
+  }
+
+  /* Text primary */
+  .text-primary {
+    color: var(--primary);
+  }
+  .hover\:text-primary:hover {
+    color: var(--primary); /* Hover text-primary */
+  }
+
+  /* Text secondary */
+  .text-secondary {
+    color: var(--secondary);
+  }
+  .hover\:text-secondary:hover {
+    color: var(--secondary); /* Hover text-secondary */
+  }
+
+  /* Border primary */
+  .border-primary {
+    border-color: var(--primary);
+  }
+  .hover\:border-primary:hover {
+    border-color: var(--primary); /* Hover border-primary */
+  }
+
+  /* Border secondary */
+  .border-secondary {
+    border-color: var(--secondary);
+  }
+  .hover\:border-secondary:hover {
+    border-color: var(--secondary); /* Hover border-secondary */
+  }
+
+  /* Background dark */
+  .bg-dark {
+    background-color: var(--dark);
+  }
+  .hover\:bg-dark:hover {
+    background-color: var(--dark);
+  }
+
+  /* Background light */
+  .bg-light {
+    background-color: var(--light);
+  }
+  .hover\:bg-light:hover {
+    background-color: var(--light);
+  }
+
+  /* Text dark */
+  .text-dark {
+    color: var(--dark);
+  }
+  .hover\:text-dark:hover {
+    color: var(--dark);
+  }
+
+  /* Text light */
+  .text-light {
+    color: var(--light);
+  }
+  .hover\:text-light:hover {
+    color: var(--light);
+  }
+
+  /* Border dark */
+  .border-dark {
+    border-color: var(--dark);
+  }
+  .hover\:border-dark:hover {
+    border-color: var(--dark);
+  }
+
+  /* Border light */
+  .border-light {
+    border-color: var(--light);
+  }
+  .hover\:border-light:hover {
+    border-color: var(--light);
+  }
+
+  /* Fade-in animation */
+  .fade-in {
+    animation: fadeIn 1s ease-out;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* Marquee animation */
+  @keyframes marquee-loop {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes marquee-loop-reverse {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  .animate-marquee-loop {
+    display: flex;
+    animation: marquee-loop 30s linear infinite;
+  }
+
+  .animate-marquee-loop-reverse {
+    display: flex;
+    animation: marquee-loop-reverse 30s linear infinite;
+  }
+
+  /* Testimonials layout */
+  .testimonials-wrapper {
+    @apply relative overflow-hidden;
+  }
+
+  .testimonials {
+    @apply flex;
+    animation: slide 50s linear infinite;
+    width: max-content;
+  }
+
+  .testimonial-logo {
+    @apply mr-2;
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+/* Custom scrollbar styles */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.perspective {
+  perspective: 1000px;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Numbers always English and LTR in RTL (Arabic) mode */
+[dir="rtl"] .ltr-nums,
+.ltr-nums {
+  direction: ltr !important;
+  unicode-bidi: isolate;
+  text-align: left !important;
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .flex {
+  flex-direction: row-reverse;
+}
+/* Keep column layout in RTL so sections don't overlap - only below lg (above lg, side-by-side layouts stay) */
+@media (max-width: 1023px) {
+  [dir="rtl"] .flex.flex-col {
+    flex-direction: column !important;
+  }
+}
+
+[dir="rtl"] .flex-row {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+[dir="rtl"] .text-right {
+  text-align: left;
+}
+
+[dir="rtl"] .ml-auto {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+[dir="rtl"] .mr-auto {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+[dir="rtl"] .pl-4 {
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+[dir="rtl"] .pr-4 {
+  padding-right: 0;
+  padding-left: 1rem;
+}
+
+[dir="rtl"] .ml-2 {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+[dir="rtl"] .mr-2 {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+[dir="rtl"] .space-x-4 > * + * {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+[dir="rtl"] .space-x-2 > * + * {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+[dir="rtl"] .space-x-6 > * + * {
+  margin-left: 0;
+  margin-right: 1.5rem;
+}
+
+[dir="rtl"] .space-x-8 > * + * {
+  margin-left: 0;
+  margin-right: 2rem;
+}
+
+[dir="rtl"] .space-x-12 > * + * {
+  margin-left: 0;
+  margin-right: 3rem;
+}
+
+/* RTL specific animations */
+[dir="rtl"] .animate-marquee-loop {
+  animation: marquee-loop-rtl 30s linear infinite;
+}
+
+[dir="rtl"] .animate-marquee-loop-reverse {
+  animation: marquee-loop-reverse-rtl 30s linear infinite;
+}
+
+@keyframes marquee-loop-rtl {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}
+
+@keyframes marquee-loop-reverse-rtl {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* RTL dropdown positioning */
+[dir="rtl"] .absolute.left-0 {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .origin-left {
+  transform-origin: right;
+}
+
+/* RTL border utilities */
+[dir="rtl"] .border-r-2 {
+  border-right: 0;
+  border-left: 2px solid;
+}
+
+[dir="rtl"] .border-l-2 {
+  border-left: 0;
+  border-right: 2px solid;
+}
+
+/* RTL flex utilities */
+[dir="rtl"] .flex-row-reverse {
+  flex-direction: row;
+}
+
+[dir="rtl"] .flex-row {
+  flex-direction: row-reverse;
+}
+
+/* RTL text alignment */
+[dir="rtl"] .text-center {
+  text-align: center;
+}
+
+[dir="rtl"] .md\:text-left {
+  text-align: right;
+}
+
+[dir="rtl"] .md\:text-right {
+  text-align: left;
+}
+
+/* RTL grid utilities */
+[dir="rtl"] .grid-cols-1 {
+  direction: rtl;
+}
+
+/* RTL specific spacing */
+[dir="rtl"] .space-y-5 > * + * {
+  margin-top: 1.25rem;
+}
+
+[dir="rtl"] .space-y-6 > * + * {
+  margin-top: 1.5rem;
+}
+
+/* RTL icon positioning */
+[dir="rtl"] .inline.mr-1\.5 {
+  margin-right: 0;
+  margin-left: 0.375rem;
+}
+
+/* RTL button positioning */
+[dir="rtl"] .justify-end {
+  justify-content: flex-start;
+}
+
+[dir="rtl"] .justify-start {
+  justify-content: flex-end;
+}
+
+/* RTL specific transforms */
+[dir="rtl"] .transform {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .transform .text,
+[dir="rtl"] .transform span,
+[dir="rtl"] .transform p,
+[dir="rtl"] .transform h1,
+[dir="rtl"] .transform h2,
+[dir="rtl"] .transform h3,
+[dir="rtl"] .transform h4,
+[dir="rtl"] .transform h5,
+[dir="rtl"] .transform h6 {
+  transform: scaleX(-1);
+}
+
+/* Fix Arabic text alignment in hero section */
+[dir="rtl"] .hero-content {
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+[dir="rtl"] .hero-content h1 {
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+[dir="rtl"] .hero-content p {
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+/* Additional Arabic text alignment fixes */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+[dir="rtl"] p {
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+/* Fix Title component centering in RTL */
+[dir="rtl"] .title-container {
+  text-align: center !important;
+}
+
+[dir="rtl"] .title-container p {
+  text-align: center !important;
+  direction: rtl !important;
+}
+
+/* Fix Hero section centering in RTL */
+[dir="rtl"] .hero-content h1 {
+  text-align: center !important;
+  direction: rtl !important;
+}
+
+[dir="rtl"] .hero-content h1 span {
+  text-align: center !important;
+  direction: rtl !important;
+}
+
+/* Force all hero text to be centered in RTL */
+[dir="rtl"] section h1 {
+  text-align: center !important;
+  direction: rtl !important;
+}
+
+[dir="rtl"] section h1 span {
+  text-align: center !important;
+  direction: rtl !important;
+}
+
+[dir="rtl"] section p {
+  text-align: center !important;
+  direction: rtl !important;
+}
+
+/* Override any conflicting text alignment in RTL */
+[dir="rtl"] * {
+  text-align: center !important;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+  text-align: center !important;
+  direction: rtl !important;
+}
+
+[dir="rtl"] p,
+[dir="rtl"] span,
+[dir="rtl"] div {
+  text-align: center !important;
+  direction: rtl !important;
+}
+
+/* Specific fix for HeroSection component */
+[dir="rtl"] .hero-content {
+  text-align: center !important;
+  direction: rtl !important;
+}
+
+[dir="rtl"] .hero-content * {
+  text-align: center !important;
+  direction: rtl !important;
+}
+
+/* Fix WhatWeDo component RTL alignment */
+[dir="rtl"] .whatwedo-container {
+  text-align: center !important;
+  direction: rtl !important;
+}
+
+[dir="rtl"] .whatwedo-container h2 {
+  text-align: center !important;
+  direction: rtl !important;
+}
+
+[dir="rtl"] .whatwedo-container p {
+  text-align: center !important;
+  direction: rtl !important;
+}
+
+[dir="rtl"] .whatwedo-container span {
+  text-align: center !important;
+  direction: rtl !important;
+}
+
+/* Specific RTL centering for content sections only */
+[dir="rtl"] section {
+  text-align: center !important;
+}
+
+[dir="rtl"] section * {
+  text-align: center !important;
+  direction: rtl !important;
+}
+
+/* Target WhatWeDo component specifically */
+[dir="rtl"] .whatwedo-container,
+[dir="rtl"] .whatwedo-container * {
+  text-align: center !important;
+  direction: rtl !important;
+}
+
+/* Force all main content to center in RTL */
+[dir="rtl"] main,
+[dir="rtl"] main * {
+  text-align: center !important;
+  direction: rtl !important;
+}
+
+/* Target specific text elements */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+  text-align: center !important;
+  direction: rtl !important;
+}
+
+[dir="rtl"] p {
+  text-align: center !important;
+  direction: rtl !important;
+}
+
+/* Exclude navbar from centering */
+[dir="rtl"] header,
+[dir="rtl"] nav,
+[dir="rtl"] .navbar,
+[dir="rtl"] .header {
+  text-align: right !important;
+}
+
+[dir="rtl"] header *,
+[dir="rtl"] nav *,
+[dir="rtl"] .navbar *,
+[dir="rtl"] .header * {
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+/* Nuclear option for RTL content - but exclude navbar */
+/* Removed aggressive body CSS that was hiding services */
+
+/* Removed aggressive CSS that was hiding services section */
+
+/* Target specific components only - removed universal selector */
+
+/* Force Arabic text to center */
+[dir="rtl"] {
+  text-align: center !important;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+  text-align: center !important;
+}
+
+[dir="rtl"] p {
+  text-align: center !important;
+}
+
+/* Simple class-based centering */
+.arabic-center {
+  text-align: center !important;
+  direction: rtl !important;
+}
+
+.arabic-center * {
+  text-align: center !important;
+  direction: rtl !important;
+}
+
+/* But exclude navbar */
+[dir="rtl"] header,
+[dir="rtl"] nav,
+[dir="rtl"] .navbar,
+[dir="rtl"] .header {
+  text-align: right !important;
+}
+
+[dir="rtl"] header *,
+[dir="rtl"] nav *,
+[dir="rtl"] .navbar *,
+[dir="rtl"] .header * {
+  text-align: right !important;
+}
+
+/* RTL Footer: keep right-aligned (do not center) */
+[dir="rtl"] footer,
+[dir="rtl"] footer * {
+  text-align: right !important;
+  direction: rtl !important;
+}
+[dir="rtl"] footer .ltr-nums,
+[dir="rtl"] footer [dir="ltr"] {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+/* RTL Mobile Sidebar Alignment */
+[dir="rtl"] .mobile-menu h2,
+[dir="rtl"] .mobile-menu .flex-1,
+[dir="rtl"] .mobile-menu .block {
+  text-align: right !important;
+}
+
+[dir="rtl"] .mobile-menu .px-8 {
+  padding-right: 2rem !important;
+  padding-left: 1rem !important;
+}
+
+[dir="rtl"] .mobile-menu .px-4 {
+  padding-right: 1rem !important;
+  padding-left: 0.5rem !important;
+}
+\
+
+
+
+
+
+
+
+
+export const translations = {
+  en: {
+    contact: {
+      badge: "GET IN TOUCH",
+      title: "Contact Us",
+      subtitle: "Let's Connect",
+      description:
+        "Ready to transform your organization? Our expert consultants are here to help you achieve excellence.",
+      methods: {
+        phone: {
+          title: "Phone",
+          value: "(+966) 55 151 0633",
+          description: "Call us directly",
+        },
+        email: {
+          title: "Email",
+          value: "info@customedge.sa",
+          description: "Send us an email",
+        },
+        whatsapp: {
+          title: "WhatsApp",
+          value: "Message Us",
+          description: "Chat instantly",
+        },
+        linkedin: {
+          title: "LinkedIn",
+          value: "Connect",
+          description: "Professional network",
+        },
+      },
+      offices: {
+        title: "Our Office",
+        subtitle: "Located in the heart of Riyadh",
+        phone: "Phone",
+        email: "Email",
+        hours: "Working Hours",
+        availability: "Response",
+        availabilityText: "Fast Response",
+        riyadh: {
+          city: "Riyadh Office",
+          address: "Riyadh, Kingdom of Saudi Arabia (RANB3067)",
+          phone: "(+966) 55 151 0633",
+          email: "info@customedge.sa",
+          hours: "Sun - Thu: 8:00 AM - 5:00 PM",
+        },
+      },
+      schedule: {
+        badge: "BOOK A SESSION",
+        title: "Schedule a Consultation",
+        description:
+          "Book a personalized session with our experts to discuss your business challenges.",
+        benefits: [
+          "Free initial consultation",
+          "Expert analysis",
+          "Custom solutions",
+          "Follow-up support",
+        ],
+        button: "Book Now",
+      },
+      map: {
+        title: "Our Location",
+        subtitle: "Find us on the map",
+        note: "Note",
+        noteText: "Appointments recommended",
+      },
+      trust: {
+        title: "Trusted Partner",
+        description: "Reliable consulting solutions",
+        clients: "Clients",
+        satisfaction: "Satisfaction",
+        response: "Response",
+      },
+      services: {
+        humanCapital: "Human Capital Solutions",
+        businessStrategies: "Business Strategies",
+        organizationalExcellence: "Organizational Excellence",
+        digitalTransformation: "Digital Transformation",
+        executiveTraining: "Executive Training",
+      },
+      company: {
+        name: "Custom Edge Consulting",
+        website: "www.customedge.sa",
+        social: "@custom_edge_CEC",
+        location: "Saudi Arabia - Riyadh",
+      },
+    },
+    services: {
+      badge: "Our Solutions",
+      title: "Solutions",
+      titleHighlight: "& Services",
+      subtitle:
+        "We offer an integrated set of consulting solutions and services specifically designed to achieve sustainable organizational excellence",
+      items: [
+        {
+          number: "01",
+          title: "Business Solutions & Strategies",
+          description:
+            "Specialized services and consultations focusing on strategy development and management, business planning and analysis, establishing and modeling work frameworks, in addition to market study and economic feasibility analysis, along with risk management and business continuity to support decision-making and enhance sustainable growth and competitiveness.",
+          features: [
+            "Strategy development and management",
+            "Business planning and analysis",
+            "Work framework modeling",
+            "Market study and feasibility analysis",
+            "Risk management and business continuity",
+            "Strategic decision-making support",
+          ],
+        },
+        {
+          number: "02",
+          title: "Human Capital Solutions",
+          description:
+            "Integrated solutions based on designing human capital strategies, improving work environment and culture, organizational development of structures and job frameworks, workforce planning, building comprehensive salary scales and benefits linked to performance management and functional competencies, along with developing career paths and functional succession, and competency development that enhances performance efficiency and increases return on investment in human capital.",
+          features: [
+            "Human capital strategy design",
+            "Organizational structure development",
+            "Workforce planning",
+            "Salary scales and benefits",
+            "Performance management",
+            "Career path development",
+          ],
+        },
+        {
+          number: "03",
+          title: "Organizational Excellence",
+          description:
+            "Integrated solutions aimed at building capabilities and achieving sustainability through developing measurement tools and organizational maturity, enhancing governance, designing operational business models and value chains, documenting policies and procedures, activating service level agreements, implementing international standards (such as ISO certificates), along with linking excellence to organizational transformation to achieve tangible and measurable results.",
+          features: [
+            "Measurement tools development",
+            "Corporate governance enhancement",
+            "Business models and value chains",
+            "Policies and procedures documentation",
+            "International standards (ISO)",
+            "Organizational transformation",
+          ],
+        },
+      ],
+      cta: {
+        learnMore: "Learn More",
+        contactUs: "Contact Us",
+      },
+    },
+    servicePhilosophy: {
+      badge: "Our Philosophy",
+      title: "Our Service",
+      titleHighlight: "Philosophy",
+      subtitle:
+        "We build our services on solid principles that ensure exceptional value and sustainable results for our clients",
+      items: [
+        {
+          number: "01",
+          title: "Applicable",
+          arabicTitle: "قابلة للتطبيق",
+          description:
+            "We provide practical consultations and implementable solutions, ensuring your transition from planning to actual execution with clear and impactful steps.",
+        },
+        {
+          number: "02",
+          title: "Customizable",
+          arabicTitle: "قابلة للتخصيص",
+          description:
+            "Our solutions are designed to align with your specific needs, offering a flexible experience that precisely achieves your goals and matches your future vision.",
+        },
+        {
+          number: "03",
+          title: "Affordable",
+          arabicTitle: "سعر منافس",
+          description:
+            "We believe that high quality doesn't necessarily mean high cost; therefore we design economical solutions with high standards that achieve the best value for investment.",
+        },
+        {
+          number: "04",
+          title: "Satisfiable",
+          arabicTitle: "مرضية",
+          description:
+            "Your satisfaction is our success standard; we ensure our services exceed your expectations and leave a positive, sustainable impact.",
+        },
+        {
+          number: "05",
+          title: "Improvable",
+          arabicTitle: "قابلة للتطوير",
+          description:
+            "We keep pace with change and development to provide you with continuously updatable solutions that enhance your performance and meet your future aspirations.",
+        },
+      ],
+      imageAlt: "Service Philosophy - Custom Edge Consulting",
+    },
+    detailedServices: {
+      badge: "Integrated Services",
+      title: "Our Specialized",
+      titleHighlight: "Solutions",
+      description:
+        "We provide a comprehensive set of integrated consulting solutions to achieve organizational excellence and enhance competitive capabilities.",
+      services: {
+        humanCapital: {
+          title: "Human Capital Solutions",
+          features: [
+            "Sustainable Development",
+            "Performance Measurement",
+            "Continuous Improvement",
+          ],
+          items: [
+            "Human capital strategies and workplace culture/environment",
+            "Organizational development for structures and job frameworks",
+            "Wages, benefits, and comprehensive compensation",
+            "Performance management, functional competencies, and talent acquisition",
+            "Career paths, succession planning, and competency development",
+          ],
+          button: "Discover More",
+        },
+        businessSolutions: {
+          title: "Business Solutions and Strategies",
+          features: [
+            "Strategic Analysis",
+            "Risk Management",
+            "Sustainable Growth",
+          ],
+          items: [
+            "Business foundations and modeling",
+            "Business planning and analysis",
+            "Strategy development and management",
+            "Risk management and business continuity",
+            "Market studies and economic feasibility",
+          ],
+          button: "Discover More",
+        },
+        organizationalExcellence: {
+          title: "Organizational Excellence",
+          features: [
+            "Total Quality",
+            "Effective Governance",
+            "Global Standards",
+          ],
+          items: [
+            "Development and implementation of analysis, measurement, and organizational maturity tools",
+            "Foundation and development of corporate governance",
+            "Development of operational business models and value chain",
+            "ISO certifications",
+            "Policies, procedures, and process automation",
+          ],
+          button: "Discover More",
+        },
+      },
+      stats: {
+        experience: {
+          number: "40+",
+          label: "Years of Experience",
+        },
+        projects: {
+          number: "500+",
+          label: "Successful Projects",
+        },
+        consultants: {
+          number: "50+",
+          label: "Consulting Experts",
+        },
+        satisfaction: {
+          number: "100%",
+          label: "Client Satisfaction",
+        },
+      },
+      cta: {
+        title: "Ready to Start Your Excellence Journey?",
+        description:
+          "Contact our consulting team today and begin your organizational transformation journey towards sustainable excellence",
+        startProject: {
+          text: "Start Your Project Now",
+          icon: "🚀",
+        },
+        freeConsultation: {
+          text: "Free Consultation",
+          icon: "🛡️",
+        },
+      },
+    },
+    nav: {
+      home: "Home",
+      about: "About Us",
+      services: "Services",
+      contact: "Contact Us",
+      location: "Location",
+      email: "Email",
+      bookConsultation: "Book a Consultation",
+      openMenu: "Open menu",
+      logoAlt: "Custom Edge Consulting logo",
+      saudiVisionAlt: "Saudi Vision 2030",
+    },
+
+    hero: {
+      title1: "The National Expertise House",
+      highlight1: "Administrative Consulting & Excellence",
+      desc1: "40 years of consulting experience",
+
+      title2: "Partners of Success",
+      highlight2: "for Organizations Aspiring for Excellence",
+      desc2:
+        "We work with government, private, and non-profit sectors to achieve sustainable organizational transformation",
+      title3: "Customized Solutions",
+      highlight3: "that Match Your Future Aspirations",
+      desc3:
+        "We design applicable and scalable solutions ensuring the highest return on investment",
+      servicesButton: "Our Services",
+      contactButton: "Contact Us",
+      experience: "{years} Years of Excellence",
+      clients: "Clients Served",
+      years: "Years Experience",
+      satisfaction: "Client Satisfaction",
+      previous: "Previous Slide",
+      next: "Next Slide",
+      play: "Play Slideshow",
+      pause: "Pause Slideshow",
+      goToSlide: "Go to slide",
+    },
+    values: {
+      badge: "Our Foundation",
+      title: "Our Core",
+      highlighted: "Values",
+      subtitle:
+        "We build our work on solid principles that combine authenticity and innovation, to ensure the delivery of exceptional consulting solutions that achieve sustainable organizational transformation",
+      continuous: {
+        title: "Continuous Development",
+        description:
+          "We believe that continuous development is the essence of organizational growth, and we work to enable our clients to achieve real strategic transformations.",
+      },
+      excellence: {
+        title: "Excellence",
+        description:
+          "We strive to provide consulting services that exceed expectations, through precisely designed qualitative solutions that achieve tangible and sustainable results.",
+      },
+      professionalism: {
+        title: "Professionalism",
+        description:
+          "We embody the highest levels of competence and discipline in service delivery, through a team with deep experience and a systematic scientific approach.",
+      },
+      commitment: {
+        title: "Commitment",
+        description:
+          "We fulfill our promises and adhere to the highest standards of professionalism and quality in everything we offer, believing that trust is built on credibility and clarity.",
+      },
+      flexibility: {
+        title: "Flexibility",
+        description:
+          "We effectively interact with market changes and customer needs, and design solutions that adapt to different work environments and their challenges.",
+      },
+      learnMore: "Learn More",
+      imageAlt: "Our Core Values - Custom Edge Consulting",
+      cta: {
+        title: "Ready to start your organizational transformation journey?",
+        description:
+          "Contact us to discover how our values can support achieving your strategic goals",
+        button: "Contact Us",
+      },
+      stats: {
+        trust: "Client Trust Rate",
+        projects: "Successful Projects",
+        years: "Years of Excellence",
+      },
+    },
+    advantages: {
+      title: "Our Competitive Advantage",
+      subtitle:
+        "We excel with a set of unique advantages that make us the ideal partner to achieve your strategic goals and elevate your organization's performance to new levels of excellence",
+      badge: "Why Choose Us",
+      items: [
+        {
+          number: "01",
+          title: "Local Expertise",
+          description:
+            "Local competencies with global experience and standards, combining deep understanding of the local market with international best practices.",
+        },
+        {
+          number: "02",
+          title: "Partnership-based Leadership",
+          description:
+            "Leadership that believes in partnership, integration, and abundance mindset, fostering collaborative relationships that drive mutual success.",
+        },
+        {
+          number: "03",
+          title: "Expert Consultants",
+          description:
+            "Consultants with leadership and technical expertise in public, private, and non-profit sectors, bringing diverse perspectives and proven methodologies.",
+        },
+        {
+          number: "04",
+          title: "Trusted Experts",
+          description:
+            "Trusted experts with excellent reputation and strong relationships with clients, built on years of delivering exceptional results.",
+        },
+        {
+          number: "05",
+          title: "Custom Solutions",
+          description:
+            "Tailored according to customer needs, ensuring that every solution is uniquely designed to address specific challenges and opportunities.",
+        },
+        {
+          number: "06",
+          title: "Quality & Price",
+          description:
+            "High quality and competitive price, delivering exceptional value without compromising on excellence or exceeding budget constraints.",
+        },
+        {
+          number: "07",
+          title: "Saudi Market Understanding",
+          description:
+            "Comprehensive and deep understanding of Saudi culture and market, enabling culturally appropriate and market-relevant solutions.",
+        },
+      ],
+      cta: {
+        title: "Benefit from our competitive advantages for your organization",
+        description:
+          "Let's work together to achieve excellence and superiority in your competitive market",
+        button: "Start Excellence Journey",
+      },
+    },
+    premium: {
+      badge: "Unique Advantages",
+      title: "Why",
+      highlighted: "Choose Us?",
+      subtitle:
+        "We offer a set of advantages specifically designed to ensure the success of your projects and achieve your strategic goals",
+      customizable: {
+        title: "Custom Solutions",
+        englishTitle: "Customizable",
+        description:
+          "We design flexible experiences that precisely achieve your goals and fully align with your future vision",
+      },
+      improvable: {
+        title: "Continuous Development",
+        englishTitle: "Improvable",
+        description:
+          "We keep pace with change and development to provide you with continuously updatable solutions that enhance your performance and meet your future aspirations",
+      },
+      applicable: {
+        title: "Applicable",
+        englishTitle: "Applicable",
+        description:
+          "We provide practical consultations and implementable solutions, ensuring your transition from planning to actual implementation with clear and impactful steps",
+      },
+      affordable: {
+        title: "Exceptional Value",
+        englishTitle: "Affordable",
+        description:
+          "We design economic solutions with global standards that achieve the highest value for investment. Your satisfaction is our primary success standard",
+      },
+      cta: {
+        title: "Ready to start your success journey?",
+        description:
+          "Contact us today to discover how we can help you achieve your goals with the best customized solutions",
+        button1: "Start Your Project Now",
+        button2: "Book Free Consultation",
+      },
+      stats: {
+        satisfaction: "Client Satisfaction",
+        support: "Support",
+        experience: "Years Experience",
+      },
+    },
+
+    partners: {
+      badge: "Our Network",
+      title: "Our Strategic",
+      titleHighlight: "Partners",
+      subtitle:
+        "We are proud of our strategic partnerships with leading local and global expertise houses, enabling us to deliver the best consulting solutions",
+    },
+    methodology: {
+      badge: "Our Approach",
+      title: "General",
+      titleHighlight: "Methodology",
+      subtitle:
+        "We follow a systematic scientific methodology that ensures the delivery of effective and sustainable consulting solutions that meet our clients' needs",
+      steps: [
+        {
+          number: "01",
+          title: "Diagnosis",
+          items: [
+            "Understanding and identifying customer needs",
+            "Analyzing the current situation",
+            "Providing recommendations based on analysis",
+          ],
+        },
+        {
+          number: "02",
+          title: "Design",
+          items: [
+            "Developing customized services and solutions",
+            "Ensuring applicability and integration with customer systems",
+          ],
+        },
+        {
+          number: "03",
+          title: "Implementation & Improvement",
+          items: [
+            "Implementing designed services and solutions",
+            "Measuring impact and ensuring continuous improvement",
+          ],
+        },
+      ],
+      imageAlt: "Methodology - Custom Edge Consulting",
+    },
+
+    whatWeDo: {
+      badge: "Our Services",
+      title: "Our Services",
+      highlighted: "Specialized Services",
+      subtitle:
+        "We provide integrated consulting solutions that combine global expertise with a deep understanding of the Saudi market to achieve sustainable organizational excellence",
+      humanCapital: {
+        title: "Human Capital Consultations",
+        description:
+          "Integrated solutions for developing human resources and organizational structures",
+      },
+      businessStrategies: {
+        title: "Business Strategies",
+        description:
+          "Business planning and analysis and economic feasibility studies",
+      },
+      organizationalExcellence: {
+        title: "Organizational Excellence",
+        description:
+          "Corporate governance, business models, and international standards",
+      },
+      specializedConsulting: {
+        title: "Specialized Consultations",
+        description:
+          "Customized solutions that meet your organization's unique needs",
+      },
+      stats: {
+        experience: "Years Experience",
+        projects: "Successful Projects",
+        experts: "Consulting Experts",
+        sectors: "Sectors Served",
+      },
+      cta: {
+        button: "Download Company Profile",
+        description: "Discover more about our expertise and services",
+      },
+    },
+
+    faq: {
+      title: "Frequently Asked Questions",
+      subtitle:
+        "Discover answers to the most common questions about our consulting services and how we work",
+      services: {
+        question: "What consulting services do you provide?",
+        answer:
+          "We provide integrated consulting services in human capital, business strategies, and organizational excellence including strategic planning, human resources management, corporate governance, and business analysis.",
+      },
+      duration: {
+        question: "What is the typical duration of a consulting project?",
+        answer:
+          "Project durations range from 3 to 12 months depending on the nature and complexity of the project, where we ensure the delivery of applicable and sustainable solutions.",
+      },
+      government: {
+        question:
+          "Do you provide consulting services to the government sector?",
+        answer:
+          "Yes, we work with government, private, and non-profit sectors, and we have extensive experience in the requirements of the Saudi government sector.",
+      },
+      methodology: {
+        question: "What is the work methodology you follow?",
+        answer:
+          "We follow a scientific methodology that includes diagnosis, design, and implementation while ensuring continuous improvement, and we design customized solutions that meet each client's needs.",
+      },
+      team: {
+        question: "Is your team certified and qualified?",
+        answer:
+          "Yes, our team consists of internationally certified consultants who hold professional certifications in management consulting, human resources, and organizational excellence.",
+      },
+      success: {
+        question: "How do you measure the success of consulting projects?",
+        answer:
+          "We measure success through key performance indicators including return on investment, customer satisfaction, and achieving the specified strategic objectives.",
+      },
+      cta: {
+        title: "Didn't find an answer to your question?",
+        description:
+          "Our consulting team is ready to answer all your inquiries and provide appropriate consultation for your organization",
+        contact: "Contact Us",
+        request: "Request Consultation",
+      },
+    },
+    footer: {
+      logoAlt: "Custom Edge Consulting",
+      companyDescription:
+        "A national expertise house based in Riyadh, we provide specialized consulting services in human capital, business strategies, and organizational excellence with 40 years of experience.",
+      address: "Riyadh, Kingdom of Saudi Arabia",
+      phone: "(+966) 55 151 0633",
+      email: "info@customedge.sa",
+      website: "www.customedge.com",
+      quickLinks: {
+        title: "Quick Links",
+        home: "Home",
+        about: "About Us",
+        services: "Our Services",
+        contact: "Contact Us",
+      },
+      services: {
+        title: "Our Services",
+        humanCapital: "Human Capital Solutions",
+        businessStrategies: "Business Strategies",
+        organizationalExcellence: "Organizational Excellence",
+        specializedConsulting: "Specialized Consulting",
+      },
+      social: {
+        twitter: "Twitter",
+        email: "Email",
+        phone: "Phone",
+      },
+      copyright: "Custom Edge Consulting. All rights reserved.",
+      tagline:
+        "The National Expertise House for Administrative Consulting and Organizational Excellence",
+    },
+    about: {
+      badge: "National Expertise House",
+      title: {
+        highlighted: "A National",
+        rest: "Expertise House based in Riyadh",
+      },
+      description: {
+        paragraph1:
+          "We provide specialized consulting services and solutions in human capital, business strategies and services, and organizational excellence.",
+        paragraph2:
+          "We are proud of a diverse consulting team with global expertise and standards, and a deep understanding of Saudi culture and market, making us the trusted partner for organizations aspiring towards development, organizational transformation, and sustainable excellence.",
+        paragraph3:
+          "We take pride in being an ambitious team that works according to clear principles in providing the best solutions and services, which are characterized as customized, applicable, high-quality, scalable, and competitively priced services and solutions.",
+        paragraph4:
+          "We base our work on extensive and diverse cumulative expertise spanning over 40 years, acquired by our professional consulting team across multiple levels and sectors, and in cooperation with an elite group of leading local and global expertise houses in the field of administrative consulting and business solutions.",
+      },
+      highlightWords: {
+        proud: "We are proud",
+        ambitious: "We take pride",
+      },
+      imageAlt: "National Expertise House - Consulting Team",
+    },
+    aboutFounder: {
+      imageAlt: "Founder and CEO - Amr Saud Abu Abah",
+      badge: "Leadership",
+      title: "Founder & CEO",
+      name: "Amr Saud Abu Abah",
+      professionalTitle:
+        "Executive Consultant with over 15 years of experience",
+      experience: {
+        title:
+          "Executive Consultant with extensive technical and leadership experience exceeding 15 years",
+        description:
+          "in planning, business strategies, human capital solutions, and organizational excellence in government, private, and non-profit sectors. Worked in collaboration with international and local expertise houses in management consulting, human resources, and organizational development across various sectors including telecommunications and IT, insurance and financial/investment sector, healthcare and real estate development, management consulting and business development, charitable societies, non-profit organizations, and municipal affairs.",
+      },
+      sectors: {
+        title: "Consultant and General Supervisor",
+        description:
+          "of Shared Services Sector and Head of Digital Transformation Committee. Certified Arbitrator and Assessor for the National Organizational Excellence Model for King Abdulaziz Quality Award (KAQA) under SASO supervision. Certified Consultant at the General Authority for Small and Medium Enterprises (Monsha'at) in entrepreneurship, strategic planning, and human resources.",
+      },
+      trainer: {
+        title: "Certified Trainer and Consultant",
+        description:
+          "from the Association for Talent Development (ATD) and Birkman methodology in personal and professional guidance. Trainer for the Canadian Professional Certification in Human Resources Leadership (CHRL). Certified expert from the Ministry of Human Resources and Social Development in HR consulting, business analysis and strategies, and talent acquisition.",
+      },
+      qualifications: {
+        title: "Academic Qualifications",
+        bachelors: "Bachelor of Business Administration - Australia",
+        executiveDiploma:
+          "Higher Diploma in Executive Management and Effective Leadership - Spain",
+        commerceDiploma: "Diploma in Commerce and Business - Australia",
+      },
+      certifications: {
+        title: "Professional Certifications",
+        list: [
+          "Certified Arbitrator for National Organizational Excellence Model",
+          "Certified Consultant at Monsha'at (SME Authority)",
+          "Certified Trainer from Association for Talent Development (ATD)",
+          "Birkman Methodology Certified in Personal and Professional Guidance",
+          "Canadian Professional Certification in Human Resources Leadership (CHRL) Trainer",
+          "Certified Expert from Ministry of Human Resources and Social Development",
+          "Numerous professional certifications in strategic planning, performance indicators, digital transformation, project management, governance, quality, and HR development",
+        ],
+      },
+      stats: {
+        experience: "Years of Experience",
+        projects: "Projects",
+        sectors: "Sectors",
+        satisfaction: "Satisfaction",
+      },
+    },
+    missionVision: {
+      badge: "Our Direction",
+      title: "Vision & Mission",
+      vision: {
+        title: "Our Vision",
+        description:
+          "To be the national expertise house and the trusted strategic partner that organizations seek on their journey towards development, organizational transformation, and sustainable excellence.",
+      },
+      mission: {
+        title: "Our Mission",
+        description:
+          "We provide customized consulting solutions and services in human capital, business strategies and services, and organizational excellence, through an exceptional team with extensive cumulative experience, deep understanding of the local market, and belief in effective partnerships aimed at increasing return on investment and achieving tangible and sustainable organizational impact for our allies and clients.",
+      },
+      imageAlt: "Mission and Vision - Custom Edge Consulting",
+    },
+    nav: {
+      home: "Home",
+      about: "About Us",
+      services: "Services",
+      contact: "Contact Us",
+      menuTitle: "Custom Edge Menu",
+      close: "Close Menu",
+      phone: "(+966) 55 151 0633",
+      email: "info@customedge.sa",
+      bookConsultation: "Book a Consultation",
+      contactInfo: "Contact Information",
+    },
+
+    global: {
+      badge: "Trusted Network",
+      title: "Our Strategic Ecosystem",
+      subtitle:
+        "Partnering with industry leaders and experts to deliver exceptional results",
+      cta: {
+        title: "Ready to Join Our Network?",
+        description:
+          "Become part of our growing ecosystem of partners and clients",
+        button1: "Become a Partner",
+        button2: "Explore Opportunities",
+      },
+    },
+    partners: {
+      title: "Strategic Partners",
+      subtitle: "Global Network",
+      description:
+        "Collaborating with leading organizations worldwide to drive innovation and deliver comprehensive solutions across industries.",
+      imageAlt: "Strategic Partners Logos",
+      stats: {
+        partners: "Global Partners",
+        countries: "Countries",
+        commitment: "Strategic Commitment",
+      },
+    },
+    clients: {
+      title: "Valued Clients",
+      subtitle: "Trusted Relationships",
+      description:
+        "Serving diverse clients across multiple sectors with tailored solutions and exceptional service delivery.",
+      imageAlt: "Clients Logos",
+      stats: {
+        clients: "Satisfied Clients",
+        retention: "Client Retention",
+        sectors: "Industry Sectors",
+      },
+    },
+    experience: {
+      title: "Team Expertise",
+      subtitle: "Accumulated Excellence",
+      description:
+        "Our team brings decades of combined experience, delivering proven results through innovative strategies and deep industry knowledge.",
+      imageAlt: "Team Experience Logos",
+      stats: {
+        experts: "Consulting Experts",
+        years: "Years Experience",
+        projects: "Successful Projects",
+      },
+    },
+  },
+
+  ar: {
+    services: {
+      badge: "حلولنا",
+      title: "الحلول",
+      titleHighlight: "والخدمات",
+      subtitle:
+        "نقدم مجموعة متكاملة من الحلول والخدمات الاستشارية المصممة خصيصاً لتحقيق التميز المؤسسي المستدام",
+      items: [
+        {
+          number: "٠١",
+          title: "حلول وإستراتيجيات الأعمال",
+          description:
+            "خدمات واستشارات متخصصة تركز على تطوير وإدارة الاستراتيجية، وتخطيط وتحليل الأعمال، وتأسيس ونمذجة أطر العمل، بالإضافة إلى دراسة السوق وتحليل الجدوى الاقتصادية، إلى جانب إدارة المخاطر واستمرارية الأعمال بما يدعم اتخاذ القرار ويعزز النمو المستدام والتنافسية.",
+          features: [
+            "تطوير وإدارة الاستراتيجية",
+            "تخطيط وتحليل الأعمال",
+            "نمذجة أطر العمل",
+            "دراسة السوق وتحليل الجدوى",
+            "إدارة المخاطر واستمرارية الأعمال",
+            "دعم اتخاذ القرار الاستراتيجي",
+          ],
+        },
+        {
+          number: "٠٢",
+          title: "حلول رأس المال البشري",
+          description:
+            "حلول متكاملة تركز على تصميم استراتيجيات رأس المال البشري وتحسين بيئة وثقافة العمل، والتطوير التنظيمي للهياكل وإطار الوظائف، وتخطيط القوى العاملة، وبناء سلم أجور ومزايا شاملة مرتبطة بإدارة الأداء والجدارات الوظيفية، إلى جانب تطوير المسارات المهنية والتعاقب الوظيفي وتنمية الكفاءات بما يعزز كفاءة الأداء ويرفع العائد على الاستثمار بالعنصر البشري.",
+          features: [
+            "تصميم استراتيجيات رأس المال البشري",
+            "تطوير الهياكل التنظيمية",
+            "تخطيط القوى العاملة",
+            "سلالم الأجور والمزايا",
+            "إدارة الأداء",
+            "تطوير المسارات المهنية",
+          ],
+        },
+        {
+          number: "٠٣",
+          title: "التميز المؤسسي",
+          description:
+            "حلول متكاملة تهدف إلى بناء القدرات وتحقيق الاستدامة عبر تطوير أدوات القياس والنضج المؤسسي، وتعزيز الحوكمة، وتصميم نماذج العمل التشغيلية وسلاسل القيمة، وتوثيق السياسات والإجراءات، وتفعيل اتفاقيات مستوى الخدمة، وتطبيق المعايير الدولية (كشهادات الأيزو)، إلى جانب ربط التميز بالتحول المؤسسي لتحقيق نتائج ملموسة وقابلة للقياس.",
+          features: [
+            "تطوير أدوات القياس",
+            "تعزيز الحوكمة المؤسسية",
+            "نماذج العمل وسلاسل القيمة",
+            "توثيق السياسات والإجراءات",
+            "المعايير الدولية (الأيزو)",
+            "التحول المؤسسي",
+          ],
+        },
+      ],
+      cta: {
+        learnMore: "اعرف المزيد",
+        contactUs: "اتصل بنا",
+      },
+    },
+    servicePhilosophy: {
+      badge: "فلسفتنا",
+      title: "فلسفتنا في",
+      titleHighlight: "تقديم الخدمة",
+      subtitle:
+        "نبني خدماتنا على مبادئ راسخة تضمن قيمة استثنائية ونتائج مستدامة لعملائنا",
+      items: [
+        {
+          number: "٠١",
+          title: "Applicable",
+          arabicTitle: "قابلة للتطبيق",
+          description:
+            "نقدم استشارات عملية وحلول قابلة للتنفيذ، تضمن لك الانتقال من مرحلة التخطيط إلى التنفيذ الفعلي بخطوات واضحة ومؤثرة.",
+        },
+        {
+          number: "٠٢",
+          title: "Customizable",
+          arabicTitle: "قابلة للتخصيص",
+          description:
+            "حلولنا مصممة لتتوافق مع احتياجاتك المحددة، بحيث تقدم لك تجربة مرنة تحقق أهدافك بدقة وتتماشى مع رؤيتك المستقبلية.",
+        },
+        {
+          number: "٠٣",
+          title: "Affordable",
+          arabicTitle: "سعر منافس",
+          description:
+            "نؤمن أن الجودة العالية لا تعني بالضرورة التكلفة الباهظة؛ لذلك نصمم لك حلول اقتصادية ذات معايير عالية تحقق أعلى قيمة مقابل الاستثمار.",
+        },
+        {
+          number: "٠٤",
+          title: "Satisfiable",
+          arabicTitle: "مرضية",
+          description:
+            "رضاك هو معيار نجاحنا؛ نحرص على أن تتجاوز خدماتنا توقعاتك وتترك أثراً إيجابياً ومستداماً.",
+        },
+        {
+          number: "٠٥",
+          title: "Improvable",
+          arabicTitle: "قابلة للتطوير",
+          description:
+            "نواكب التغيير والتطور لنقدم لك حلولاً قابلة للتحديث المستمر تعزز أداءك وتواكب تطلعاتك المستقبلية.",
+        },
+      ],
+      imageAlt: "فلسفة تقديم الخدمة - كاستم إيدج للاستشارات",
+    },
+    missionVision: {
+      badge: "وجهتنا",
+      title: "رؤيتنا ورسالتنا",
+      vision: {
+        title: "رؤيتنا",
+        description:
+          "أن نكون بيت الخبرة الوطني والشريك الإستراتيجي الموثوق الذي تقصده المنظمات الطامحة في رحلتها نحو التطوير والتحول المؤسسي والتميز المستدام.",
+      },
+      mission: {
+        title: "رسالتنا",
+        description:
+          "نقدم حلول وخدمات استشارية مخصصة في مجال رأس المال البشري، واستراتيجيات وخدمات الأعمال، والتميز المؤسسي، من خلال فريق متميز يتمتع بخبرات تراكمية واسعة، وفهم عميق للسوق المحلي، ويؤمن بالشراكات الفاعلة التي تهدف إلى رفع العائد على الإستثمار وتحقيق أثر مؤسسي ملموس ومستدام لحلفائنا وعملائنا.",
+      },
+      imageAlt: "الرؤية والرسالة - كاستم إيدج للاستشارات",
+    },
+
+    global: {
+      badge: "شبكة موثوقة",
+      title: "نظامنا الاستراتيجي",
+      subtitle: "نعمل مع قادة الصناعة والخبراء لتقديم نتائج استثنائية",
+      cta: {
+        title: "مستعد للانضمام إلى شبكتنا؟",
+        description: "كن جزءًا من نظامنا المتنامي من الشركاء والعملاء",
+        button1: "كن شريكًا",
+        button2: "استكشف الفرص",
+      },
+    },
+
+    partners: {
+      badge: "شبكتنا",
+      title: "شركاؤنا",
+      titleHighlight: "الإستراتيجيون",
+      subtitle:
+        "نفخر بشراكاتنا الإستراتيجية مع نخبة من بيوت الخبرة المحلية والعالمية الرائدة، مما يمكننا من تقديم أفضل الحلول الاستشارية",
+    },
+    clients: {
+      title: "العملاء الكرام",
+      subtitle: "علاقات موثوقة",
+      description:
+        "نخدم عملاء متنوعين عبر قطاعات متعددة بحلول مخصصة وتقديم خدمات استثنائية.",
+      imageAlt: "شعارات العملاء",
+      stats: {
+        clients: "عملاء راضون",
+        retention: "استبقاء العملاء",
+        sectors: "قطاعات صناعية",
+      },
+    },
+    experience: {
+      title: "خبرة الفريق",
+      subtitle: "تميز متراكم",
+      description:
+        "يجلب فريقنا عقودًا من الخبرة المجتمعة، ويقدم نتائج مثبتة من خلال استراتيجيات مبتكرة ومعرفة عميقة بالصناعة.",
+      imageAlt: "شعارات خبرة الفريق",
+      stats: {
+        experts: "خبراء استشاريون",
+        years: "سنوات خبرة",
+        projects: "مشاريع ناجحة",
+      },
+    },
+    detailedServices: {
+      badge: "خدمات متكاملة",
+      title: "حلولنا",
+      titleHighlight: "المتخصصة",
+      description:
+        "نقدم مجموعة شاملة من الحلول الاستشارية المتكاملة لتحقيق التميز المؤسسي وتعزيز القدرات التنافسية",
+      services: {
+        humanCapital: {
+          title: "حلول رأس المال البشري",
+          features: ["تطوير مستدام", "قياس الأداء", "تحسين مستمر"],
+          items: [
+            "إستراتيجيات رأس المال البشري وثقافة وبيئة العمل",
+            "التطوير التنظيمي للهياكل وإطار الوظائف",
+            "الأجور والمزايا والتعويضات الشاملة",
+            "إدارة الأداء والجدارات الوظيفية وإستقطاب الكفاءات",
+            "المسارات والتعاقب الوظيفي وتطوير الكفاءات",
+          ],
+          button: "اكتشف المزيد",
+        },
+        businessSolutions: {
+          title: "حلول وإستراتيجيات الأعمال",
+          features: ["تحليل استراتيجي", "إدارة المخاطر", "نمو مستدام"],
+          items: [
+            "أسس ونمذجة الأعمال",
+            "تخطيط وتحليل الأعمال",
+            "تطوير وإدارة الاستراتيجية",
+            "إدارة المخاطر واستمرارية الأعمال",
+            "دراسة السوق والجدوى الاقتصادية",
+          ],
+          button: "اكتشف المزيد",
+        },
+        organizationalExcellence: {
+          title: "التميز المؤسسي",
+          features: ["جودة شاملة", "حوكمة رشيدة", "معايير عالمية"],
+          items: [
+            "تطوير وتطبيق أدوات التحليل والقياس والنضج المؤسسي",
+            "أسس وتطوير الحوكمة المؤسسية",
+            "تطوير نماذج العمل التشغيلية وسلسلة القيمة المقدمة",
+            "شهادات الأيزو (ISO)",
+            "السياسات والإجراءات وأتمتة العمليات",
+          ],
+          button: "اكتشف المزيد",
+        },
+      },
+      stats: {
+        experience: {
+          number: "40+",
+          label: "عام خبرة",
+        },
+        projects: {
+          number: "500+",
+          label: "مشروع ناجح",
+        },
+        consultants: {
+          number: "50+",
+          label: "خبير استشاري",
+        },
+        satisfaction: {
+          number: "100%",
+          label: "رضا عملاء",
+        },
+      },
+      cta: {
+        title: "مستعد لبدء رحلة التميز؟",
+        description:
+          "تواصل مع فريقنا الاستشاري اليوم وابدأ رحلة التحول المؤسسي نحو التميز المستدام",
+        startProject: {
+          text: "ابدأ مشروعك الآن",
+          icon: "🚀",
+        },
+        freeConsultation: {
+          text: "استشارة مجانية",
+          icon: "🛡️",
+        },
+      },
+    },
+    nav: {
+      home: "الرئيسية",
+      about: "من نحن",
+      services: "الخدمات",
+      contact: "اتصل بنا",
+      location: "الموقع",
+      email: "البريد الإلكتروني",
+      bookConsultation: "احجز استشارة",
+      openMenu: "فتح القائمة",
+      logoAlt: "شعار Custom Edge Consulting",
+      saudiVisionAlt: "رؤية السعودية 2030",
+    },
+
+    hero: {
+      title1: "بيت الخبرة الوطني",
+      highlight1: "للاستشارات الإدارية والتميز المؤسسي",
+      desc1: "حلول استشارية متكاملة بخبرة تمتد لأكثر من 40 عامًا",
+      title2: "شركاء النجاح",
+      highlight2: "للمؤسسات الطامحة للتميز",
+      desc2:
+        "نعمل مع القطاعات الحكومية والخاصة وغير الربحية لتحقيق التحول المؤسسي المستدام",
+      title3: "حلول مخصصة",
+      highlight3: "تواكب تطلعاتكم المستقبلية",
+      desc3:
+        "نصمم حلولاً قابلة للتطبيق والتطوير تضمن تحقيق أعلى عائد على الاستثمار",
+      servicesButton: "خدماتنا",
+      contactButton: "اتصل بنا",
+      experience: "{years} عاماً من التميز",
+      clients: "عماء تم خدمتهم",
+      years: "سنوات خبرة",
+      satisfaction: "رضا العملاء",
+      previous: "الشريحة السابقة",
+      next: "الشريحة التالية",
+      play: "تشغيل العرض",
+      pause: "إيقاف العرض مؤقتاً",
+      goToSlide: "انتقل إلى الشريحة",
+    },
+    values: {
+      badge: "قيمنا",
+      title: "قيمنا",
+      highlighted: "الأساسية",
+      subtitle:
+        "نؤسس عملنا على مبادئ راسخة تجمع بين الأصالة والابتكار، لضمان تقديم حلول استشارية استثنائية تحقق التحول المؤسسي المستدام",
+      continuous: {
+        title: "التطوير المستمر",
+        description:
+          "نؤمن أن التطوير المستمر هو جوهر النمو المؤسسي، ونعمل على تمكين عملائنا من إحداث تحولات استراتيجية حقيقية.",
+      },
+      excellence: {
+        title: "التميّز",
+        description:
+          "نسعى لتقديم خدمات استشارية تتجاوز التوقعات، من خلال حلول نوعية مصممة بدقة، تحقق نتائج ملموسة ومستدامة.",
+      },
+      professionalism: {
+        title: "الاحترافية",
+        description:
+          "نُجسد أعلى درجات الكفاءة والانضباط في تقديم الخدمات، من خلال فريق يتمتع بخبرة عميقة ونهج علمي ممنهج.",
+      },
+      commitment: {
+        title: "الالتزام",
+        description:
+          "نفي بوعودنا ونلتزم بأعلى معايير المهنية والجودة في كل ما نقدمه، إيمانًا بأن الثقة تُبنى على المصداقية والوضوح.",
+      },
+      flexibility: {
+        title: "المرونة",
+        description:
+          "نتفاعل مع متغيرات السوق واحتياجات العملاء بفعالية، ونصمم حلولًا قابلة للتكيف مع بيئات العمل المختلفة وتحدياتها.",
+      },
+      learnMore: "اعرف المزيد",
+      imageAlt: "قيمنا الأساسية - كاستم إيدج للاستشارات",
+      cta: {
+        title: "مستعدون للبدء في رحلة التحول المؤسسي؟",
+        description:
+          "تواصل معنا لاكتشاف كيف يمكن لقيمنا أن تدعم تحقيق أهدافكم الاستراتيجية",
+        button: "تواصل معنا",
+      },
+      stats: {
+        trust: "معدل ثقة العملاء",
+        projects: "مشروع ناجح",
+        years: "عامًا من التميز",
+      },
+    },
+
+    advantages: {
+      title: "ميزتنا التنافسية",
+      subtitle:
+        "نتميز بمجموعة من المزايا الفريدة التي تجعلنا الشريك المثالي لتحقيق أهدافكم الاستراتيجية والارتقاء بأداء مؤسستكم إلى مستويات جديدة من التميز",
+      badge: "لماذا تختارنا",
+      items: [
+        {
+          number: "٠١",
+          title: "كفاءات محلية",
+          description:
+            "كفاءات محلية بخبرات ومعايير عالمية، تجمع بين الفهم العميق للسوق المحلي وأفضل الممارسات الدولية.",
+        },
+        {
+          number: "٠٢",
+          title: "قيادة مؤمنة بالشراكة",
+          description:
+            "قيادة تؤمن بالشراكة والتكامل وعقلية الوفرة، وتعزز العلاقات التعاونية التي تدفع نحو النجاح المشترك.",
+        },
+        {
+          number: "٠٣",
+          title: "مستشارون خبراء",
+          description:
+            "مستشارون ذوو خبرة قيادية وفنية في القطاعات العامة والخاصة وغير الربحية، يقدمون وجهات نظر متنوعة ومنهجيات مثبتة.",
+        },
+        {
+          number: "٠٤",
+          title: "خبراء موثوقون",
+          description:
+            "خبراء موثوقون يتمتعون بسمعة متميزة وعلاقات قوية مع العملاء، مبنية على سنوات من تقديم نتائج استثنائية.",
+        },
+        {
+          number: "٠٥",
+          title: "حلول مخصصة",
+          description:
+            "حلول مخصصة حسب احتياجات العميل، تضمن تصميم كل حل بشكل فريد لمواجهة التحديات والفرص المحددة.",
+        },
+        {
+          number: "٠٦",
+          title: "جودة عالية وسعر منافس",
+          description:
+            "جودة عالية وسعر منافس، تقديم قيمة استثنائية دون المساس بالتميز أو تجاوز قيود الميزانية.",
+        },
+        {
+          number: "٠٧",
+          title: "فهم السوق السعودي",
+          description:
+            "الفهم الواسع والعميق للثقافة والسوق السعودي، مما يمكن من تقديم حلول مناسبة ثقافياً وملائمة للسوق.",
+        },
+      ],
+      cta: {
+        title: "استفد من ميزاتنا التنافسية لمؤسستك",
+        description: "دعنا نعمل معًا لتحقيق التميز والتفوق في سوقكم التنافسي",
+        button: "ابدأ رحلة التميز",
+      },
+    },
+
+    premium: {
+      badge: "مزايا فريدة",
+      title: "لماذا",
+      highlighted: "تختارنا؟",
+      subtitle:
+        "نقدم مجموعة من المزايا المصممة خصيصًا لضمان نجاح مشاريعك وتحقيق أهدافك الاستراتيجية",
+      customizable: {
+        title: "حلول مخصصة",
+        englishTitle: "Customizable",
+        description:
+          "نصمم تجارب مرنة تحقق أهدافك بدقة وتتماشى مع رؤيتك المستقبلية بشكل كامل",
+      },
+      improvable: {
+        title: "تطوير مستمر",
+        englishTitle: "Improvable",
+        description:
+          "نواكب التغيير والتطور لنقدم لك حلولًا قابلة للتحديث المستمر، تعزز أداءك وتواكب تطلعاتك المستقبلية",
+      },
+      applicable: {
+        title: "قابلة للتطبيق",
+        englishTitle: "Applicable",
+        description:
+          "نقدم استشارات عملية وحلولًا قابلة للتنفيذ، تضمن لك الانتقال من مرحلة التخطيط إلى التنفيذ الفعلي بخطوات واضحة ومؤثرة",
+      },
+      affordable: {
+        title: "قيمة استثنائية",
+        englishTitle: "Affordable",
+        description:
+          "نصمم حلولًا اقتصادية بمعايير عالمية تحقق أعلى قيمة مقابل الاستثمار. رضاك هو معيار نجاحنا الأول",
+      },
+      cta: {
+        title: "مستعد لبدء رحلة النجاح؟",
+        description:
+          "تواصل معنا اليوم لاكتشاف كيف يمكننا مساعدتك في تحقيق أهدافك بأفضل الحلول المخصصة",
+        button1: "ابدأ مشروعك الآن",
+        button2: "احجز استشارة مجانية",
+      },
+      stats: {
+        satisfaction: "رضا العملاء",
+        support: "دعم",
+        experience: "سنة خبرة",
+      },
+    },
+
+    partners: {
+      badge: "شبكتنا",
+      title: "شبكة",
+      highlighted: "علاقاتنا وخبراتنا",
+      subtitle:
+        "نفتخر بشراكاتنا الاستراتيجية وثقة عملائنا وتنوع خبرات فريقنا التي تجعلنا الشريك المثالي لنجاحكم",
+      strategicPartners: {
+        title: "شركائنا الإستراتيجيين",
+        description:
+          "نعمل مع أبرز البيوت الاستشارية والشركاء العالميين لتقديم أفضل الحلول",
+      },
+      clients: {
+        title: "عملاؤنا",
+        description: "نفخر بثقة كبرى الشركات والمؤسسات في قطاعات متنوعة",
+      },
+      teamExpertise: {
+        title: "الخبرات التراكمية لفريقنا",
+        description: "فريق متكامل يجمع بين الخبرة المحلية والمعايير العالمية",
+      },
+      viewDetails: "عرض التفاصيل",
+      stats: {
+        partners: "شريك استراتيجي",
+        clients: "عميل راضي",
+        experience: "عام خبرة",
+        alignment: "تزامن مع أهداف العملاء",
+      },
+      cta: {
+        title: "انضم إلى شبكة نجاحنا",
+        description:
+          "كن جزءًا من قائمة عملائنا المميزين واستفد من خبراتنا وشراكاتنا الاستراتيجية",
+        button1: "تواصل معنا",
+        button2: "تعرف على خدماتنا",
+      },
+    },
+
+    methodology: {
+      badge: "منهجيتنا",
+      title: "المنهجية",
+      titleHighlight: "العامة",
+      subtitle:
+        "نتبع منهجية علمية ممنهجة تضمن تقديم حلول استشارية فعالة ومستدامة تلبي احتياجات عملائنا",
+      steps: [
+        {
+          number: "٠١",
+          title: "التشخيص",
+          items: [
+            "فهم وتحديد احتياجات العميل",
+            "تحليل الوضع الراهن",
+            "تقديم المرئيات والتوصيات المبنية على التحليل",
+          ],
+        },
+        {
+          number: "٠٢",
+          title: "التصميم",
+          items: [
+            "تطوير خدمات وحلول مخصصة",
+            "ضمان قابلية التطبيق والتكامل مع أنظمة العميل",
+          ],
+        },
+        {
+          number: "٠٣",
+          title: "التطبيق والتحسين",
+          items: [
+            "تنفيذ الخدمات والحلول المصممة",
+            "قياس الأثر وضمان التحسين المستمر",
+          ],
+        },
+      ],
+      imageAlt: "المنهجية - كاستم إيدج للاستشارات",
+    },
+
+    whatWeDo: {
+      badge: "خدماتنا",
+      title: "خدماتنا",
+      highlighted: "المتخصصة",
+      subtitle:
+        "نقدم حلولاً استشارية متكاملة تجمع بين الخبرة العالمية والفهم العميق للسوق السعودي لتحقيق التميز المؤسسي المستدام",
+      humanCapital: {
+        title: "استشارات رأس المال البشري",
+        description: "حلول متكاملة لتطوير الموارد البشرية والهياكل التنظيمية",
+      },
+      businessStrategies: {
+        title: "إستراتيجيات الأعمال",
+        description: "تخطيط وتحليل الأعمال ودراسات الجدوى الاقتصادية",
+      },
+      organizationalExcellence: {
+        title: "التميز المؤسسي",
+        description: "حوكمة الشركات ونماذج العمل والمعايير الدولية",
+      },
+      specializedConsulting: {
+        title: "استشارات متخصصة",
+        description: "حلول مخصصة تلبي احتياجات مؤسستك الفريدة",
+      },
+      stats: {
+        experience: "عام خبرة",
+        projects: "مشروع ناجح",
+        experts: "خبير استشاري",
+        sectors: "قطاع خدم",
+      },
+      cta: {
+        button: "تحميل البروفايل التعريفي",
+        description: "اكتشف المزيد عن خبراتنا وخدماتنا",
+      },
+    },
+
+    faq: {
+      title: "الأسئلة الشائعة",
+      subtitle:
+        "اكتشف إجابات الأسئلة الأكثر شيوعاً حول خدماتنا الاستشارية وطريقة عملنا",
+      services: {
+        question: "ما هي الخدمات الاستشارية التي تقدمونها؟",
+        answer:
+          "نقدم خدمات استشارية متكاملة في رأس المال البشري، استراتيجيات الأعمال، والتميز المؤسسي تشمل التخطيط الاستراتيجي، إدارة الموارد البشرية، الحوكمة المؤسسية، وتحليل الأعمال.",
+      },
+      duration: {
+        question: "كم تبلغ مدة المشروع الاستشاري النموذجي؟",
+        answer:
+          "تتراوح مدة المشاريع بين 3 إلى 12 شهراً حسب طبيعة المشروع وتعقيده، حيث نضمن تقديم حلول قابلة للتطبيق ومستدامة.",
+      },
+      government: {
+        question: "هل تقدمون خدمات استشارية للقطاع الحكومي؟",
+        answer:
+          "نعم، نعمل مع القطاعات الحكومية والخاصة وغير الربحية، ونتمتع بخبرة واسعة في متطلبات القطاع الحكومي السعودي.",
+      },
+      methodology: {
+        question: "ما هي منهجية العمل التي تتبعونها؟",
+        answer:
+          "نتبع منهجية علمية تشمل التشخيص، التصميم، والتطبيق مع ضمان التحسين المستمر، ونصمم حلولاً مخصصة تلبي احتياجات كل عميل.",
+      },
+      team: {
+        question: "هل فريقكم معتمد ومؤهل؟",
+        answer:
+          "نعم، فريقنا من المستشارين المعتمدين دولياً وحاصل على شهادات مهنية في الاستشارات الإدارية والموارد البشرية والتميز المؤسسي.",
+      },
+      success: {
+        question: "كيف تقيسون نجاح المشاريع الاستشارية؟",
+        answer:
+          "نقيس النجاح من خلال مؤشرات أداء رئيسية تشمل العائد على الاستثمار، رضا العملاء، وتحقيق الأهداف الاستراتيجية المحددة.",
+      },
+      cta: {
+        title: "لم تجد إجابة لسؤالك؟",
+        description:
+          "فريقنا الاستشاري جاهز للإجابة على جميع استفساراتك وتقديم الاستشارة المناسبة لمؤسستك",
+        contact: "تواصل معنا",
+        request: "طلب استشارة",
+      },
+    },
+    footer: {
+      logoAlt: "Custom Edge Consulting",
+      companyDescription:
+        "بيت خبرة وطني مقره الرياض، نقدم خدمات استشارية متخصصة في رأس المال البشري، استراتيجيات الأعمال، والتميز المؤسسي بخبرة 40 عاماً.",
+      address: "الرياض، المملكة العربية السعودية",
+      phone: "(+966) 55 151 0633",
+      email: "info@customedge.sa",
+      website: "www.customedge.com",
+      quickLinks: {
+        title: "روابط سريعة",
+        home: "الرئيسية",
+        about: "من نحن",
+        services: "خدماتنا",
+        contact: "اتصل بنا",
+      },
+      services: {
+        title: "خدماتنا",
+        humanCapital: "حلول رأس المال البشري",
+        businessStrategies: "إستراتيجيات الأعمال",
+        organizationalExcellence: "التميز المؤسسي",
+        specializedConsulting: "استشارات متخصصة",
+      },
+      social: {
+        twitter: "تويتر",
+        email: "البريد الإلكتروني",
+        phone: "الهاتف",
+      },
+      copyright: "Custom Edge Consulting. جميع الحقوق محفوظة.",
+      tagline: "بيت الخبرة الوطني للاستشارات الإدارية والتميز المؤسسي",
+    },
+    // For Arabic (ar)
+    about: {
+      badge: "بيت الخبرة الوطني",
+      title: {
+        highlighted: "بيت خبرة",
+        rest: "وطني مقره الرياض",
+      },
+      description: {
+        paragraph1:
+          "نقدم خدمات وحلول استشارية متخصصة في رأس المال البشري، واستراتيجيات وخدمات الأعمال، والتميّز المؤسسي.",
+        paragraph2:
+          "بفريق استشاري متنوع يتمتع بخبرات ومعايير عالمية، وبفهم عميق للثقافة والسوق السعودي، مما يجعلنا الشريك الموثوق للمنظمات الطامحة نحو التطوير والتحوّل المؤسسي والتميّز المستدام.",
+        paragraph3:
+          "نعتز بكوننا فريقًا طموحًا يعمل وفق مبادئ واضحة في تقديم أفضل الحلول والخدمات، والتي تتميز بأنها خدمات وحلول مخصصة، قابلة للتطبيق، عالية الجودة، قابلة للتطوير وبأسعار منافسة.",
+        paragraph4:
+          "نستند في عملنا إلى خبرات تراكمية واسعة ومتنوعة يمتد أثرها لأكثر من 40 عامًا، اكتسبها فريقنا الاستشاري المحترف عبر مستويات وقطاعات متعددة، وبالتعاون مع نخبة من بيوت الخبرة المحلية والعالمية الرائدة في مجال الاستشارات الإدارية وحلول الأعمال.",
+      },
+      highlightWords: {
+        proud: "نفخر",
+        ambitious: "نعتز",
+      },
+      imageAlt: "بيت الخبرة الوطني - فريق الاستشارات",
+    },
+
+    aboutFounder: {
+      imageAlt: "المؤسس والرئيس التنفيذي - عمرو سعود أبو عباءة",
+      badge: "القيادة",
+      title: "المؤسس والرئيس التنفيذي",
+      name: "عمرو سعود أبو عباءة",
+      professionalTitle: "مستشار تنفيذي بخبرة تفوق 15 عاماً",
+      experience: {
+        title: "مستشار تنفيذي بخبرة فنية وقيادية واسعة تفوق 15 عام",
+        description:
+          "في التخطيط وإستراتيجيات الأعمال وحلول رأس المال البشري والتميز المؤسسي في القطاع الحكومي والخاص وغير الربحي. عمل بالتعاون مع مجموعة من بيوت الخبرة العالمية والمحلية في مجال الإستشارات الإدارية والموارد البشرية والتطوير المؤسسي وذلك في العديد من القطاعات مثل الإتصالات وتقنية المعلومات، التأمين والقطاع المالي والإستثماري، القطاع الصحي والتطوير العقاري، الإستشارات الإدارية وتطوير الأعمال، الجمعيات الخيرية والأهلية والشركات غير الربحية، والشؤون البلدية والإسكان.",
+      },
+      sectors: {
+        title: "مستشار ومشرف عام",
+        description:
+          "قطاع الخدمات المشتركة ورئيس لجنة التحول الرقمي. مُحَكِّم ومقيم معتمد للنموذج الوطني للتميز المؤسسي لجائزة الملك عبدالعزيز للجودة (كاكا) بإشراف الهيئة السعودية للمواصفات والمقاييس والجودة (ساسو). مستشار معتمد في الهيئة العامة للمنشآت الصغيرة والمتوسطة (منشآت) في ريادة الأعمال والتخطيط الإستراتيجي والموارد البشرية.",
+      },
+      trainer: {
+        title: "مدرب ومستشار معتمد",
+        description:
+          "من الجمعية العالمية لتنمية المواهب (ATD) ومنهجية بيركمان (BIRKMAN) العالمية في التوجيه والإرشاد الشخصي والمهني. مدرب للشهادة المهنية الكندية في قيادة الموارد البشرية (CHRL). خبير معتمد من وزارة الموارد البشرية والتنمية الاجتماعية في استشارات الموارد البشرية وتحليل وإستراتيجيات الأعمال واستقطاب المواهب.",
+      },
+      qualifications: {
+        title: "المؤهلات الأكاديمية",
+        bachelors: "بكالوريوس إدارة أعمال - أستراليا",
+        executiveDiploma:
+          "دبلوم عالي في الإدارة التنفيذية والقيادة الفعالة - إسبانيا",
+        commerceDiploma: "دبلوم تجارة وأعمال - أستراليا",
+      },
+      certifications: {
+        title: "الشهادات المهنية",
+        list: [
+          "محكم معتمد لنموذج التميز المؤسسي الوطني",
+          "استشاري معتمد في هيئة المنشآت الصغيرة والمتوسطة (منشآت)",
+          "مدرب معتمد من جمعية تطوير المواهب (ATD)",
+          "معتمد في منهجية بيركمان (BIRKMAN) للتوجيه الشخصي والمهني",
+          "مدرب للشهادة المهنية الكندية في قيادة الموارد البشرية (CHRL)",
+          "خبير معتمد من وزارة الموارد البشرية والتنمية الاجتماعية",
+          "العديد من الشهادات المهنية في التخطيط الاستراتيجي، مؤشرات الأداء، التحول الرقمي، إدارة المشاريع، الحوكمة، الجودة، وتطوير الموارد البشرية",
+        ],
+      },
+      stats: {
+        experience: "سنوات خبرة",
+        projects: "مشروع",
+        sectors: "قطاع",
+        satisfaction: "رضا",
+      },
+    },
+    nav: {
+      home: "الرئيسية",
+      about: "من نحن",
+      services: "الخدمات",
+      contact: "اتصل بنا",
+      menuTitle: "قائمة Custom Edge",
+      close: "إغلاق القائمة",
+      phone: "(+966) 55 151 0633",
+      email: "info@customedge.sa",
+      bookConsultation: "احجز استشارة",
+      contactInfo: "معلومات الاتصال",
+    },
+    contact: {
+      badge: "اتصل بنا",
+      title: "تواصل معنا",
+      subtitle: "لنتواصل",
+      description:
+        "مستعد لتحويل مؤسستك؟ مستشارونا الخبراء هنا لمساعدتك في تحقيق التميز.",
+      methods: {
+        phone: {
+          title: "الهاتف",
+          value: "(+966) 55 151 0633",
+          description: "اتصل بنا مباشرة",
+        },
+        email: {
+          title: "البريد الإلكتروني",
+          value: "info@customedge.sa",
+          description: "أرسل لنا بريداً إلكترونياً",
+        },
+        whatsapp: {
+          title: "واتساب",
+          value: "راسلنا",
+          description: "دردش فورياً",
+        },
+        linkedin: {
+          title: "لينكدإن",
+          value: "تواصل",
+          description: "شبكة مهنية",
+        },
+      },
+      offices: {
+        title: "مكتبنا",
+        subtitle: "يقع في قلب الرياض",
+        phone: "الهاتف",
+        email: "البريد الإلكتروني",
+        hours: "ساعات العمل",
+        availability: "الاستجابة",
+        availabilityText: "استجابة سريعة",
+        riyadh: {
+          city: "مكتب الرياض",
+          address: "الرياض، المملكة العربية السعودية (RANB3067)",
+          phone: "(+966) 55 151 0633",
+          email: "info@customedge.sa",
+          hours: "الأحد - الخميس: ٨:٠٠ ص - ٥:٠٠ م",
+        },
+      },
+      schedule: {
+        badge: "احجز جلسة",
+        title: "جدولة استشارة",
+        description: "احجز جلسة مخصصة مع خبرائنا لمناقشة تحديات أعمالك.",
+        benefits: [
+          "استشارة أولية مجانية",
+          "تحليل خبير",
+          "حلول مخصصة",
+          "دعم متابعة",
+        ],
+        button: "احجز الآن",
+      },
+      map: {
+        title: "موقعنا",
+        subtitle: "تجدنا على الخريطة",
+        note: "ملاحظة",
+        noteText: "يُفضل تحديد موعد مسبق",
+      },
+      trust: {
+        title: "شريك موثوق",
+        description: "حلول استشارية موثوقة",
+        clients: "عملاء",
+        satisfaction: "رضا",
+        response: "استجابة",
+      },
+      services: {
+        humanCapital: "حلول رأس المال البشري",
+        businessStrategies: "استراتيجيات الأعمال",
+        organizationalExcellence: "التميز المؤسسي",
+        digitalTransformation: "التحول الرقمي",
+        executiveTraining: "التدريب التنفيذي",
+      },
+      company: {
+        name: "كاستم إيدج للاستشارات",
+        website: "www.customedge.sa",
+        social: "@custom_edge_CEC",
+        location: "المملكة العربية السعودية - الرياض",
+      },
+    },
+  },
+};
+
+// Helper function to get translation
+export const getTranslation = (key, language = "ar", params = {}) => {
+  const keys = key.split(".");
+  let translation = translations[language];
+
+  for (const k of keys) {
+    if (translation && translation[k]) {
+      translation = translation[k];
+    } else {
+      // Fallback to English if translation not found
+      translation = translations.en;
+      for (const fallbackKey of keys) {
+        if (translation && translation[fallbackKey]) {
+          translation = translation[fallbackKey];
+        } else {
+          console.warn(`Translation not found for key: ${key}`);
+          return key; // Return key if no translation found
+        }
+      }
+      break;
+    }
+  }
+
+  // Replace parameters in translation
+  if (typeof translation === "string") {
+    return translation.replace(/\{(\w+)\}/g, (match, param) => {
+      return params[param] || match;
+    });
+  }
+
+  return translation || key;
+};

@@ -1,0 +1,131 @@
+"use client";
+import {
+  FaBullseye,
+  FaEye,
+  FaLightbulb,
+  FaHandshake,
+  FaChartLine,
+  FaRocket,
+} from "react-icons/fa";
+import { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+export default function MissionVision() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+
+  return (
+    <div className="relative w-full flex flex-col md:flex-row overflow-hidden bg-white">
+      {/* Mission Section */}
+      <div
+        className="relative w-full md:w-1/2 bg-[#165e91] text-white flex items-center justify-center p-12 z-10"
+        data-aos="fade-right"
+      >
+        <div className="max-w-md z-20">
+          <div
+            className="flex items-center mb-8"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <FaBullseye className="text-4xl mr-4 text-[#4da8da]" />
+            <h2 className="text-3xl md:text-4xl font-bold">Our Mission</h2>
+          </div>
+
+          <div className="space-y-6">
+            <p
+              className="text-lg leading-relaxed flex items-start"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <FaLightbulb className="flex-shrink-0 mt-1 mr-3 text-[#4da8da]" />
+              To deliver comprehensive, reliable, and innovative technology
+              solutions that empower our clients, elevate industries, and
+              contribute to a smarter future.
+            </p>
+
+            <p
+              className="text-lg leading-relaxed flex items-start"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <FaHandshake className="flex-shrink-0 mt-1 mr-3 text-[#4da8da]" />
+              We build long-term partnerships by understanding client needs and
+              delivering tailored solutions that drive business growth.
+            </p>
+          </div>
+        </div>
+
+        {/* Animated decorative elements */}
+        <div
+          className="absolute bottom-0 right-0 w-32 h-32 rounded-full bg-[#4da8da]/20"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        ></div>
+      </div>
+
+      {/* Diagonal separator */}
+      <div className="absolute hidden md:block left-1/2 top-0 h-full z-10">
+        <svg
+          className="h-full w-10 text-[#165e91]"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <polygon fill="currentColor" points="0,0 100,0 0,100" />
+        </svg>
+      </div>
+
+      {/* Vision Section */}
+      <div
+        className="w-full md:w-1/2 bg-gray-50 text-gray-800 flex items-center justify-center p-12 z-0"
+        data-aos="fade-left"
+      >
+        <div className="max-w-md">
+          <div
+            className="flex items-center mb-8"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <FaEye className="text-4xl mr-4 text-[#165e91]" />
+            <h2 className="text-3xl md:text-4xl font-bold">Our Vision</h2>
+          </div>
+
+          <div className="space-y-6">
+            <p
+              className="text-lg leading-relaxed flex items-start"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <FaChartLine className="flex-shrink-0 mt-1 mr-3 text-[#165e91]" />
+              To become the region's leading technology partner by exceeding
+              client expectations and driving digital transformation.
+            </p>
+
+            <p
+              className="text-lg leading-relaxed flex items-start"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <FaRocket className="flex-shrink-0 mt-1 mr-3 text-[#165e91]" />
+              We create value by being at the forefront of innovation,
+              empowering businesses to thrive in the digital world.
+            </p>
+          </div>
+
+          {/* Animated decorative elements */}
+          <div
+            className="absolute top-0 left-0 w-32 h-32 rounded-full bg-[#165e91]/10"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          ></div>
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -1,0 +1,103 @@
+// // src/app/api/contact/route.ts
+// import { NextResponse } from "next/server";
+// import ExcelJS from "exceljs";
+// import path from "path";
+// import fs from "fs/promises";
+
+// async function ensureDirectory(filePath: string) {
+//   const dir = path.dirname(filePath);
+//   await fs.mkdir(dir, { recursive: true });
+// }
+
+// function getFilePath(): string {
+//   return path.join(process.cwd(), "data", "contact_submissions.xlsx");
+// }
+
+// async function loadWorkbook() {
+//   const workbook = new ExcelJS.Workbook();
+//   const filePath = getFilePath();
+
+//   console.log(`[loadWorkbook] File path: ${filePath}`);
+//   console.log(`[loadWorkbook] Checking if file exists...`);
+
+//   try {
+//     await fs.access(filePath);
+//     console.log("[loadWorkbook] File exists, reading...");
+//     await workbook.xlsx.readFile(filePath);
+//     console.log("[loadWorkbook] Workbook read successfully.");
+//   } catch {
+//     console.log("[loadWorkbook] File does not exist, creating new workbook...");
+//     const worksheet = workbook.addWorksheet("Submissions");
+//     worksheet.columns = [
+//       { header: "Timestamp", key: "timestamp", width: 22 },
+//       { header: "Company", key: "company", width: 22 },
+//       { header: "Name", key: "name", width: 25 },
+//       { header: "Email", key: "email", width: 30 },
+//       { header: "Phone", key: "phone", width: 20 },
+//       { header: "Message", key: "message", width: 50 },
+//     ];
+//     await ensureDirectory(filePath);
+//     const buffer = await workbook.xlsx.writeBuffer();
+//     await fs.writeFile(filePath, new Uint8Array(buffer)); // ✅ FIXED
+//     console.log("[loadWorkbook] New file created with headers.");
+//     return { workbook, worksheet };
+//   }
+
+//   const worksheet = workbook.getWorksheet("Submissions");
+//   if (!worksheet) {
+//     throw new Error("Worksheet 'Submissions' not found in existing workbook.");
+//   }
+//   console.log(
+//     `[loadWorkbook] Found worksheet with ${worksheet.rowCount} rows.`,
+//   );
+//   return { workbook, worksheet };
+// }
+
+// export async function POST(request: Request) {
+//   console.log("\n--- New POST request ---");
+//   try {
+//     const body = await request.json();
+//     const { name, email, phone, message, company } = body;
+//     console.log("Received data:", { name, email, phone, message, company });
+
+//     if (!name || !email || !message) {
+//       return NextResponse.json(
+//         { error: "Required fields missing" },
+//         { status: 400 },
+//       );
+//     }
+
+//     const { workbook, worksheet } = await loadWorkbook();
+//     console.log(`Before addRow – worksheet has ${worksheet.rowCount} rows.`);
+
+//     worksheet.addRow({
+//       timestamp: new Date().toISOString(),
+//       company: company || "Not specified",
+//       name,
+//       email,
+//       phone: phone || "",
+//       message,
+//     });
+
+//     console.log(`After addRow – worksheet now has ${worksheet.rowCount} rows.`);
+
+//     const filePath = getFilePath();
+//     const buffer = await workbook.xlsx.writeBuffer();
+//     await fs.writeFile(filePath, new Uint8Array(buffer)); // ✅ FIXED
+//     console.log(`Workbook written to ${filePath}`);
+
+//     // Verification
+//     const verificationWorkbook = new ExcelJS.Workbook();
+//     await verificationWorkbook.xlsx.readFile(filePath);
+//     const verifySheet = verificationWorkbook.getWorksheet("Submissions");
+//     console.log(`Verification: ${verifySheet?.rowCount} rows found.`);
+
+//     return NextResponse.json({ success: true });
+//   } catch (error) {
+//     console.error("Error saving submission:", error);
+//     return NextResponse.json(
+//       { error: "Internal server error" },
+//       { status: 500 },
+//     );
+//   }
+// }

@@ -1,0 +1,225 @@
+"use client";
+import {
+  FaBolt,
+  FaGlobe,
+  FaShieldAlt,
+  FaChartLine,
+  FaNetworkWired,
+  FaSatellite,
+} from "react-icons/fa";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Image from "next/image";
+import Link from "next/link";
+
+export default function TelecomLanding() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+
+  const features = [
+    {
+      icon: <FaBolt className="text-[#165e91] text-xl" />,
+      title: "5G Ultra Speed",
+      description: "Multi-gigabit speeds with ultra-low latency",
+    },
+    {
+      icon: <FaNetworkWired className="text-[#165e91] text-xl" />,
+      title: "Fiber Optic Network",
+      description: "Future-proof infrastructure with unlimited bandwidth",
+    },
+    {
+      icon: <FaShieldAlt className="text-[#165e91] text-xl" />,
+      title: "Enterprise Security",
+      description: "Military-grade encryption and protection",
+    },
+    {
+      icon: <FaSatellite className="text-[#165e91] text-xl" />,
+      title: "Global Coverage",
+      description: "Connectivity across 200+ countries",
+    },
+  ];
+
+  return (
+    <div className="bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-20 lg:py-28">
+        <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12">
+          {/* Visual Section - Different layout for mobile */}
+          <div className="w-full lg:w-1/2 order-2 lg:order-1">
+            {/* Mobile single image (shown on small screens) */}
+            <div className="lg:hidden relative w-full h-64 sm:h-80 rounded-xl overflow-hidden shadow-lg mb-8">
+              <Image
+                src="/assets/t1.jpg" // Using the most relevant image for mobile
+                alt="Telecom solutions"
+                fill
+                className="object-cover"
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+
+            {/* Desktop overlapping images (shown on larger screens) */}
+            <div className="hidden lg:block relative h-full min-h-[500px]">
+              {/* Base Image */}
+              <div
+                className="absolute w-[85%] h-[70%] left-0 bottom-0 rounded-xl overflow-hidden border-2 border-white shadow-lg"
+                data-aos="fade-up"
+              >
+                <Image
+                  src="/assets/T3.webp"
+                  alt="Telecom infrastructure"
+                  fill
+                  className="object-cover"
+                  priority
+                  sizes="50vw"
+                />
+              </div>
+
+              {/* Middle Image */}
+              <div
+                className="absolute w-[75%] h-[60%] right-0 top-10 rounded-xl overflow-hidden border-2 border-white shadow-lg z-10"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <Image
+                  src="/assets/t2.jpg"
+                  alt="Network operations center"
+                  fill
+                  className="object-cover"
+                  priority
+                  sizes="50vw"
+                />
+              </div>
+
+              {/* Top Image */}
+              <div
+                className="absolute w-[65%] h-[50%] left-5 top-0 rounded-xl overflow-hidden border-2 border-white shadow-lg z-20"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <Image
+                  src="/assets/t1.jpg"
+                  alt="Technical team working"
+                  fill
+                  className="object-cover"
+                  priority
+                  sizes="50vw"
+                />
+              </div>
+
+              {/* Decorative elements */}
+              <div
+                className="absolute -bottom-5 -left-5 w-24 h-24 rounded-full bg-[#165e91]/10 z-0"
+                data-aos="fade-right"
+                data-aos-delay="600"
+              ></div>
+              <div
+                className="absolute -top-5 -right-5 w-20 h-20 rounded-full bg-[#165e91]/5 z-0"
+                data-aos="fade-left"
+                data-aos-delay="600"
+              ></div>
+            </div>
+          </div>
+
+          {/* Content Section */}
+          <div className="w-full lg:w-1/2 order-1 lg:order-2">
+            <span
+              className="inline-block px-3 py-1 bg-[#165e91]/10 text-[#165e91] rounded-full text-sm font-medium mb-4"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
+              Enterprise Telecom Solutions
+            </span>
+
+            <h2
+              className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <span className="text-[#165e91]">Reliable Connectivity</span> for
+              Modern Businesses
+            </h2>
+
+            <p
+              className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              Gaihab Telecom delivers secure, high-performance network solutions
+              tailored to your enterprise needs.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-8 sm:mb-10">
+              {features.map((feature, index) => (
+                <div
+                  key={index}
+                  className="p-3 sm:p-4 rounded-lg border border-gray-200 hover:border-[#165e91]/30 transition-colors"
+                  data-aos="fade-up"
+                  data-aos-delay={250 + index * 100}
+                >
+                  <div className="flex items-start gap-2 sm:gap-3">
+                    <div
+                      className="p-2 bg-[#165e91]/10 rounded-md"
+                      data-aos="zoom-in"
+                      data-aos-delay={300 + index * 100}
+                    >
+                      {feature.icon}
+                    </div>
+                    <div>
+                      <h3
+                        className="font-semibold text-gray-800 text-sm sm:text-base"
+                        data-aos="fade-left"
+                        data-aos-delay={350 + index * 100}
+                      >
+                        {feature.title}
+                      </h3>
+                      <p
+                        className="text-gray-600 text-xs sm:text-sm mt-1"
+                        data-aos="fade-left"
+                        data-aos-delay={400 + index * 100}
+                      >
+                        {feature.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
+              <Link
+                href={
+                  "https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7353025769574400001"
+                }
+                target="_blank"
+              >
+                <button
+                  className="px-4 sm:px-6 py-2 sm:py-3 bg-[#165e91] hover:bg-[#124b7a] text-white font-medium rounded-lg transition-colors text-sm sm:text-base"
+                  data-aos="fade-up"
+                  data-aos-delay="650"
+                >
+                  Subscribe to LinkedIn
+                </button>
+              </Link>
+              <Link href={"/contact"}>
+                <button
+                  className="px-4 sm:px-6 py-2 sm:py-3 border border-gray-300 text-gray-700 hover:bg-gray-50 font-medium rounded-lg transition-colors text-sm sm:text-base"
+                  data-aos="fade-up"
+                  data-aos-delay="700"
+                >
+                  Contact Us
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

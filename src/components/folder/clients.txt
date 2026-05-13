@@ -1,0 +1,141 @@
+import { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import Title from "./Title";
+import SpacingWrapper from "./SpacingWrapper";
+
+const OurClients = () => {
+  const projects = [
+    {
+      name: "National Unified Procurement Company",
+      category: "Healthcare",
+      location: "Dammam",
+      value: "300,000,000 SAR",
+      image: "/assets/projects/c1.png",
+    },
+    {
+      name: "General Directorate of Health Affairs",
+      category: "Healthcare",
+      location: "AL Khobar",
+      value: "2,700,000 SAR",
+      image: "/assets/projects/c3.jpg",
+    },
+    {
+      name: "AL Khobar Medical Complex – ALakrabia",
+      category: "Healthcare",
+      location: "Dammam",
+      value: "1,800,000 SAR",
+      image: "/assets/projects/c2.png",
+    },
+    {
+      name: "Regional Poison Control Center",
+      category: "Healthcare",
+      location: "Dammam",
+      value: "1,200,000 SAR",
+      image: "/assets/projects/c4.png",
+    },
+    {
+      name: "ARAMCO",
+      category: "Industrial",
+      location: "Dhahran",
+      value: "650,000 SAR",
+      image: "/assets/projects/c5.png",
+    },
+    {
+      name: "Coral Hotel",
+      category: "Hospitality",
+      location: "Jubail",
+      value: "1,200,000 SAR",
+      image: "/assets/projects/c7.png",
+    },
+    {
+      name: "Saud AI-Babtain Cardiac Center",
+      category: "Healthcare",
+      location: "Dammam",
+      value: "3,400,000 SAR",
+      image: "/assets/projects/c6.jpg",
+    },
+    {
+      name: "KFUPM",
+      category: "Commercial",
+      location: "Dammam",
+      value: "700,000 SAR",
+      image: "/assets/projects/c8.webp",
+    },
+    {
+      name: "AL Hassa Municipality",
+      category: "Commercial",
+      location: "Qatif",
+      value: "340,000 SAR",
+      image: "/assets/projects/c11.png",
+    },
+    {
+      name: "AL Moosa Specialized Hospital",
+      category: "Healthcare",
+      location: "AL Hassa",
+      value: "1,600,000 SAR",
+      image: "/assets/projects/c10.png",
+    },
+    {
+      name: "Dr.Samyra Al Baiat Medical Tower",
+      category: "Healthcare",
+      location: "AL Hassa",
+      value: "850,000 SAR",
+      image: "/assets/projects/c12.jpg",
+    },
+    {
+      name: "AL-Sharq News Paper",
+      category: "Commercial",
+      location: "AL Khobar",
+      value: "1,300,000 SAR",
+      image: "/assets/projects/c13.webp",
+    },
+    {
+      name: "Maternity and Children Hospital",
+      category: "Healthcare",
+      location: "Dhahran",
+      value: "2,800,000 SAR",
+      image: "/assets/projects/c15.jpg",
+    },
+    {
+      name: "Pearl Compound (Lo”Lo”a) Saudi Rama",
+      category: "Residential",
+      location: "Dammam",
+      value: "3,200,000 SAR",
+      image: "/assets/projects/c14.jpg",
+    },
+    {
+      name: "ROSEN Saudi Arabia – Dhahran Techno Valley",
+      category: "Industrial",
+      location: "Dammam",
+      value: "1,400,000 SAR",
+      image: "/assets/projects/c16.png",
+    },
+  ];
+
+  return (
+    <div className="container mx-auto px-4 py-8">
+      <div className="text-center mb-12">
+        <Title text={"Our Clients"} />
+      </div>
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        {projects.map((client, index) => (
+          <div
+            key={index}
+            className="p-2 rounded-lg transition-all duration-300 flex items-center justify-center h-32"
+          >
+            <img
+              src={client.image}
+              alt={client.name}
+              className="max-h-32 max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-500"
+              loading="lazy"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default OurClients;
