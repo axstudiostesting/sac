@@ -327,7 +327,7 @@ export const translations = {
       slide2: {
         id: "salam",
         title: "Salam Station",
-        image: "/hero/salam.png",
+        image: "/hero/salam.jpg",
         desc: "Salam Roads Petroleum Services Company specializes in petroleum, energy, and support services, serving as a strategic arm bridging energy and transportation sectors",
         link: "/companies/salam",
         cta: "Discover Salam Station",
@@ -457,6 +457,11 @@ export const translations = {
             "Energy Sector Support - Technical solutions for drilling and production operations",
             "Sustainability Operations - Eco-friendly policies including energy management",
           ],
+          images: [
+            "/companies/salam/1.jpg",
+            "/companies/salam/2.jpg",
+            "/companies/salam/3.jpg",
+          ],
           targetSectors: [
             "Government entities",
             "Land transport companies",
@@ -476,9 +481,9 @@ export const translations = {
             "Leading provider of telecommunications and security solutions in Saudi Arabia since 1992.",
           description: `Al-Sheikh Telecommunications Company (Saudi Call) was established in 1992, evolving from authorized distributor for Nokia and Ericsson with 100+ branches to a strategic pillar in telecommunications and infrastructure. Today, Saudi Call is a trusted partner delivering vital projects including design, supply, and implementation of advanced technological systems across Saudi Arabia.`,
           images: [
-            "/hero/saudicall2.png",
-            "/hero/abreez.png",
-            "/hero/mowad.png",
+            "/companies/saudi-call/1.jpg",
+            "/companies/saudi-call/2.jpg",
+            "/companies/saudi-call/3.jpeg",
           ],
           metrics: [
             { value: "400+", label: "Technical & Administrative Experts" },
@@ -520,9 +525,9 @@ export const translations = {
             "Real estate and investment arm specializing in commercial and residential assets in Al-Khobar.",
           description: `Ebreez Arabia serves as the real estate and investment arm of Sadara, specializing in management and development of commercial and residential assets in Al-Khobar City.`,
           images: [
-            "/hero/saudicall2.png",
-            "/hero/abreez.png",
-            "/hero/mowad.png",
+            "/companies/ebreez/1.jpeg",
+            "/companies/ebreez/2.jpeg",
+            "/companies/ebreez/3.jpeg",
           ],
           metrics: [
             { value: "5+", label: "Premium Properties" },
@@ -554,11 +559,11 @@ export const translations = {
           shortDescription:
             "Local manufacturer of drilling fluid additives and specialized industrial minerals since 2013.",
           description: `Drilling Materials Company (Mawad) commenced operations in 2013 from the Second Industrial City in Dammam, establishing itself as a reliable local manufacturer of drilling fluid additives and specialized industrial minerals. The company operates under the highest standards of quality and sustainability, with a vision to become an innovative and trusted Saudi manufacturer at regional and international levels.`,
-          images: [
-            "/hero/saudicall2.png",
-            "/hero/abreez.png",
-            "/hero/mowad.png",
-          ],
+          // images: [
+          //   "/hero/saudicall2.png",
+          //   "/hero/abreez.png",
+          //   "/hero/mowad.png",
+          // ],
           metrics: [
             { value: "2013", label: "Year Established" },
             { value: "API 13A", label: "Certified Testing Center" },
@@ -594,11 +599,6 @@ export const translations = {
           shortDescription:
             "Leading manufacturer of high-quality plastic products serving Saudi and GCC markets.",
           description: `Plastic Ultimate Quality Plastic Products (Plastech) has emerged as a leading local manufacturer of high-quality plastic products, serving Saudi and GCC markets through efficient supply chains and advanced production capabilities.`,
-          images: [
-            "/hero/saudicall2.png",
-            "/hero/abreez.png",
-            "/hero/mowad.png",
-          ],
           metrics: [
             { value: "30L", label: "Container Capacity" },
             { value: "1000L", label: "IBC Containers" },
@@ -631,6 +631,11 @@ export const translations = {
           id: "jovae",
           slug: "jovae",
           name: "Jovae Industrial",
+          images: [
+            "/companies/jovae/1.jpeg",
+            "/companies/jovae/2.jpeg",
+            "/companies/jovae/3.jpeg",
+          ],
           logo: "/companies/jovae.png",
           shortDescription:
             "Manufacturer of high-performance household cleaning and disinfectant solutions under Britex brand.",
@@ -1874,7 +1879,7 @@ export const translations = {
       slide2: {
         id: "salam",
         title: "سلام ستيشن",
-        image: "/hero/salam.png",
+        image: "/hero/salam.jpg",
         desc: "تتخصص شركة سالم رودز للخدمات البترولية في خدمات البترول والطاقة والدعم، وتعمل كذراع استراتيجي يربط بين قطاعي الطاقة والنقل",
         link: "/companies/salam",
 
@@ -1958,7 +1963,7 @@ export const translations = {
           id: "salam-station",
           slug: "salam-station",
           name: "سلام ستيشن",
-          logo: "/companies/salam-station.png",
+          logo: "/companies/salam.png",
           shortDescription:
             "خدمات دعم البترول والطاقة التي تربط قطاعي الطاقة والنقل.",
           description: `تتخصص شركة سالم رودز للخدمات البترولية في خدمات البترول والطاقة والدعم، وتعمل كذراع استراتيجي يربط بين قطاعي الطاقة والنقل.`,
