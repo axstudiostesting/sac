@@ -133,7 +133,7 @@ const ClientsSection = () => {
       icon: FiUsers,
       value: hasAnimated
         ? isRTL
-          ? toArabicNumerals(`${counts.clients}+`)
+          ? toArabicNumerals(`+${counts.clients}`)
           : `${counts.clients}+`
         : isRTL
           ? "٠+"
@@ -144,7 +144,7 @@ const ClientsSection = () => {
       icon: FiBriefcase,
       value: hasAnimated
         ? isRTL
-          ? toArabicNumerals(`${counts.projects}+`)
+          ? toArabicNumerals(`+${counts.projects}`)
           : `${counts.projects}+`
         : isRTL
           ? "٠+"
@@ -155,7 +155,7 @@ const ClientsSection = () => {
       icon: FiAward,
       value: hasAnimated
         ? isRTL
-          ? toArabicNumerals(`${counts.experience}+`)
+          ? toArabicNumerals(`+${counts.experience}`)
           : `${counts.experience}+`
         : isRTL
           ? "٠+"

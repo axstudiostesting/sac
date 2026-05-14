@@ -494,14 +494,15 @@ const CompanyDetail = ({ slug }) => {
               className="bg-white rounded-2xl p-6 shadow-md text-center"
             >
               <h4 className="font-bold text-gray-900 mb-2">
-                Interested in {company.name}?
+                {isRTL ? `مهتم بـ ${company.name}؟` : `Interested in ${company.name}?`}
+
               </h4>
               <p className="text-sm text-gray-500 mb-4">
-                Contact us to learn more about our services
+                {isRTL ? "تواصل معنا لمعرفة المزيد عن خدماتنا" : "Contact us to learn more about our services"}
               </p>
               <Link href="/contact">
                 <button className="w-full bg-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-primary/90 transition-all duration-300 hover:scale-105">
-                  Get in Touch
+                  {isRTL ? "تواصل" : "Get in Touch"}
                 </button>
               </Link>
             </div>

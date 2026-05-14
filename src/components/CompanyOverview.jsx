@@ -247,7 +247,7 @@ const CompanyOverview = () => {
                         <div className="w-2 h-2 bg-green-500 rounded-full absolute inset-0 animate-ping" />
                       </div>
                       <span className="text-xs font-bold text-gray-700">
-                        Est. 1992
+                        {isRTL ? "تأسست عام ١٩٩٢" : "Est. 1992"}
                       </span>
                     </div>
                   </div>

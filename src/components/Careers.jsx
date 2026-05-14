@@ -32,11 +32,10 @@ const CareersSection = () => {
   const jobs = [];
 
   const stats = [
-    { value: "500+", label: "Employees", icon: FiUsers },
-    { value: "15+", label: "Nationalities", icon: FiTrendingUp },
-    { value: "98%", label: "Saudization", icon: FiAward },
+    { value: "500+", valueAr: "٥٠٠+", label: "Employees", labelAr: "موظف", icon: FiUsers },
+    { value: "15+", valueAr: "١٥+", label: "Nationalities", labelAr: "جنسية", icon: FiTrendingUp },
+    { value: "98%", valueAr: "٩٨٪", label: "Saudization", labelAr: "سعودة", icon: FiAward },
   ];
-
   const handleSendCV = () => {
     const subject = encodeURIComponent("Job Application - CV Submission");
     const body = encodeURIComponent(
@@ -91,10 +90,10 @@ const CareersSection = () => {
                   <Icon className="w-6 h-6 md:w-8 md:h-8 text-primary" />
                 </div>
                 <div className="text-2xl md:text-3xl font-bold text-gray-900">
-                  {stat.value}
+                  {isRTL ? stat.valueAr : stat.value}
                 </div>
                 <div className="text-xs md:text-sm text-gray-500">
-                  {stat.label}
+                  {isRTL ? stat.labelAr : stat.label}
                 </div>
               </div>
             );

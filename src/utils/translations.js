@@ -329,7 +329,7 @@ export const translations = {
         title: "Salam Station",
         image: "/hero/salam.jpg",
         desc: "Salam Roads Petroleum Services Company specializes in petroleum, energy, and support services, serving as a strategic arm bridging energy and transportation sectors",
-        link: "/companies/salam",
+        link: "/companies/salam-station",
         cta: "Discover Salam Station",
       },
       slide3: {
@@ -1804,17 +1804,17 @@ export const translations = {
       stats: {
         years: {
           number: "+25",
-          label: "Years of Excellence",
+          label: "سنوات من التميز", // Years of Excellence
         },
 
         projects: {
           number: "+50",
-          label: "Successful Projects",
+          label: "مشاريع ناجحة", // Successful Projects
         },
 
         team: {
           number: "+100",
-          label: "Expert Team",
+          label: "فريق من الخبراء", // Expert Team
         },
       },
     },
@@ -1881,7 +1881,7 @@ export const translations = {
         title: "سلام ستيشن",
         image: "/hero/salam.jpg",
         desc: "تتخصص شركة سالم رودز للخدمات البترولية في خدمات البترول والطاقة والدعم، وتعمل كذراع استراتيجي يربط بين قطاعي الطاقة والنقل",
-        link: "/companies/salam",
+        link: "/companies/salam-station",
 
         cta: "اكتشف سالم ستيشن",
       },
