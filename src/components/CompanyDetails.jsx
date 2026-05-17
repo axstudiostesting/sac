@@ -13,6 +13,7 @@ import {
   FiStar,
   FiBriefcase,
   FiUsers,
+  FiGlobe,
 } from "react-icons/fi";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -112,6 +113,7 @@ const CompanyDetail = ({ slug }) => {
             <div className="p-8 md:p-12 lg:p-16 relative">
               <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center lg:items-start">
                 {/* Logo Section - Enhanced */}
+
                 <div className="relative group">
                   {/* Animated Rings */}
                   <div className="absolute -inset-3 rounded-3xl bg-gradient-to-r from-[#27374e]/20 via-[#27374e]/40 to-[#27374e]/20 opacity-0 group-hover:opacity-100 blur-xl transition-all duration-700 group-hover:scale-110" />
@@ -131,6 +133,11 @@ const CompanyDetail = ({ slug }) => {
                       />
                     </div>
 
+                    {/* Decorative Corner Accents */}
+                    {/* <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-[#27374e]/20 rounded-tl-2xl" />
+                    <div className="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-[#27374e]/20 rounded-tr-2xl" />
+                    <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-[#27374e]/20 rounded-bl-2xl" />
+                    <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-[#27374e]/20 rounded-br-2xl" /> */}
                   </div>
 
                   {/* Floating Badge - Optional */}
@@ -190,7 +197,7 @@ const CompanyDetail = ({ slug }) => {
 
                     {/* Website Chip */}
                     {company.website && (
-                      <div className="group relative">
+                      <div className="group relative cursor-pointer">
                         <div className="absolute inset-0 bg-gradient-to-r from-[#27374e]/0 via-[#27374e]/10 to-[#27374e]/0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                         <div className="relative flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm border border-gray-100 hover:border-[#27374e]/30 hover:shadow-md transition-all duration-300">
                           <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center">
@@ -252,8 +259,7 @@ const CompanyDetail = ({ slug }) => {
                     src={img}
                     alt={`gallery-${idx}`}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
+                    className="object-contain transition-transform duration-500 group-hover:scale-110" />
                 </div>
 
                 {/* Overlay */}
@@ -495,7 +501,6 @@ const CompanyDetail = ({ slug }) => {
             >
               <h4 className="font-bold text-gray-900 mb-2">
                 {isRTL ? `مهتم بـ ${company.name}؟` : `Interested in ${company.name}?`}
-
               </h4>
               <p className="text-sm text-gray-500 mb-4">
                 {isRTL ? "تواصل معنا لمعرفة المزيد عن خدماتنا" : "Contact us to learn more about our services"}

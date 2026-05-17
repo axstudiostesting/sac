@@ -145,6 +145,14 @@ const HeaderHero = () => {
       link: "hero.slide7.link",
       ctaKey: "hero.slide7.cta",
     },
+    {
+      id: "hero.slide8.id",
+      titleKey: "hero.slide8.title",
+      descKey: "hero.slide8.desc",
+      image: "hero.slide8.image",
+      link: "hero.slide8.link",
+      ctaKey: "hero.slide8.cta",
+    },
     // {
     //   id: "salam-station",
     //   titleKey: "hero.slide6.title",

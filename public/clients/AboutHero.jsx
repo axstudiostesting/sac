@@ -141,7 +141,6 @@ const AboutHero = () => {
   const floatingStats = [
     {
       value: "30+",
-      valueAr: "+٣٠",
       labelKey: "about.floatingCard.label",
       titleKey: "about.floatingCard.title",
       locationKey: "about.floatingCard.location",
@@ -346,7 +345,6 @@ const AboutHero = () => {
                     <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center">
                       <span className="text-gray-900 font-bold text-2xl">
                         {isRTL ? stat.valueAr : stat.value}
-
                       </span>
                     </div>
                     <div>

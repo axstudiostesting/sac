@@ -196,10 +196,10 @@ const CompanyOverview = () => {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl transform group-hover:scale-[1.02] transition-all duration-700">
                 <div className="relative h-[550px] md:h-[600px] w-full">
                   <Image
-                    src="/st2.jpeg"
+                    src="/gate-tower.jpeg"
                     alt="Sadara Development Investment Company"
                     fill
-                    className="object-cover transition-transform duration-1000 group-hover:scale-110"
+                    className="object-cover object-top transition-transform duration-1000 group-hover:scale-110"
                     priority
                   />
                 </div>
@@ -247,8 +247,7 @@ const CompanyOverview = () => {
                         <div className="w-2 h-2 bg-green-500 rounded-full absolute inset-0 animate-ping" />
                       </div>
                       <span className="text-xs font-bold text-gray-700">
-                        {isRTL ? "تأسست عام ١٩٩٢" : "Est. 1992"}
-                      </span>
+                        {isRTL ? "تأسست عام ١٩٩٢" : "Est. 1992"}                      </span>
                     </div>
                   </div>
                 </div>

@@ -104,18 +104,12 @@ const Footer = () => {
 
                 {/* Social Icons */}
                 <div data-aos="fade-up" className="flex gap-3 md:gap-4 justify-center lg:justify-start">
-                  <a
-                    href={
-                      t("footer.social.twitterUrl") ||
-                      "https://twitter.com/sadara"
-                    }
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-300 hover:bg-[#1DA1F2] hover:text-white transition-all duration-300"
+                  <div
+                    className="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center cursor-pointer text-gray-300 hover:bg-[#1DA1F2] hover:text-white transition-all duration-300"
                     aria-label="Twitter"
                   >
                     <FaTwitter className="text-base md:text-lg" />
-                  </a>
+                  </div>
                   <a
                     href={
                       t("footer.social.linkedinUrl") ||
@@ -128,19 +122,13 @@ const Footer = () => {
                   >
                     <FaLinkedin className="text-base md:text-lg" />
                   </a>
-                  <a
-                    href={
-                      t("footer.social.facebookUrl") ||
-                      "https://www.facebook.com/people/sadaraholding/100084901930975/"
-                    }
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-300 hover:bg-[#0077B5] hover:text-white transition-all duration-300"
+                  <div
+                    className="cursor-pointer w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-300 hover:bg-[#0077B5] hover:text-white transition-all duration-300"
                     aria-label="Facebok"
 
                   >
                     <FaFacebook className="text-base md:text-lg" />
-                  </a>
+                  </div>
                 </div>
               </div>
               {/* Mobile: Stacked layout with accordion sections */}
@@ -265,10 +253,10 @@ const Footer = () => {
                   >
                     <FaEnvelope className="text-white/60 mt-0.5 flex-shrink-0" />
                     <a
-                      href={`mailto:${t("footer.contact.email") || "info@sadara.com"}`}
+                      href={`mailto:${t("footer.contact.email") || "info@sdi.com.sa"}`}
                       className="hover:text-white transition-colors break-all"
                     >
-                      {t("footer.contact.email") || "info@sadara.com"}
+                      {t("footer.contact.email") || "info@sdi.com.sa"}
                     </a>
                   </div>
                   <div

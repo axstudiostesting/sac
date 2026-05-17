@@ -36,6 +36,7 @@ const CareersSection = () => {
     { value: "15+", valueAr: "١٥+", label: "Nationalities", labelAr: "جنسية", icon: FiTrendingUp },
     { value: "98%", valueAr: "٩٨٪", label: "Saudization", labelAr: "سعودة", icon: FiAward },
   ];
+
   const handleSendCV = () => {
     const subject = encodeURIComponent("Job Application - CV Submission");
     const body = encodeURIComponent(
@@ -139,10 +140,10 @@ const CareersSection = () => {
               <p className="text-xs text-gray-400 mt-4">
                 {t("careers.noJobs.or")}{" "}
                 <a
-                  href="mailto:careers@sadara.com"
+                  href="mailto:careers@sdi.com.sa"
                   className="text-primary hover:underline"
                 >
-                  careers@sadara.com
+                  careers@sdi.com.sa
                 </a>
               </p>
             </div>
@@ -226,7 +227,7 @@ const CareersSection = () => {
                       const body = encodeURIComponent(
                         `Dear Hiring Manager,\n\nI am writing to apply for the ${job.title} position at Sadara Development Investment Company.\n\nPlease find my resume attached for your review.\n\nBest regards,\n[Your Name]\n[Your Phone Number]`,
                       );
-                      window.location.href = `mailto:careers@sadara.com?subject=${subject}&body=${body}`;
+                      window.location.href = `mailto:careers@sdi.com.sa?subject=${subject}&body=${body}`;
                     }}
                     className="w-full inline-flex items-center justify-center gap-2 bg-primary text-white px-4 py-2.5 rounded-lg font-semibold text-sm hover:bg-primary/90 transition-all duration-300 group/btn"
                   >

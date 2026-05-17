@@ -83,7 +83,7 @@ export const translations = {
         
         <p>The solution is now available for businesses across all sectors, with customized packages tailored to specific industry needs.</p>
       `,
-          image: "/st.png",
+          image: "/h1b.jpg",
           date: "March 15, 2024",
           readTime: "5 min read",
           author: "Admin",
@@ -150,7 +150,7 @@ export const translations = {
           <li>Compliance requirements</li>
         </ul>
       `,
-          image: "/st.png",
+          image: "/alshaikh.jpeg",
           date: "May 5, 2024",
           location: "Online Webinar",
           time: "2:00 PM - 5:00 PM",
@@ -329,7 +329,7 @@ export const translations = {
         title: "Salam Station",
         image: "/hero/salam.jpg",
         desc: "Salam Roads Petroleum Services Company specializes in petroleum, energy, and support services, serving as a strategic arm bridging energy and transportation sectors",
-        link: "/companies/salam-station",
+        link: "/companies/salam",
         cta: "Discover Salam Station",
       },
       slide3: {
@@ -440,39 +440,6 @@ export const translations = {
       // Company data array
       data: [
         {
-          id: "salam-station",
-          slug: "salam-station",
-          name: "Salam Station",
-          logo: "/companies/salam.png",
-          shortDescription:
-            "Petroleum and energy support services bridging energy and transportation sectors.",
-          description: `Salam Roads Petroleum Services Company specializes in petroleum, energy, and support services, serving as a strategic arm bridging energy and transportation sectors.`,
-          metrics: [
-            { value: "Highways", label: "Strategic Locations" },
-            { value: "Eastern", label: "Primary Region" },
-            { value: "24/7", label: "Service Available" },
-          ],
-          services: [
-            "Fuel & Service Stations - Integrated stations including fueling, maintenance, restrooms, restaurants",
-            "Energy Sector Support - Technical solutions for drilling and production operations",
-            "Sustainability Operations - Eco-friendly policies including energy management",
-          ],
-          images: [
-            "/companies/salam/1.jpg",
-            "/companies/salam/2.jpg",
-            "/companies/salam/3.jpg",
-          ],
-          targetSectors: [
-            "Government entities",
-            "Land transport companies",
-            "Drilling operators",
-            "Travelers on highways",
-          ],
-          certifications: [],
-          established: 2020,
-          headquarters: "Eastern Province, Saudi Arabia",
-        },
-        {
           id: "saudi-call",
           slug: "saudi-call",
           name: "Saudi Call",
@@ -484,6 +451,9 @@ export const translations = {
             "/companies/saudi-call/1.jpg",
             "/companies/saudi-call/2.jpg",
             "/companies/saudi-call/3.jpeg",
+            "/companies/saudi-call/4.jpg",
+            "/companies/saudi-call/5.jpg",
+            "/companies/saudi-call/6.jpg",
           ],
           metrics: [
             { value: "400+", label: "Technical & Administrative Experts" },
@@ -514,7 +484,8 @@ export const translations = {
             "HCIS Approved - Industrial Security Contractor",
           ],
           established: 1992,
-          headquarters: "Riyadh, Saudi Arabia",
+          headquarters: "Al-Khobar, Saudi Arabia",
+          website: "www.sdi.com.sa",
         },
         {
           id: "ebreez",
@@ -522,15 +493,15 @@ export const translations = {
           name: "Ebreez Arabia",
           logo: "/companies/ebreez.png",
           shortDescription:
-            "Real estate and investment arm specializing in commercial and residential assets in Al-Khobar.",
-          description: `Ebreez Arabia serves as the real estate and investment arm of Sadara, specializing in management and development of commercial and residential assets in Al-Khobar City.`,
+            "Real estate and investment branch specializing in commercial and residential assets in Al-Khobar.",
+          description: `Ebreez Arabia is the real estate and investment branch of Sadara. It focuses on managing and developing commercial and residential properties in Al-Khobar City.`,
           images: [
             "/companies/ebreez/1.jpeg",
             "/companies/ebreez/2.jpeg",
             "/companies/ebreez/3.jpeg",
           ],
           metrics: [
-            { value: "5+", label: "Premium Properties" },
+            { value: "10+", label: "Premium Properties" },
             { value: "Al-Khobar", label: "Primary Location" },
             { value: "2026", label: "Foreign Ownership Ready" },
           ],
@@ -550,6 +521,7 @@ export const translations = {
           certifications: [],
           established: 2010,
           headquarters: "Al-Khobar, Saudi Arabia",
+          website: "www.sdi.com.sa",
         },
         {
           id: "mawad",
@@ -559,11 +531,6 @@ export const translations = {
           shortDescription:
             "Local manufacturer of drilling fluid additives and specialized industrial minerals since 2013.",
           description: `Drilling Materials Company (Mawad) commenced operations in 2013 from the Second Industrial City in Dammam, establishing itself as a reliable local manufacturer of drilling fluid additives and specialized industrial minerals. The company operates under the highest standards of quality and sustainability, with a vision to become an innovative and trusted Saudi manufacturer at regional and international levels.`,
-          // images: [
-          //   "/hero/saudicall2.png",
-          //   "/hero/abreez.png",
-          //   "/hero/mowad.png",
-          // ],
           metrics: [
             { value: "2013", label: "Year Established" },
             { value: "API 13A", label: "Certified Testing Center" },
@@ -590,6 +557,7 @@ export const translations = {
           ],
           established: 2013,
           headquarters: "Dammam, Saudi Arabia",
+          website: "www.sdi.com.sa",
         },
         {
           id: "plastech",
@@ -599,6 +567,13 @@ export const translations = {
           shortDescription:
             "Leading manufacturer of high-quality plastic products serving Saudi and GCC markets.",
           description: `Plastic Ultimate Quality Plastic Products (Plastech) has emerged as a leading local manufacturer of high-quality plastic products, serving Saudi and GCC markets through efficient supply chains and advanced production capabilities.`,
+          images: [
+            "/companies/plastech/1.png",
+            "/companies/plastech/2.png",
+            "/companies/plastech/3.png",
+            "/companies/plastech/4.png",
+            "/companies/plastech/5.png",
+          ],
           metrics: [
             { value: "30L", label: "Container Capacity" },
             { value: "1000L", label: "IBC Containers" },
@@ -626,20 +601,23 @@ export const translations = {
           ],
           established: 2015,
           headquarters: "Dammam, Saudi Arabia",
+          website: "www.sdi.com.sa",
         },
         {
           id: "jovae",
           slug: "jovae",
           name: "Jovae Industrial",
-          images: [
-            "/companies/jovae/1.jpeg",
-            "/companies/jovae/2.jpeg",
-            "/companies/jovae/3.jpeg",
-          ],
           logo: "/companies/jovae.png",
           shortDescription:
             "Manufacturer of high-performance household cleaning and disinfectant solutions under Britex brand.",
           description: `Jovae – Britex Detergents Factory produces high-performance household cleaning and disinfectant solutions, manufactured by Saudi hands in accordance with the highest national quality standards. Britex combines high quality with affordability, maintaining full compliance with SASO standards.`,
+          images: [
+            "/companies/jovae/1.jpeg",
+            "/companies/jovae/2.jpeg",
+            "/companies/jovae/3.jpeg",
+            "/companies/jovae/4.jpeg",
+            "/companies/jovae/5.jpeg",
+          ],
           metrics: [
             { value: "SASO", label: "Compliant Standards" },
             { value: "GMP", label: "Manufacturing Practice" },
@@ -657,21 +635,15 @@ export const translations = {
           headquarters: "Dammam, Saudi Arabia",
           website: "britexksa.com",
         },
-
         {
           id: "wajd",
           slug: "wajd",
           name: "Wajd",
           logo: "/companies/wajd.png",
           shortDescription:
-            "A diversified holding company powering Saudi Arabia’s future across telecom, security, real estate, oil & gas, manufacturing, and more.",
+            "Wajd is a leading Saudi company specializing in tech-enabled property management, operation, and maintenance to sustain asset value, boost investment returns, and elevate quality of life.",
           description:
             "Wajd is a leading Saudi company specializing in integrated property management, operation, and maintenance services. With a vision to be the foremost company in asset management and smart real estate solutions in the Kingdom, Wajd delivers professional, tech-enabled services that sustain asset value, enhance investment returns, and elevate quality of life. The company's mission is to provide comprehensive real estate, facilities, maintenance, and operational services based on the highest quality standards and modern technology, ensuring client satisfaction, operational efficiency, and the preservation of assets at the highest level.",
-          // images: [
-          //   "/hero/placeholder1.jpg",
-          //   "/hero/placeholder2.jpg",
-          //   "/hero/placeholder3.jpg",
-          // ],
           metrics: [
             { value: "2020", label: "Year Established" },
             { value: "50+", label: "Managed Properties" },
@@ -695,6 +667,41 @@ export const translations = {
           ],
           established: 2020,
           headquarters: "Riyadh, Saudi Arabia",
+          website: "www.sdi.com.sa",
+        },
+        {
+          id: "salam-station",
+          slug: "salam-station",
+          name: "Salam Station",
+          logo: "/companies/salam.png",
+          shortDescription:
+            "Petroleum and energy support services bridging energy and transportation sectors.",
+          description: `Salam Roads Petroleum Services Company specializes in petroleum, energy, and support services, serving as a strategic arm bridging energy and transportation sectors.`,
+          metrics: [
+            { value: "Highways", label: "Strategic Locations" },
+            { value: "Eastern", label: "Primary Region" },
+            { value: "24/7", label: "Service Available" },
+          ],
+          images: [
+            "/companies/salam/1.jpg",
+            "/companies/salam/2.jpg",
+            "/companies/salam/3.jpg",
+          ],
+          services: [
+            "Fuel & Service Stations - Integrated stations including fueling, maintenance, restrooms, restaurants",
+            "Energy Sector Support - Technical solutions for drilling and production operations",
+            "Sustainability Operations - Eco-friendly policies including energy management",
+          ],
+          targetSectors: [
+            "Government entities",
+            "Land transport companies",
+            "Drilling operators",
+            "Travelers on highways",
+          ],
+          certifications: [],
+          established: 2020,
+          headquarters: "Eastern Province, Saudi Arabia",
+          website: "www.sdi.com.sa",
         },
       ],
 
@@ -1088,7 +1095,7 @@ export const translations = {
           address: "Saudi Arabia - Dammam - Industrial Area",
           phone: "+966 50 884 4731",
           email: "info@plastechfactory.com",
-          website: "https://plastech.com.sa/en/",
+          website: "www.plastech.com.sa/en/",
           workingHours: "Sunday - Thursday: 8:00 AM - 5:00 PM",
           contactPerson: "Mohamed Fawzi",
         },
@@ -1099,7 +1106,7 @@ export const translations = {
           address: "Saudi Arabia - Dammam - Industrial Area",
           phone: "+966 59 673 5773",
           email: "m.parvez@jovae.com",
-          website: "https://jovae.com/ar/",
+          website: "www.jovae.com/ar/",
           workingHours: "Sunday - Thursday: 8:00 AM - 5:00 PM",
         },
 
@@ -1109,7 +1116,7 @@ export const translations = {
           address: "Saudi Arabia - Dammam - Industrial Area",
           phone: "+966 59 673 5773",
           email: "m.parvez@jovae.com",
-          website: "https://jovae.com/ar/",
+          website: "www.jovae.com/ar/",
           workingHours: "Sunday - Thursday: 8:00 AM - 5:00 PM",
         },
       },
@@ -1510,11 +1517,11 @@ export const translations = {
 
       contact: {
         title: "Contact Us",
-        email: "info@sadara.com",
+        email: "info@sdi.com.sa",
         phone: "+966 59 673 5773",
         fax: "+966 12 345 6789",
         address:
-          "King Fahd Road, Al Olaya District,<br />P.O. Box 12345, Riyadh 11433,<br />Kingdom of Saudi Arabia",
+          "Khobar Gate Tower, King Fahd Road, Al Bandariyah, Al Khobar 34424",
       },
 
       social: {
@@ -1522,7 +1529,7 @@ export const translations = {
         twitterUrl: "https://twitter.com/sadara",
         linkedin: "LinkedIn",
         linkedinUrl:
-          "https://www.linkedin.com/company/sadara-chemical-company/",
+          "https://www.linkedin.com/company/sadara-development-investment",
         instagram: "Instagram",
         instagramUrl: "https://instagram.com/sadara",
       },
@@ -1789,7 +1796,7 @@ export const translations = {
       titleHighlight: "مجموعة آل شيخ",
       description: {
         p1: "شركة صدارة التنمية للاستثمار والاستثمار هي شركة قابضة متنوعة تعمل ككيان قانوني رسمي يشرف على جميع الشركات التابعة لمجموعة آل شيخ التجارية والصناعية.",
-        p2: "تعمل سدارة من الخبر، المملكة العربية السعودية، وتشرف على محفظة متنوعة عبر قطاعات حيوية تشمل العقارات والنفط والغاز والاتصالات وأنظمة الأمن والتصنيع والخدمات التشغيلية.",
+        p2: "تعمل صدارة من الخبر، المملكة العربية السعودية، وتشرف على محفظة متنوعة عبر قطاعات حيوية تشمل العقارات والنفط والغاز والاتصالات وأنظمة الأمن والتصنيع والخدمات التشغيلية.",
       },
       highlights: {
         experience: "أكثر من 20 عاماً من التميز",
@@ -1814,7 +1821,7 @@ export const translations = {
 
         team: {
           number: "+100",
-          label: "فريق من الخبراء", // Expert Team
+          label: "Expert Team",
         },
       },
     },
@@ -1824,7 +1831,7 @@ export const translations = {
     pages: {
       about: {
         badge: "من نحن",
-        title: "عن شركة سدارا للتنمية والاستثمار",
+        title: "عن شركة صدارة للتنمية والاستثمار",
         subtitle: "تعرف على رؤيتنا ورسالتنا ورحلتنا",
       },
       contact: {
@@ -1854,7 +1861,7 @@ export const translations = {
       },
     },
     static: {
-      title: "شركة سدارا للتنمية والاستثمار",
+      title: "شركة صدارة للتنمية والاستثمار",
       desc: "شركة قابضة متنوعة تشرف على شركات تابعة في قطاعات حيوية في المملكة",
       cta: "اعرف المزيد عنا",
     },
@@ -1870,9 +1877,9 @@ export const translations = {
       },
       slide1: {
         id: "sadara",
-        title: "سدارا للتنمية\nشركة استثمار",
+        title: "صدارة للتنمية\nشركة استثمار",
         desc: "شركة قابضة متنوعة تشرف على شركات تابعة في قطاعات حيوية في المملكة",
-        cta: "اكتشف سدارا",
+        cta: "اكتشف صدارة",
         image: "/hero/sadara4.png",
         link: "/companies/about",
       },
@@ -1881,7 +1888,7 @@ export const translations = {
         title: "سلام ستيشن",
         image: "/hero/salam.jpg",
         desc: "تتخصص شركة سالم رودز للخدمات البترولية في خدمات البترول والطاقة والدعم، وتعمل كذراع استراتيجي يربط بين قطاعي الطاقة والنقل",
-        link: "/companies/salam-station",
+        link: "/companies/salam",
 
         cta: "اكتشف سالم ستيشن",
       },
@@ -1919,9 +1926,9 @@ export const translations = {
       },
       slide7: {
         id: "jovae",
-        title: " جوفية الصناعية",
+        title: "  جوفية  الصناعية",
         desc: "مصنع لمنظفات منزلية عالية الأداء ومحاليل تعقيم تحت علامة برايتكس التجارية",
-        cta: "جوفية الصناعية",
+        cta: "استكشف جوفي",
         image: "/hero/jovae2.png",
         link: "/companies/jovae",
       },
@@ -1939,13 +1946,13 @@ export const translations = {
       title: "موثوق من قبل",
       titleHighlight: "الشركات الرائدة في جميع أنحاء المملكة",
       description:
-        "انضم إلى أكثر من 500+ شركة راضية اختارت سدارا كشريك موثوق. من الشركات الكبرى إلى الشركات الناشئة المبتكرة، ساعدنا المؤسسات في جميع أنحاء المملكة على تحقيق أهدافها.",
+        "انضم إلى أكثر من 500+ شركة راضية اختارت صدارة كشريك موثوق. من الشركات الكبرى إلى الشركات الناشئة المبتكرة، ساعدنا المؤسسات في جميع أنحاء المملكة على تحقيق أهدافها.",
       viewAll: "عرض جميع قصص النجاح",
     },
     download: {
       badge: "ملف الشركة",
       title: "تحميل ملف الشركة التعريفي",
-      description: "تعرف على رؤية ورسالة ومحفظة استثمارات سدارا بالتفصيل.",
+      description: "تعرف على رؤية ورسالة ومحفظة استثمارات صدارة بالتفصيل.",
       button: "تحميل PDF",
       fileInfo: "PDF • ٢.٥ ميجابايت",
     },
@@ -1960,34 +1967,6 @@ export const translations = {
       // Company data array - Arabic
       data: [
         {
-          id: "salam-station",
-          slug: "salam-station",
-          name: "سلام ستيشن",
-          logo: "/companies/salam.png",
-          shortDescription:
-            "خدمات دعم البترول والطاقة التي تربط قطاعي الطاقة والنقل.",
-          description: `تتخصص شركة سالم رودز للخدمات البترولية في خدمات البترول والطاقة والدعم، وتعمل كذراع استراتيجي يربط بين قطاعي الطاقة والنقل.`,
-          metrics: [
-            { value: "الطرق السريعة", label: "مواقع استراتيجية" },
-            { value: "الشرقية", label: "المنطقة الرئيسية" },
-            { value: "٢٤/٧", label: "خدمات متاحة" },
-          ],
-          services: [
-            "محطات الوقود والخدمات - محطات متكاملة تشمل التزود بالوقود والصيانة والدورات والمطاعم",
-            "دعم قطاع الطاقة - حلول تقنية متقدمة لعمليات الحفر والإنتاج",
-            "عمليات الاستدامة - سياسات صديقة للبيئة تشمل إدارة الطاقة",
-          ],
-          targetSectors: [
-            "الكيانات الحكومية",
-            "شركات النقل البري",
-            "مشغلي الحفر",
-            "المسافرين على الطرق السريعة",
-          ],
-          certifications: [],
-          established: 2020,
-          headquarters: "المنطقة الشرقية، المملكة العربية السعودية",
-        },
-        {
           id: "saudi-call",
           slug: "saudi-call",
           name: "سعودي كول",
@@ -1996,9 +1975,12 @@ export const translations = {
             "مزود رائد لحلول الاتصالات والأمن في المملكة العربية السعودية منذ عام 1992.",
           description: `تأسست شركة الشيخ للاتصالات (سعودي كول) في عام 1992، وتطورت من موزع معتمد لـ نوكيا وإريكسون مع أكثر من 100 فرع إلى ركيزة استراتيجية في الاتصالات والبنية التحتية. اليوم، سعودي كول هي شريك موثوق يقدم مشاريع حيوية تشمل تصميم وتوريد وتنفيذ الأنظمة التكنولوجية المتقدمة في جميع أنحاء المملكة العربية السعودية.`,
           images: [
-            "/hero/saudicall2.png",
-            "/hero/abreez.png",
-            "/hero/mowad.png",
+            "/companies/saudi-call/1.jpg",
+            "/companies/saudi-call/2.jpg",
+            "/companies/saudi-call/3.jpeg",
+            "/companies/saudi-call/4.jpg",
+            "/companies/saudi-call/5.jpg",
+            "/companies/saudi-call/6.jpg",
           ],
           metrics: [
             { value: "+٤٠٠", label: "خبير تقني وإداري" },
@@ -2030,24 +2012,25 @@ export const translations = {
             "معتمد من HCIS - مقاول أمن صناعي",
           ],
           established: 1992,
-          headquarters: "الرياض، المملكة العربية السعودية",
+          headquarters: "الخبر، المملكة العربية السعودية",
+          website: "www.sdi.com.sa",
         },
         {
           id: "ebreez",
           slug: "ebreez",
           name: "إبريز العربية",
           logo: "/companies/ebreez.png",
-
           shortDescription:
-            "ذراع عقاري واستثماري متخصص في الأصول التجارية والسكنية في الخبر.",
-          description: `تعد إبريز العربية الذراع العقاري والاستثماري لشركة سدارا، وتتخصص في إدارة وتطوير الأصول التجارية والسكنية في مدينة الخبر.`,
+            "إبريز العربية هي الفرع العقاري والاستثماري لشركة صدارة، وتتخصص في الأصول التجارية والسكنية في الخبر.",
+          description:
+            "إبريز العربية هي الذراع العقاري والاستثماري لشركة صدارة. وهي تركز على إدارة وتطوير العقارات التجارية والسكنية في مدينة الخبر.",
           images: [
-            "/hero/saudicall2.png",
-            "/hero/abreez.png",
-            "/hero/mowad.png",
+            "/companies/ebreez/1.jpeg",
+            "/companies/ebreez/2.jpeg",
+            "/companies/ebreez/3.jpeg",
           ],
           metrics: [
-            { value: "+٥", label: "عقارات متميزة" },
+            { value: "+١٠", label: "عقارات متميزة" },
             { value: "الخبر", label: "الموقع الرئيسي" },
             { value: "٢٠٢٦", label: "جاهز للملكية الأجنبية" },
           ],
@@ -2067,6 +2050,7 @@ export const translations = {
           certifications: [],
           established: 2010,
           headquarters: "الخبر، المملكة العربية السعودية",
+          website: "www.sdi.com.sa",
         },
         {
           id: "mawad",
@@ -2076,11 +2060,6 @@ export const translations = {
           shortDescription:
             "شركة محلية لتصنيع إضافات سوائل الحفر والمعادن الصناعية المتخصصة منذ عام ٢٠١٣.",
           description: `بدأت شركة مواد الحفر للحفر عملياتها في عام ٢٠١٣ من المدينة الصناعية الثانية في الدمام، وأثبتت نفسها كشركة مصنعة محلية موثوقة لإضافات سوائل الحفر والمعادن الصناعية المتخصصة. تعمل الشركة وفق أعلى معايير الجودة والاستدامة، بهدف أن تصبح شركة سعودية مبتكرة وموثوقة على المستويين الإقليمي والدولي.`,
-          images: [
-            "/hero/saudicall2.png",
-            "/hero/abreez.png",
-            "/hero/mowad.png",
-          ],
           metrics: [
             { value: "٢٠١٣", label: "عام التأسيس" },
             { value: "API 13A", label: "مركز اختبار معتمد" },
@@ -2107,6 +2086,7 @@ export const translations = {
           ],
           established: 2013,
           headquarters: "الدمام، المملكة العربية السعودية",
+          website: "www.sdi.com.sa",
         },
         {
           id: "plastech",
@@ -2117,9 +2097,11 @@ export const translations = {
             "شركة رائدة في تصنيع المنتجات البلاستيكية عالية الجودة التي تخدم الأسواق السعودية والخليجية.",
           description: `برزت شركة بلاستك (منتجات البلاستيك عالية الجودة) كشركة مصنعة محلية رائدة للمنتجات البلاستيكية عالية الجودة، وتخدم الأسواق السعودية والخليجية من خلال سلاسل التوريد الفعالة وقدرات الإنتاج المتقدمة.`,
           images: [
-            "/hero/saudicall2.png",
-            "/hero/abreez.png",
-            "/hero/mowad.png",
+            "/companies/plastech/1.png",
+            "/companies/plastech/2.png",
+            "/companies/plastech/3.png",
+            "/companies/plastech/4.png",
+            "/companies/plastech/5.png",
           ],
           metrics: [
             { value: "٣٠ لتر", label: "سعة الحاويات" },
@@ -2152,15 +2134,17 @@ export const translations = {
         {
           id: "jovae",
           slug: "jovae",
-          name: "جوفيه",
+          name: "  جوفية  الصناعية",
           logo: "/companies/jovae.png",
           shortDescription:
             "شركة مصنعة لمنظفات منزلية عالية الأداء ومحاليل تعقيم تحت علامة برايتكس التجارية.",
           description: `ينتج مصنع جوفي - برايتكس للمنظفات حلولاً عالية الأداء للتنظيف المنزلي والتعقيم، يتم تصنيعها بأيدٍ سعودية وفق أعلى معايير الجودة الوطنية. تجمع برايتكس بين الجودة العالية والقدرة على تحمل التكاليف، مع الالتزام الكامل بمعايير SASO.`,
           images: [
-            "/hero/saudicall2.png",
-            "/hero/abreez.png",
-            "/hero/mowad.png",
+            "/companies/jovae/1.jpeg",
+            "/companies/jovae/2.jpeg",
+            "/companies/jovae/3.jpeg",
+            "/companies/jovae/4.jpeg",
+            "/companies/jovae/5.jpeg",
           ],
           metrics: [
             { value: "SASO", label: "المعايير المطابقة" },
@@ -2179,21 +2163,15 @@ export const translations = {
           headquarters: "الدمام، المملكة العربية السعودية",
           website: "britexksa.com",
         },
-
         {
           id: "wajd",
           slug: "wajd",
           name: "وجد",
           logo: "/companies/wajd.png",
           shortDescription:
-            "شركة قابضة متنوعة تدفع بمستقبل المملكة العربية السعودية قدماً في الاتصالات والأمن والعقارات والنفط والغاز والتصنيع وغيرها.",
+            "وجد هي شركة سعودية رائدة متخصصة في إدارة وتشغيل وصيانة الممتلكات باستخدام التقنيات الحديثة، بهدف الحفاظ على قيمة الأصول، وتعزيز العوائد الاستثمارية، والارتقاء بجودة الحياة",
           description:
             "وجد هي شركة سعودية رائدة متخصصة في الخدمات المتكاملة لإدارة العقارات والتشغيل والصيانة. تهدف الشركة، من خلال رؤيتها لتكون الشركة الأولى في إدارة الأصول والحلول العقارية الذكية في المملكة، إلى تقديم خدمات مهنية مدعومة بأحدث التقنيات تحافظ على قيمة الأصول وتُعزز العوائد الاستثمارية وترتقي بجودة الحياة. تتمثل رسالة الشركة في تقديم خدمات شاملة للعقارات والمرافق والصيانة والتشغيل بالاعتماد على أعلى معايير الجودة والتقنيات الحديثة، بما يضمن رضا العملاء وكفاءة التشغيل والحفاظ على الأصول بأفضل صورة.",
-          // images: [
-          //   "/hero/placeholder1.jpg",
-          //   "/hero/placeholder2.jpg",
-          //   "/hero/placeholder3.jpg",
-          // ],
           metrics: [
             { value: "2020", label: "عام التأسيس" },
             { value: "50+", label: "عقارات مُدارة" },
@@ -2217,12 +2195,47 @@ export const translations = {
           ],
           established: 2020,
           headquarters: "الرياض، المملكة العربية السعودية",
+          website: "www.sdi.com.sa",
+        },
+        {
+          id: "salam-station",
+          slug: "salam-station",
+          name: "سلام ستيشن",
+          logo: "/companies/salam.png",
+          shortDescription:
+            "خدمات دعم البترول والطاقة التي تربط قطاعي الطاقة والنقل.",
+          description: `تتخصص شركة سالم رودز للخدمات البترولية في خدمات البترول والطاقة والدعم، وتعمل كذراع استراتيجي يربط بين قطاعي الطاقة والنقل.`,
+          metrics: [
+            { value: "الطرق السريعة", label: "مواقع استراتيجية" },
+            { value: "الشرقية", label: "المنطقة الرئيسية" },
+            { value: "٢٤/٧", label: "خدمات متاحة" },
+          ],
+          services: [
+            "محطات الوقود والخدمات - محطات متكاملة تشمل التزود بالوقود والصيانة والدورات والمطاعم",
+            "دعم قطاع الطاقة - حلول تقنية متقدمة لعمليات الحفر والإنتاج",
+            "عمليات الاستدامة - سياسات صديقة للبيئة تشمل إدارة الطاقة",
+          ],
+          images: [
+            "/companies/salam/1.jpg",
+            "/companies/salam/2.jpg",
+            "/companies/salam/3.jpg",
+          ],
+          targetSectors: [
+            "الكيانات الحكومية",
+            "شركات النقل البري",
+            "مشغلي الحفر",
+            "المسافرين على الطرق السريعة",
+          ],
+          certifications: [],
+          established: 2020,
+          headquarters: "المنطقة الشرقية، المملكة العربية السعودية",
+          website: "www.sdi.com.sa",
         },
       ],
       // UI text translations - Arabic
-      badge: "مجموعة سدارا",
+      badge: "مجموعة صدارة",
       title: "شركاتنا",
-      subtitle: "اكتشف المحفظة المتنوعة للشركات تحت مجموعة سدارا",
+      subtitle: "اكتشف المحفظة المتنوعة للشركات تحت مجموعة صدارة",
       viewCompany: "عرض الشركة",
       established: "تأسست",
       backToCompanies: "العودة إلى الشركات",
@@ -2240,9 +2253,9 @@ export const translations = {
       badge: "مؤسسونا",
       messageLabel: "رسالة المؤسسين",
       message:
-        "نحن إبراهيم وعبدالله ابنا محمد الشيخ، نقدم شركة سدارا للتنمية والاستثمار - الكيان القانوني المستمر لمسيرتنا التجارية والصناعية التي تمتد لأكثر من أربعة عقود تحت مجموعة الشيخ التجارية والصناعية. رؤيتنا مدفوعة بإيمان راسخ بأن التكامل المؤسسي والجهود الموحدة هي حجر الزاوية لتحقيق النمو المستدام وبناء كيان استثماري قادر على المنافسة محلياً وإقليمياً وعالمياً. سدارا هي أكثر من كيان قانوني - إنها خطوة استراتيجية نحو تعزيز الكفاءة التشغيلية وتوسيع الشراكات وجذب استثمارات عالية القيمة تتماشى مع رؤية السعودية 2030.",
+        "نحن إبراهيم وعبدالله ابنا محمد الشيخ، نقدم شركة صدارة للتنمية والاستثمار - الكيان القانوني المستمر لمسيرتنا التجارية والصناعية التي تمتد لأكثر من أربعة عقود تحت مجموعة الشيخ التجارية والصناعية. رؤيتنا مدفوعة بإيمان راسخ بأن التكامل المؤسسي والجهود الموحدة هي حجر الزاوية لتحقيق النمو المستدام وبناء كيان استثماري قادر على المنافسة محلياً وإقليمياً وعالمياً. صدارة هي أكثر من كيان قانوني - إنها خطوة استراتيجية نحو تعزيز الكفاءة التشغيلية وتوسيع الشراكات وجذب استثمارات عالية القيمة تتماشى مع رؤية السعودية 2030.",
       messageSignature:
-        "عبدالله وإبراهيم الشيخ | المؤسسان المشاركان، مجموعة سدارا",
+        "عبدالله وإبراهيم الشيخ | المؤسسان المشاركان، مجموعة صدارة",
       founders: [
         {
           name: "إبراهيم الشيخ",
@@ -2303,11 +2316,11 @@ export const translations = {
 
     aboutSadara: {
       badge: "من نحن",
-      title: "شركة سدارا للتنمية والاستثمار",
+      title: "شركة صدارة للتنمية والاستثمار",
       subtitle: "بناء مستقبل متنوع للمملكة العربية السعودية",
       overviewTitle: "نظرة عامة",
       description:
-        "شركة سدارا للتنمية والاستثمار هي شركة قابضة متنوعة تعمل ككيان قانوني رسمي يشرف على جميع الشركات التابعة لمجموعة الشيخ التجارية والصناعية. تعمل سدارا من الخبر، المملكة العربية السعودية، وتشرف على محفظة متنوعة في قطاعات حيوية تشمل العقارات والنفط والغاز والاتصالات وأنظمة الأمن والتصنيع والخدمات التشغيلية. تهدف الشركة إلى تحقيق أقصى قيمة من خلال توسيع قاعدة استثماراتها وتنويع أنشطتها وجذب فرص واعدة محلياً وإقليمياً.",
+        "شركة صدارة للتنمية والاستثمار هي شركة قابضة متنوعة تعمل ككيان قانوني رسمي يشرف على جميع الشركات التابعة لمجموعة الشيخ التجارية والصناعية. تعمل صدارة من الخبر، المملكة العربية السعودية، وتشرف على محفظة متنوعة في قطاعات حيوية تشمل العقارات والنفط والغاز والاتصالات وأنظمة الأمن والتصنيع والخدمات التشغيلية. تهدف الشركة إلى تحقيق أقصى قيمة من خلال توسيع قاعدة استثماراتها وتنويع أنشطتها وجذب فرص واعدة محلياً وإقليمياً.",
       missionTitle: "رسالتنا",
       mission:
         "إدارة وتطوير محفظة استثمارية متنوعة قائمة على الحوكمة السليمة والابتكار والتميز التشغيلي - تمكين الشركات التابعة وتعظيم العوائد طويلة الأجل.",
@@ -2327,7 +2340,7 @@ export const translations = {
       subtitle:
         "شركة قابضة متنوعة تشكل مستقبل الاستثمار في المملكة العربية السعودية",
       description:
-        " شركة سدارا للتنمية والاستثمار هي شركة قابضة متنوعة تعمل ككيان قانوني رسمي يشرف على جميع الشركات التابعة لمجموعة الشيخ التجارية والصناعية. تعمل الشركة من مدينة الخبر في المملكة العربية السعودية، وتشرف على محفظة متنوعة في قطاعات حيوية تشمل العقارات والنفط والغاز والاتصالات وأنظمة الأمن والتصنيع والخدمات التشغيلية. وتهدف الشركة إلى تعظيم خلق القيمة من خلال توسيع قاعدة استثماراتها وتنويع أنشطتها وجذب الفرص الواعدة محلياً وإقليمياً",
+        " شركة صدارة للتنمية والاستثمار هي شركة قابضة متنوعة تعمل ككيان قانوني رسمي يشرف على جميع الشركات التابعة لمجموعة الشيخ التجارية والصناعية. تعمل الشركة من مدينة الخبر في المملكة العربية السعودية، وتشرف على محفظة متنوعة في قطاعات حيوية تشمل العقارات والنفط والغاز والاتصالات وأنظمة الأمن والتصنيع والخدمات التشغيلية. وتهدف الشركة إلى تعظيم خلق القيمة من خلال توسيع قاعدة استثماراتها وتنويع أنشطتها وجذب الفرص الواعدة محلياً وإقليمياً",
       buttonText: "اقرأ المزيد",
     },
 
@@ -2513,7 +2526,7 @@ export const translations = {
       bookConsultation: "احجز استشارة",
       openMenu: "فتح القائمة",
       closeMenu: "إغلاق القائمة", // ADD THIS
-      logoAlt: "شعار مجموعة سدارا",
+      logoAlt: "شعار مجموعة صدارة",
       saudiVisionAlt: "رؤية السعودية 2030",
       menuTitle: "القائمة", // ADD THIS
       contactInfo: "معلومات الاتصال", // ADD THIS
@@ -2756,19 +2769,19 @@ export const translations = {
       badge: "ملكية وإدارة موحدة تحت مظلة واحدة",
       title: {
         part1: "شركة",
-        part2: "سدارى للتنمية والاستثمار",
+        part2: "صدارة للتنمية والاستثمار",
       },
       subtitle:
         "شركة قابضة متنوعة | أفضل الممارسات | كفاءة عالية بمعايير حوكمة الشركات",
       paragraph1: {
         part1:
-          "شركة سدارى للتنمية والاستثمار هي شركة قابضة متنوعة تعمل ككيان قانوني رسمي يشرف على جميع شركات",
+          "شركة صدارة للتنمية والاستثمار هي شركة قابضة متنوعة تعمل ككيان قانوني رسمي يشرف على جميع شركات",
         highlight: "مجموعة آل الشيخ التجارية والصناعية",
         part2: ".",
       },
       paragraph2: {
         label: "المقر الرئيسي",
-        text: "تعمل سدارى من الخبر، المملكة العربية السعودية، وتشرف على محفظة متنوعة في قطاعات حيوية تشمل العقارات والنفط والغاز والاتصالات وأنظمة الأمن والتصنيع والخدمات التشغيلية.",
+        text: "تعمل صدارة من الخبر، المملكة العربية السعودية، وتشرف على محفظة متنوعة في قطاعات حيوية تشمل العقارات والنفط والغاز والاتصالات وأنظمة الأمن والتصنيع والخدمات التشغيلية.",
       },
       paragraph3: {
         title: "الرؤية الاستراتيجية",
@@ -2800,7 +2813,7 @@ export const translations = {
           "نبني شراكات طويلة الأمد من خلال فهم احتياجات العملاء وتقديم حلول مخصصة تدفع نمو الأعمال.",
       },
       image: {
-        caption1: "شركة سدارى للتنمية",
+        caption1: "شركة صدارة للتنمية",
         caption2: "الخبر، المملكة العربية السعودية",
       },
       floatingCard: {
@@ -2939,7 +2952,7 @@ export const translations = {
           title: "خدمات الاتصالات، الكمبيوتر وتقنية المعلومات",
           image: "/h1b.jpg",
           description:
-            "تقدم سدارة حلول اتصالات وتقنية معلومات متطورة تشكل العمود الفقري للبنية التحتية الرقمية الحديثة. تشمل خدماتنا الشاملة نشر شبكات الألياف البصرية، تكامل الأنظمة، وتقنيات الاتصال المتقدمة. نحن متخصصون في تنفيذ OSP و FTTH/FTTR، الكابلات الأرضية والجوية، وربط الشبكات لمشغلي الاتصالات الرئيسيين. من تصميم الشبكات إلى التنفيذ والصيانة، نقدم حلولاً شاملة تمكن الشركات من البقاء على اتصال في عالم اليوم الرقمي سريع الخطى.",
+            "تقدم صدارة حلول اتصالات وتقنية معلومات متطورة تشكل العمود الفقري للبنية التحتية الرقمية الحديثة. تشمل خدماتنا الشاملة نشر شبكات الألياف البصرية، تكامل الأنظمة، وتقنيات الاتصال المتقدمة. نحن متخصصون في تنفيذ OSP و FTTH/FTTR، الكابلات الأرضية والجوية، وربط الشبكات لمشغلي الاتصالات الرئيسيين. من تصميم الشبكات إلى التنفيذ والصيانة، نقدم حلولاً شاملة تمكن الشركات من البقاء على اتصال في عالم اليوم الرقمي سريع الخطى.",
           metrics: [
             { value: "+1000", label: "كم ألياف بصرية" },
             { value: "+50", label: "مشروع شبكات" },
@@ -2959,7 +2972,7 @@ export const translations = {
           title: "خدمات الأمن الصناعي",
           image: "/img2.jpg",
           description:
-            "تقدم سدارة حلول أمنية صناعية شاملة مصممة لحماية البنية التحتية الحيوية وضمان الجاهزية التشغيلية. تشمل أنظمتنا المعتمدة من HCIS الأسوار المحيطية، المراقبة، التحكم في الدخول، وأنظمة الإنذار المبكر للمنشآت الحساسة. نحن ندرك تحديات الأمن الفريدة التي تواجهها المنشآت الصناعية ونقدم حلولاً مخصصة تلبي أعلى معايير السلامة.",
+            "تقدم صدارة حلول أمنية صناعية شاملة مصممة لحماية البنية التحتية الحيوية وضمان الجاهزية التشغيلية. تشمل أنظمتنا المعتمدة من HCIS الأسوار المحيطية، المراقبة، التحكم في الدخول، وأنظمة الإنذار المبكر للمنشآت الحساسة. نحن ندرك تحديات الأمن الفريدة التي تواجهها المنشآت الصناعية ونقدم حلولاً مخصصة تلبي أعلى معايير السلامة.",
           metrics: [
             { value: "+500", label: "تركيب" },
             { value: "24/7", label: "مراقبة" },
@@ -2979,7 +2992,7 @@ export const translations = {
           title: "خدمات إدارة المرافق",
           image: "/img3.jpg",
           description:
-            "تقدم سدارة حلولاً متكاملة لإدارة المرافق تضمن كفاءة تشغيلية مثالية وتميزاً في الصيانة. تشمل خدماتنا تشغيل المباني، إدارة الطاقة، أنظمة التهوية والتكييف، والصيانة الوقائية. نستخدم حلولاً متكاملة لإدارة الأصول لزيادة عمر المعدات وتقليل التكاليف التشغيلية.",
+            "تقدم صدارة حلولاً متكاملة لإدارة المرافق تضمن كفاءة تشغيلية مثالية وتميزاً في الصيانة. تشمل خدماتنا تشغيل المباني، إدارة الطاقة، أنظمة التهوية والتكييف، والصيانة الوقائية. نستخدم حلولاً متكاملة لإدارة الأصول لزيادة عمر المعدات وتقليل التكاليف التشغيلية.",
           metrics: [
             { value: "+100", label: "منشأة" },
             { value: "99%", label: "وقت تشغيل" },
@@ -2999,7 +3012,7 @@ export const translations = {
           title: "خدمات النفط والغاز",
           image: "/h1b.jpg",
           description:
-            "تقدم سدارة مواد الحفر كيميائية عالية الجودة وخدمات دعم فني لصناعة النفط والغاز. منتجاتنا تلبي معايير API ومصممة للآبار ذات الضغط العالي ودرجة الحرارة العالية، مما يضمن أداءً مثالياً في ظروف الحفر الصعبة. نوفر إضافات سوائل الحفر، المعادن الصناعية، والمواد الكيميائية المتخصصة التي تعزز كفاءة وسلامة الحفر.",
+            "تقدم صدارة مواد الحفر كيميائية عالية الجودة وخدمات دعم فني لصناعة النفط والغاز. منتجاتنا تلبي معايير API ومصممة للآبار ذات الضغط العالي ودرجة الحرارة العالية، مما يضمن أداءً مثالياً في ظروف الحفر الصعبة. نوفر إضافات سوائل الحفر، المعادن الصناعية، والمواد الكيميائية المتخصصة التي تعزز كفاءة وسلامة الحفر.",
           metrics: [
             { value: "API 13A", label: "معتمد" },
             { value: "نيوم", label: "مشروع" },
@@ -3019,7 +3032,7 @@ export const translations = {
           title: "خدمات التصنيع",
           image: "/img2.jpg",
           description:
-            "تصنع سدارة منتجات صناعية واستهلاكية عالية الجودة تخدم الأسواق المحلية والإقليمية. تشمل مجموعة منتجاتنا حلول التنظيف، المنتجات البلاستيكية، والمواد الصناعية المتخصصة. نركز على الابتكار ومراقبة الجودة وممارسات التصنيع المستدامة.",
+            "تصنع صدارة منتجات صناعية واستهلاكية عالية الجودة تخدم الأسواق المحلية والإقليمية. تشمل مجموعة منتجاتنا حلول التنظيف، المنتجات البلاستيكية، والمواد الصناعية المتخصصة. نركز على الابتكار ومراقبة الجودة وممارسات التصنيع المستدامة.",
           metrics: [
             { value: "+50", label: "منتج" },
             { value: "GMP", label: "معتمد" },
@@ -3039,7 +3052,7 @@ export const translations = {
           title: "تطوير العقارات",
           image: "/img4.jpg",
           description:
-            "تطور سدارة عقارات سكنية وتجارية راقية تجمع بين التصميم الحديث والممارسات المستدامة. مشاريعنا موجودة في مواقع استراتيجية متميزة تقدم قيمة استثنائية وجودة حياة عالية. نركز على إنشاء مجتمعات متكاملة تلبي الاحتياجات المتطورة للعائلات والشركات الحديثة.",
+            "تطور صدارة عقارات سكنية وتجارية راقية تجمع بين التصميم الحديث والممارسات المستدامة. مشاريعنا موجودة في مواقع استراتيجية متميزة تقدم قيمة استثنائية وجودة حياة عالية. نركز على إنشاء مجتمعات متكاملة تلبي الاحتياجات المتطورة للعائلات والشركات الحديثة.",
           metrics: [
             { value: "+500", label: "وحدة" },
             { value: "+5", label: "موقع" },
@@ -3064,7 +3077,7 @@ export const translations = {
       subtitle: "نحن هنا للمساعدة. تواصل معنا في أي وقت",
       companies: {
         sadara: {
-          name: "شركة سدارا للتنمية والاستثمار",
+          name: "شركة صدارة للتنمية والاستثمار",
           badge: "شركة قابضة",
           address: "برج بوابة الخبر، طريق الملك فهد، البندرية، الخبر 34424",
           phone: "966596735773+",
@@ -3123,7 +3136,7 @@ export const translations = {
           address: "المملكة العربية السعودية - الدمام - المنطقة الصناعية",
           phone: "+966 50 884 4731",
           email: "info@plastechfactory.com",
-          website: "https://plastech.com.sa/en/",
+          website: "www.plastech.com.sa/en/",
           workingHours: "الأحد - الخميس: 8:00 ص - 5:00 م",
           contactPerson: "محمد فوزي",
         },
@@ -3134,7 +3147,7 @@ export const translations = {
           address: "المملكة العربية السعودية - الدمام - المنطقة الصناعية",
           phone: "+966 59 673 5773",
           email: "m.parvez@jovae.com",
-          website: "https://jovae.com/ar/",
+          website: "www.jovae.com/ar/",
           workingHours: "الأحد - الخميس: 8:00 ص - 5:00 م",
         },
 
@@ -3144,7 +3157,7 @@ export const translations = {
           address: "المملكة العربية السعودية - الدمام - المنطقة الصناعية",
           phone: "+966 59 673 5773",
           email: "m.parvez@jovae.com",
-          website: "https://jovae.com/ar/",
+          website: "www.jovae.com/ar/",
           workingHours: "الأحد - الخميس: 8:00 ص - 5:00 م",
         },
       },
@@ -3168,10 +3181,10 @@ export const translations = {
       },
     },
     footer: {
-      logoAlt: "شعار مجموعة سدارا",
+      logoAlt: "شعار مجموعة صدارة",
       companyDescription:
-        "شركة سدارا للتنمية والاستثمار هي شركة قابضة متنوعة تشرف على شركات تابعة في قطاعات حيوية في المملكة العربية السعودية، وتقدم خدمات مبتكرة وموثوقة تمكن الشركات من الازدهار.",
-      copyright: "© {year} شركة سدارا للتنمية والاستثمار. جميع الحقوق محفوظة.",
+        "شركة صدارة للتنمية والاستثمار هي شركة قابضة متنوعة تشرف على شركات تابعة في قطاعات حيوية في المملكة العربية السعودية، وتقدم خدمات مبتكرة وموثوقة تمكن الشركات من الازدهار.",
+      copyright: "© {year} شركة صدارة للتنمية والاستثمار. جميع الحقوق محفوظة.",
       tagline: "بناء مستقبل متنوع للمملكة العربية السعودية",
 
       companies: {
@@ -3194,11 +3207,10 @@ export const translations = {
 
       contact: {
         title: "اتصل بنا",
-        email: "info@sadara.com",
+        email: "info@sdi.com.sa",
         phone: "+966 59 673 5773",
         fax: "+966 12 345 6789",
-        address:
-          "طريق الملك فهد، حي العليا،<br />ص.ب 12345، الرياض 11433،<br />المملكة العربية السعودية",
+        address: "برج بوابة الخبر، طريق الملك فهد، البندرية، الخبر ٣٤٤٢",
       },
 
       social: {
@@ -3206,7 +3218,7 @@ export const translations = {
         twitterUrl: "https://twitter.com/sadara",
         linkedin: "لينكدإن",
         linkedinUrl:
-          "https://www.linkedin.com/company/sadara-chemical-company/",
+          "https://www.linkedin.com/company/sadara-development-investment",
         facebook: "فيسبوك",
         facebookUrl:
           "https://www.facebook.com/people/sadaraholding/100084901930975/",
@@ -3216,7 +3228,7 @@ export const translations = {
       badge: "ابق على اطلاع",
       title: "الأخبار و",
       highlightedText: "الفعاليات",
-      subtitle: "اكتشف آخر التحديثات والإعلانات والأخبار من مجموعة سدارا",
+      subtitle: "اكتشف آخر التحديثات والإعلانات والأخبار من مجموعة صدارة",
       news: "أخبار",
       event: "فعالية",
       readMore: "اقرأ المزيد",
@@ -3273,7 +3285,7 @@ export const translations = {
           description:
             "انضم إلينا في أكبر مؤتمر تقني في المملكة. قابل خبراء الصناعة واكتشف أحدث الابتكارات.",
           content: `
-        <p>تفتخر مجموعة سدارا بالإعلان عن مشاركتها في قمة التقنية ٢٠٢٤، أكبر مؤتمر تقني في المملكة العربية السعودية.</p>
+        <p>تفتخر مجموعة صدارة بالإعلان عن مشاركتها في قمة التقنية ٢٠٢٤، أكبر مؤتمر تقني في المملكة العربية السعودية.</p>
         
         <h2>أبرز فعاليات الحدث</h2>
         <ul>
@@ -3298,7 +3310,7 @@ export const translations = {
           description:
             "شراكة استراتيجية لجلب حلول تقنية عالمية المستوى إلى السوق السعودي.",
           content: `
-        <p>تعلن مجموعة سدارا عن شراكة استراتيجية مع شركة تقنية عالمية رائدة لجلب حلول عالمية المستوى إلى السوق السعودي.</p>
+        <p>تعلن مجموعة صدارة عن شراكة استراتيجية مع شركة تقنية عالمية رائدة لجلب حلول عالمية المستوى إلى السوق السعودي.</p>
         
         <p>ستمكننا هذه الشراكة من تقديم خدمات محسنة وتقنيات متطورة لعملائنا في مختلف القطاعات بما في ذلك الاتصالات والأمن والتصنيع.</p>
       `,
@@ -3326,7 +3338,7 @@ export const translations = {
           <li>متطلبات الامتثال</li>
         </ul>
       `,
-          image: "/h1b.jpg",
+          image: "/alshaikh.jpeg",
           date: "٥ مايو ٢٠٢٤",
           location: "ندوة عبر الإنترنت",
           time: "٢:٠٠ م - ٥:٠٠ م",
@@ -3356,7 +3368,7 @@ export const translations = {
           title: "العشاء السنوي ٢٠٢٤",
           description: "الاحتفال بإنجازاتنا مع العملاء والشركاء.",
           content: `
-        <p>استضافت مجموعة سدارا عشاءها السنوي، احتفالاً بسنة أخرى من الإنجازات والنمو مع عملائنا وشركائنا الكرام.</p>
+        <p>استضافت مجموعة صدارة عشاءها السنوي، احتفالاً بسنة أخرى من الإنجازات والنمو مع عملائنا وشركائنا الكرام.</p>
         
         <p>جمع الحدث قادة الصناعة والشركاء وأعضاء الفريق للتعرف على المساهمات البارزة والاحتفال بنجاحنا الجماعي.</p>
       `,
@@ -3373,7 +3385,7 @@ export const translations = {
           description:
             "تم الاعتراف بنا كأفضل مزود لخدمات إدارة المرافق لعام ٢٠٢٤.",
           content: `
-        <p>تم الاعتراف بمجموعة سدارا كأفضل مزود لخدمات إدارة المرافق لعام ٢٠٢٤ من قبل جمعية إدارة المرافق السعودية.</p>
+        <p>تم الاعتراف بمجموعة صدارة كأفضل مزود لخدمات إدارة المرافق لعام ٢٠٢٤ من قبل جمعية إدارة المرافق السعودية.</p>
         
         <p>تعترف هذه الجائزة بالتزامنا بالتميز والابتكار ورضا العملاء في خدمات إدارة المرافق في جميع أنحاء المملكة.</p>
       `,
@@ -3390,7 +3402,7 @@ export const translations = {
           title: "حلول مراكز البيانات الجديدة متاحة الآن",
           description: "حلول متطورة لمراكز البيانات مع أمان محسن.",
           content: `
-        <p>تعلن مجموعة سدارا عن إطلاق حلول جديدة ومتطورة لمراكز البيانات مصممة لتلبية الاحتياجات المتزايدة للشركات الحديثة.</p>
+        <p>تعلن مجموعة صدارة عن إطلاق حلول جديدة ومتطورة لمراكز البيانات مصممة لتلبية الاحتياجات المتزايدة للشركات الحديثة.</p>
         
         <p>توفر هذه الحلول أماناً محسناً وقابلية للتوسع وكفاءة للشركات التي تتطلع إلى تحسين البنية التحتية لتقنية المعلومات لديها.</p>
       `,
@@ -3407,7 +3419,7 @@ export const translations = {
           title: "منتدى التحول الرقمي",
           description: "مناقشة مستقبل التحول الرقمي في المملكة.",
           content: `
-        <p>شاركت مجموعة سدارا في منتدى التحول الرقمي، لمناقشة مستقبل التحول الرقمي في المملكة العربية السعودية.</p>
+        <p>شاركت مجموعة صدارة في منتدى التحول الرقمي، لمناقشة مستقبل التحول الرقمي في المملكة العربية السعودية.</p>
         
         <p>شارك خبراؤنا رؤى حول كيفية استفادة الشركات من التكنولوجيا لدفع النمو والكفاءة في العصر الرقمي.</p>
       `,
@@ -3423,7 +3435,7 @@ export const translations = {
           title: "إطلاق حملة الاستشارات المجانية",
           description: "عرض لفترة محدودة للشركات التي تتطلع إلى التطوير.",
           content: `
-        <p>تطلق مجموعة سدارا حملة استشارات مجانية للشركات التي تتطلع إلى تطوير البنية التحتية التقنية لديها.</p>
+        <p>تطلق مجموعة صدارة حملة استشارات مجانية للشركات التي تتطلع إلى تطوير البنية التحتية التقنية لديها.</p>
         
         <p>يوفر هذا العرض المحدود الوقت للشركات مشورة الخبراء حول تحسين عملياتها وتنفيذ حلول متطورة.</p>
       `,

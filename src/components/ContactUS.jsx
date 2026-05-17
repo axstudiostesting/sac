@@ -334,13 +334,13 @@ const ContactSection = () => {
               </div>
               <div className={`p-6 space-y-4 ${isRTL ? "text-right" : ""}`}>
                 {/* Address */}
-                <div className={`flex items-start gap-3 ${isRTL ? "flex-row-reverse" : ""}`}>
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <FiMapPin className="w-5 h-5 text-primary" />
-                  </div>
+                <div className={`flex items-start gap-3 ${isRTL ? "flex-row-reverse" : ""}`}>                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <FiMapPin className="w-5 h-5 text-primary" />
+                </div>
                   <div className={`w-full text-left`}>
                     <p className="text-xs text-gray-900 uppercase tracking-wider text-left">
                       {isRTL ? "العنوان" : "Address"}
+                      Address
                     </p>
                     <p className="text-gray-600 text-sm mt-1">
                       {t(`${currentCompany.key}.address`)}
@@ -348,14 +348,12 @@ const ContactSection = () => {
                   </div>
                 </div>
                 {/* Phone */}
-                <div className={`flex items-start gap-3 ${isRTL ? "flex-row-reverse" : ""}`}>
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <FiPhone className="w-5 h-5 text-primary" />
-                  </div>
+                <div className={`flex items-start gap-3 ${isRTL ? "flex-row-reverse" : ""}`}>                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <FiPhone className="w-5 h-5 text-primary" />
+                </div>
                   <div>
                     <p className="text-xs text-gray-900 uppercase tracking-wider text-left">
                       {isRTL ? "الهاتف" : "Phone"}
-
                     </p>
                     <a
                       href={`tel:${t(`${currentCompany.key}.phone`)}`}
@@ -391,7 +389,6 @@ const ContactSection = () => {
                   <div>
                     <p className="text-xs text-gray-900 uppercase tracking-wider text-left">
                       {isRTL ? "الموقع الإلكتروني" : "Website"}
-
                     </p>
                     <a
                       href={`https://${t(
@@ -406,10 +403,9 @@ const ContactSection = () => {
                   </div>
                 </div>
                 {/* Working Hours */}
-                <div className={`flex items-start gap-3 ${isRTL ? "flex-row-reverse" : ""}`}>
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <FiClock className="w-5 h-5 text-primary" />
-                  </div>
+                <div className={`flex items-start gap-3 ${isRTL ? "flex-row-reverse" : ""}`}>                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <FiClock className="w-5 h-5 text-primary" />
+                </div>
                   <div>
                     <p className="text-xs text-gray-900 uppercase tracking-wider text-left">
                       {isRTL ? "ساعات العمل" : "Working Hours"}
@@ -464,10 +460,10 @@ const ContactSection = () => {
               </div>
             </div>
           </div>
-        </div >
+        </div>
 
         {/* Bottom Decoration */}
-        <div className="mt-12 text-center" >
+        <div className="mt-12 text-center">
           <div className="inline-flex items-center gap-3">
             <div className="w-16 h-[2px] bg-primary/20 rounded-full" />
 
@@ -481,9 +477,9 @@ const ContactSection = () => {
 
             <div className="w-16 h-[2px] bg-primary/20 rounded-full" />
           </div>
-        </div >
-      </div >
-    </section >
+        </div>
+      </div>
+    </section>
   );
 };
 

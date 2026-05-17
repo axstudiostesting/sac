@@ -2,7 +2,7 @@
 // export async function GET(request) {
 //   const openai = new OpenAI({
 //     apiKey:
-//       ",
+//
 //   });
 
 //   const completion = openai.chat.completions.create({
