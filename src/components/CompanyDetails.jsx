@@ -162,7 +162,12 @@ const CompanyDetail = ({ slug }) => {
                   </p>
 
                   {/* Info Chips - Enhanced */}
-                  <div className="flex flex-wrap justify-center lg:justify-start gap-3 mt-4">
+                  <div
+                    className={`flex flex-wrap gap-3 mt-4 ${isRTL
+                        ? "justify-center lg:justify-end flex-row-reverse"
+                        : "justify-center lg:justify-start"
+                      }`}
+                  >
                     {/* Established Chip */}
                     <div className="group relative">
                       <div className="absolute inset-0 bg-gradient-to-r from-[#27374e]/0 via-[#27374e]/10 to-[#27374e]/0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -210,6 +215,24 @@ const CompanyDetail = ({ slug }) => {
                             className="text-sm text-gray-700 hover:text-primary transition-colors"
                           >
                             {company.website}
+                          </a>
+                        </div>
+                      </div>
+                    )}
+                    {company.website2 && (
+                      <div className="group relative cursor-pointer">
+                        <div className="absolute inset-0 bg-gradient-to-r from-[#27374e]/0 via-[#27374e]/10 to-[#27374e]/0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                        <div className="relative flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm border border-gray-100 hover:border-[#27374e]/30 hover:shadow-md transition-all duration-300">
+                          <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center">
+                            <FiStar className="w-3 h-3 text-primary" />
+                          </div>
+                          <a
+                            href={`https://${company.website2}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm text-gray-700 hover:text-primary transition-colors"
+                          >
+                            {company.website2}
                           </a>
                         </div>
                       </div>

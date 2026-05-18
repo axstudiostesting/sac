@@ -44,57 +44,61 @@ const ContactSection = () => {
         "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3315.8323963573935!2d50.211102910646815!3d26.30615037691803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDE4JzIyLjEiTiA1MMKwMTInNDkuMyJF!5e1!3m2!1sen!2sin!4v1779064680093!5m2!1sen!2sin",
     },
 
+
     "salam-station": {
       key: "contact.companies.salamStation",
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3315.8323963573935!2d50.211102910646815!3d26.30615037691803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDE4JzIyLjEiTiA1MMKwMTInNDkuMyJF!5e1!3m2!1sen!2sin!4v1779064680093!5m2!1sen!2sin",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.6233928324223!2d50.1901186750944!3d26.38325647696677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e51332b0a037%3A0xf85148aeeacad065!2sKing%20Faisal%20Ibn%20Abd%20Al%20Aziz%20Saudi%20Arabia!5e1!3m2!1sen!2sin!4v1779115502052!5m2!1sen!2sin",
     },
 
     "saudi-call": {
       key: "contact.companies.saudiCall",
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3315.8323963573935!2d50.211102910646815!3d26.30615037691803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDE4JzIyLjEiTiA1MMKwMTInNDkuMyJF!5e1!3m2!1sen!2sin!4v1779064680093!5m2!1sen!2sin",
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3313.6233921716494!2d50.1901187!3d26.3832565!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e51332b0a037%3A0xf85148aeeacad065!2sKing%20Faisal%20Ibn%20Abd%20Al%20Aziz%20Saudi%20Arabia!5e1!3m2!1sen!2sin!4v1779115370613!5m2!1sen!2sin",
+
     },
 
     ebreez: {
       key: "contact.companies.ebreez",
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3315.8323963573935!2d50.211102910646815!3d26.30615037691803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDE4JzIyLjEiTiA1MMKwMTInNDkuMyJF!5e1!3m2!1sen!2sin!4v1779064680093!5m2!1sen!2sin",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.2427564789855!2d50.21793097509102!3d26.2918034770227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e831f4f94b3f%3A0x3e21a5b2ba630ab0!2sPrince%20Turkey%20Street%2C%20Al%20Khobar%20Saudi%20Arabia!5e1!3m2!1sen!2sin!4v1779069677995!5m2!1sen!2sin",
     },
+
 
     mawad: {
       key: "contact.companies.mawad",
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3315.8323963573935!2d50.211102910646815!3d26.30615037691803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDE4JzIyLjEiTiA1MMKwMTInNDkuMyJF!5e1!3m2!1sen!2sin!4v1779064680093!5m2!1sen!2sin",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53076.865132770916!2d49.93058162853362!3d26.254664323360924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e361e91873d79b9%3A0xab3c27390473718c!2sDammam%202nd%20Industrial%20City%2C%20Dammam%20Saudi%20Arabia!5e1!3m2!1sen!2sin!4v1779115431216!5m2!1sen!2sin",
     },
 
     plastech: {
       key: "contact.companies.plastech",
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3315.8323963573935!2d50.211102910646815!3d26.30615037691803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDE4JzIyLjEiTiA1MMKwMTInNDkuMyJF!5e1!3m2!1sen!2sin!4v1779064680093!5m2!1sen!2sin",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26505.31564409636!2d50.102056474634104!3d26.399249622249307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e4d788b626d9%3A0x1e936c4f0c7b04ad!2sDammam%201st%20Industrial%20City%2C%20Dammam%2032234%2C%20Saudi%20Arabia!5e1!3m2!1sen!2sin!4v1779069558967!5m2!1sen!2sin",
     },
+
 
     jovae: {
       key: "contact.companies.jovae",
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3315.8323963573935!2d50.211102910646815!3d26.30615037691803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDE4JzIyLjEiTiA1MMKwMTInNDkuMyJF!5e1!3m2!1sen!2sin!4v1779064680093!5m2!1sen!2sin",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26505.31564409636!2d50.102056474634104!3d26.399249622249307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e4d788b626d9%3A0x1e936c4f0c7b04ad!2sDammam%201st%20Industrial%20City%2C%20Dammam%2032234%2C%20Saudi%20Arabia!5e1!3m2!1sen!2sin!4v1779069558967!5m2!1sen!2sin",
     },
 
     wajd: {
       key: "contact.companies.wajd",
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3315.8323963573935!2d50.211102910646815!3d26.30615037691803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDE4JzIyLjEiTiA1MMKwMTInNDkuMyJF!5e1!3m2!1sen!2sin!4v1779064680093!5m2!1sen!2sin",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26505.31564409636!2d50.102056474634104!3d26.399249622249307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e4d788b626d9%3A0x1e936c4f0c7b04ad!2sDammam%201st%20Industrial%20City%2C%20Dammam%2032234%2C%20Saudi%20Arabia!5e1!3m2!1sen!2sin!4v1779069558967!5m2!1sen!2sin",
     },
   };
   const companyList = [
     { id: "sadara", key: "contact.companies.sadara.name" },
-    { id: "salam-station", key: "contact.companies.salamStation.name" },
     { id: "saudi-call", key: "contact.companies.saudiCall.name" },
     { id: "ebreez", key: "contact.companies.ebreez.name" },
     { id: "mawad", key: "contact.companies.mawad.name" },
     { id: "plastech", key: "contact.companies.plastech.name" },
     { id: "jovae", key: "contact.companies.jovae.name" },
     { id: "wajd", key: "contact.companies.wajd.name" },
+    { id: "salam-station", key: "contact.companies.salamStation.name" },
   ];;
 
   const currentCompany = companies[activeCompany];

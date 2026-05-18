@@ -325,14 +325,6 @@ export const translations = {
         link: "/companies/about",
       },
       slide2: {
-        id: "salam",
-        title: "Salam Station",
-        image: "/hero/salam.jpg",
-        desc: "Salam Roads Petroleum Services Company specializes in petroleum, energy, and support services, serving as a strategic arm bridging energy and transportation sectors",
-        link: "/companies/salam",
-        cta: "Discover Salam Station",
-      },
-      slide3: {
         id: "saudi-call",
         image: "/hero/saudicall2.png",
         title: "Saudi Call\nTelecom & Security",
@@ -340,15 +332,15 @@ export const translations = {
         link: "/companies/saudi-call",
         cta: "Explore Saudi Call",
       },
-      slide4: {
+      slide3: {
         id: "ebreez",
-        image: "/hero/abreez.png",
+        image: "/hero/abreez.jpeg",
         title: "Ebreez Arabia\nReal Estate Development",
         desc: "Premium commercial and residential properties in strategic locations",
         cta: "Discover Ebreez",
         link: "/companies/ebreez",
       },
-      slide5: {
+      slide4: {
         id: "mawad",
         image: "/hero/mowad.png",
         title: "Mawad\nOil & Gas Solutions",
@@ -356,7 +348,7 @@ export const translations = {
         link: "/companies/mawad",
         cta: "Learn About Mawad",
       },
-      slide6: {
+      slide5: {
         id: "plastech",
         image: "/hero/plastech2.png",
         title: "Plastech\nPlastic Industries",
@@ -364,7 +356,7 @@ export const translations = {
         link: "/companies/plastech",
         cta: "Explore Plastech",
       },
-      slide7: {
+      slide6: {
         id: "jovae",
         image: "/hero/jovae2.png",
         title: "Jovae Industrial",
@@ -372,13 +364,21 @@ export const translations = {
         link: "/companies/jovae",
         cta: "Explore Jovae",
       },
-      slide8: {
+      slide7: {
         id: "wajd",
         image: "/hero/wajd.jpg",
         title: "Wajd - Management and Services",
         desc: "A diversified holding company powering Saudi Arabia’s future across telecom, security, real estate, oil & gas, manufacturing, and more",
         link: "/companies/wajd",
         cta: "Explore Wajd",
+      },
+      slide8: {
+        id: "salam",
+        title: "Salam Station",
+        image: "/hero/salam.jpg",
+        desc: "Salam Roads Petroleum Services Company specializes in petroleum, energy, and support services, serving as a strategic arm bridging energy and transportation sectors",
+        link: "/companies/salam",
+        cta: "Discover Salam Station",
       },
     },
     clients: {
@@ -485,7 +485,7 @@ export const translations = {
           ],
           established: 1992,
           headquarters: "Al-Khobar, Saudi Arabia",
-          website: "https://saudi-call.com/",
+          website: "www.saudi-call.com",
         },
         {
           id: "ebreez",
@@ -499,6 +499,10 @@ export const translations = {
             "/companies/ebreez/1.jpeg",
             "/companies/ebreez/2.jpeg",
             "/companies/ebreez/3.jpeg",
+            "/companies/ebreez/4.jpeg",
+            "/companies/ebreez/5.jpeg",
+            "/companies/ebreez/6.jpeg",
+            "/companies/ebreez/7.jpeg",
           ],
           metrics: [
             { value: "10+", label: "Premium Properties" },
@@ -521,7 +525,6 @@ export const translations = {
           certifications: [],
           established: 2010,
           headquarters: "Al-Khobar, Saudi Arabia",
-          website: "www.sdi.com.sa",
         },
         {
           id: "mawad",
@@ -557,7 +560,7 @@ export const translations = {
           ],
           established: 2013,
           headquarters: "Dammam, Saudi Arabia",
-          website: "www.sdi.com.sa",
+          website: "www.drilling-materials.com",
         },
         {
           id: "plastech",
@@ -573,6 +576,9 @@ export const translations = {
             "/companies/plastech/3.png",
             "/companies/plastech/4.png",
             "/companies/plastech/5.png",
+            "/companies/plastech/6.png",
+            "/companies/plastech/7.png",
+            "/companies/plastech/8.png",
           ],
           metrics: [
             { value: "30L", label: "Container Capacity" },
@@ -601,7 +607,7 @@ export const translations = {
           ],
           established: 2015,
           headquarters: "Dammam, Saudi Arabia",
-          website: "www.sdi.com.sa",
+          website: "www.plastech.com.sa/en/",
         },
         {
           id: "jovae",
@@ -617,6 +623,7 @@ export const translations = {
             "/companies/jovae/3.jpeg",
             "/companies/jovae/4.jpeg",
             "/companies/jovae/5.jpeg",
+            "/companies/jovae/6.jpeg",
           ],
           metrics: [
             { value: "SASO", label: "Compliant Standards" },
@@ -633,7 +640,8 @@ export const translations = {
           certifications: ["SASO Standards", "GMP Certified", "ISO Compliance"],
           established: 2018,
           headquarters: "Dammam, Saudi Arabia",
-          website: "britexksa.com",
+          website: "www.britexksa.com",
+          website2: "www.jovae.com/ar",
         },
         {
           id: "wajd",
@@ -667,7 +675,6 @@ export const translations = {
           ],
           established: 2020,
           headquarters: "Riyadh, Saudi Arabia",
-          website: "www.sdi.com.sa",
         },
         {
           id: "salam-station",
@@ -686,6 +693,11 @@ export const translations = {
             "/companies/salam/1.jpg",
             "/companies/salam/2.jpg",
             "/companies/salam/3.jpg",
+            "/companies/salam/4.jpg",
+            "/companies/salam/5.jpg",
+            "/companies/salam/6.jpg",
+            "/companies/salam/7.jpg",
+            "/companies/salam/8.jpg",
           ],
           services: [
             "Fuel & Service Stations - Integrated stations including fueling, maintenance, restrooms, restaurants",
@@ -701,7 +713,6 @@ export const translations = {
           certifications: [],
           established: 2020,
           headquarters: "Eastern Province, Saudi Arabia",
-          website: "www.sdi.com.sa",
         },
       ],
 
@@ -790,7 +801,7 @@ export const translations = {
           icon: "trending",
         },
         {
-          number: "6",
+          number: "7",
           label: "Group Companies",
           icon: "briefcase",
         },
@@ -1044,15 +1055,6 @@ export const translations = {
           website: "www.sdi.com.sa",
           workingHours: "Sunday - Thursday: 8:00 AM - 5:00 PM",
         },
-
-        salamStation: {
-          name: "Salam Station",
-          badge: "Petroleum and Energy",
-          address:
-            "King Faisal Al Aziz Road, Al Yarmouk, Al Khobar 34423, Saudi Arabia",
-          workingHours: "Sunday - Thursday: 8:00 AM - 5:00 PM",
-        },
-
         saudiCall: {
           name: "Saudi Call",
           badge: "Telecom & Security",
@@ -1096,8 +1098,8 @@ export const translations = {
           badge: "Cleaning Products",
           address: "Saudi Arabia - Dammam - Industrial Area",
           email: "m.parvez@jovae.com",
-          website: "www.jovae.com/ar/",
-          website2: "https://britexksa.com/",
+          website: "www.jovae.com/ar",
+          website2: "www.britexksa.com",
           workingHours: "Sunday - Thursday: 8:00 AM - 5:00 PM",
         },
 
@@ -1105,6 +1107,13 @@ export const translations = {
           name: "Wajd",
           badge: "Property Management, Operations, Maintenance",
           address: "Saudi Arabia - Dammam - Industrial Area",
+          workingHours: "Sunday - Thursday: 8:00 AM - 5:00 PM",
+        },
+        salamStation: {
+          name: "Salam Station",
+          badge: "Petroleum and Energy",
+          address:
+            "King Faisal Al Aziz Road, Al Yarmouk, Al Khobar 34423, Saudi Arabia",
           workingHours: "Sunday - Thursday: 8:00 AM - 5:00 PM",
         },
       },
@@ -1506,15 +1515,15 @@ export const translations = {
       contact: {
         title: "Contact Us",
         email: "info@sdi.com.sa",
-        phone: "+966 59 673 5773",
-        fax: "+966 12 345 6789",
+        phone: "013 887 4122",
+        fax: "013 887 4122",
         address:
           "Khobar Gate Tower, King Fahd Road, Al Bandariyah, Al Khobar 34424",
       },
 
       social: {
         twitter: "Twitter",
-        twitterUrl: "https://twitter.com/sadara",
+        twitterUrl: "https://www.twitter.com/sadara",
         linkedin: "LinkedIn",
         linkedinUrl:
           "https://www.linkedin.com/company/sadara-development-investment",
@@ -1872,15 +1881,6 @@ export const translations = {
         link: "/companies/about",
       },
       slide2: {
-        id: "salam",
-        title: "سلام ستيشن",
-        image: "/hero/salam.jpg",
-        desc: "تتخصص شركة سالم رودز للخدمات البترولية في خدمات البترول والطاقة والدعم، وتعمل كذراع استراتيجي يربط بين قطاعي الطاقة والنقل",
-        link: "/companies/salam",
-
-        cta: "اكتشف سالم ستيشن",
-      },
-      slide3: {
         id: "saudi-call",
         title: "سعودي كول\nالاتصالات والأمن",
         desc: "مزود رائد لحلول الاتصالات والأمن منذ عام 1992",
@@ -1888,15 +1888,15 @@ export const translations = {
         image: "/hero/saudicall2.png",
         link: "/companies/saudi-call",
       },
-      slide4: {
+      slide3: {
         id: "ebreez",
         title: "إبريز العربية\nتطوير العقارات",
         desc: "عقارات تجارية وسكنية فاخرة في مواقع استراتيجية",
         cta: "اكتشف إبريز",
-        image: "/hero/abreez.png",
+        image: "/hero/abreez.jpeg",
         link: "/companies/ebreez",
       },
-      slide5: {
+      slide4: {
         id: "mawad",
         title: "مواد الحفر\nحلول النفط والغاز",
         desc: "شركة محلية لتصنيع إضافات سوائل الحفر والمعادن الصناعية",
@@ -1904,7 +1904,7 @@ export const translations = {
         image: "/hero/mowad.png",
         link: "/companies/mawad",
       },
-      slide6: {
+      slide5: {
         id: "plastech",
         title: "بلاستك\nالصناعات البلاستيكية",
         desc: "شركة رائدة في تصنيع المنتجات البلاستيكية عالية الجودة لخدمة أسواق الخليج",
@@ -1912,21 +1912,29 @@ export const translations = {
         image: "/hero/plastech2.png",
         link: "/companies/plastech",
       },
-      slide7: {
+      slide6: {
         id: "jovae",
         title: "  جوفية  الصناعية",
         desc: "مصنع لمنظفات منزلية عالية الأداء ومحاليل تعقيم تحت علامة برايتكس التجارية",
-        cta: "استكشف جوفي",
+        cta: "استكشف جوفية ",
         image: "/hero/jovae2.png",
         link: "/companies/jovae",
       },
-      slide8: {
+      slide7: {
         id: "wajd",
         image: "/hero/wajd.jpg",
         title: "وجد - الإدارة والخدمات",
         desc: "شركة قابضة متنوعة تدفع بمستقبل المملكة العربية السعودية قدماً في الاتصالات والأمن والعقارات والنفط والغاز والتصنيع وغيرها",
         link: "/companies/wajd",
         cta: "استكشف وجد",
+      },
+      slide8: {
+        id: "salam",
+        title: "سلام ستيشن",
+        image: "/hero/salam.jpg",
+        desc: "خدمات دعم البترول والطاقة التي تربط قطاعي الطاقة والنقل.",
+        link: "/companies/salam-station",
+        cta: "استكشف سالم ستيشن",
       },
     },
     clients: {
@@ -2001,7 +2009,7 @@ export const translations = {
           ],
           established: 1992,
           headquarters: "الخبر، المملكة العربية السعودية",
-          website: "https://saudi-call.com/",
+          website: "www.saudi-call.com",
         },
         {
           id: "ebreez",
@@ -2016,6 +2024,10 @@ export const translations = {
             "/companies/ebreez/1.jpeg",
             "/companies/ebreez/2.jpeg",
             "/companies/ebreez/3.jpeg",
+            "/companies/ebreez/4.jpeg",
+            "/companies/ebreez/5.jpeg",
+            "/companies/ebreez/6.jpeg",
+            "/companies/ebreez/7.jpeg",
           ],
           metrics: [
             { value: "+١٠", label: "عقارات متميزة" },
@@ -2038,7 +2050,6 @@ export const translations = {
           certifications: [],
           established: 2010,
           headquarters: "الخبر، المملكة العربية السعودية",
-          website: "www.sdi.com.sa",
         },
         {
           id: "mawad",
@@ -2074,7 +2085,7 @@ export const translations = {
           ],
           established: 2013,
           headquarters: "الدمام، المملكة العربية السعودية",
-          website: "www.sdi.com.sa",
+          website: "www.drilling-materials.com",
         },
         {
           id: "plastech",
@@ -2090,6 +2101,9 @@ export const translations = {
             "/companies/plastech/3.png",
             "/companies/plastech/4.png",
             "/companies/plastech/5.png",
+            "/companies/plastech/6.png",
+            "/companies/plastech/7.png",
+            "/companies/plastech/8.png",
           ],
           metrics: [
             { value: "٣٠ لتر", label: "سعة الحاويات" },
@@ -2118,21 +2132,23 @@ export const translations = {
           ],
           established: 2015,
           headquarters: "الدمام، المملكة العربية السعودية",
+          website: "www.plastech.com.sa/en/",
         },
         {
           id: "jovae",
           slug: "jovae",
-          name: "  جوفية  الصناعية",
+          name: "جوفية الصناعية",
           logo: "/companies/jovae.png",
           shortDescription:
             "شركة مصنعة لمنظفات منزلية عالية الأداء ومحاليل تعقيم تحت علامة برايتكس التجارية.",
-          description: `ينتج مصنع جوفي - برايتكس للمنظفات حلولاً عالية الأداء للتنظيف المنزلي والتعقيم، يتم تصنيعها بأيدٍ سعودية وفق أعلى معايير الجودة الوطنية. تجمع برايتكس بين الجودة العالية والقدرة على تحمل التكاليف، مع الالتزام الكامل بمعايير SASO.`,
+          description: `ينتج مصنع جوفية  - برايتكس للمنظفات حلولاً عالية الأداء للتنظيف المنزلي والتعقيم، يتم تصنيعها بأيدٍ سعودية وفق أعلى معايير الجودة الوطنية. تجمع برايتكس بين الجودة العالية والقدرة على تحمل التكاليف، مع الالتزام الكامل بمعايير SASO.`,
           images: [
             "/companies/jovae/1.jpeg",
             "/companies/jovae/2.jpeg",
             "/companies/jovae/3.jpeg",
             "/companies/jovae/4.jpeg",
             "/companies/jovae/5.jpeg",
+            "/companies/jovae/6.jpeg",
           ],
           metrics: [
             { value: "SASO", label: "المعايير المطابقة" },
@@ -2150,6 +2166,7 @@ export const translations = {
           established: 2018,
           headquarters: "الدمام، المملكة العربية السعودية",
           website: "britexksa.com",
+          website2: "www.jovae.com/ar",
         },
         {
           id: "wajd",
@@ -2183,7 +2200,6 @@ export const translations = {
           ],
           established: 2020,
           headquarters: "الرياض، المملكة العربية السعودية",
-          website: "www.sdi.com.sa",
         },
         {
           id: "salam-station",
@@ -2207,6 +2223,11 @@ export const translations = {
             "/companies/salam/1.jpg",
             "/companies/salam/2.jpg",
             "/companies/salam/3.jpg",
+            "/companies/salam/4.jpg",
+            "/companies/salam/5.jpg",
+            "/companies/salam/6.jpg",
+            "/companies/salam/7.jpg",
+            "/companies/salam/8.jpg",
           ],
           targetSectors: [
             "الكيانات الحكومية",
@@ -2217,7 +2238,6 @@ export const translations = {
           certifications: [],
           established: 2020,
           headquarters: "المنطقة الشرقية، المملكة العربية السعودية",
-          website: "www.sdi.com.sa",
         },
       ],
       // UI text translations - Arabic
@@ -2285,7 +2305,7 @@ export const translations = {
           icon: "trending",
         },
         {
-          number: "6",
+          number: "7",
           label: "شركات المجموعة",
           icon: "briefcase",
         },
@@ -3074,14 +3094,6 @@ export const translations = {
           workingHours: "الأحد - الخميس: 8:00 ص - 5:00 م",
         },
 
-        salamStation: {
-          name: "سالم ستيشن",
-          badge: "البترول والطاقة",
-          address:
-            "طريق الملك فيصل العزيز، اليرموك، الخبر 34423، المملكة العربية السعودية",
-          workingHours: "الأحد - الخميس: 8:00 ص - 5:00 م",
-        },
-
         saudiCall: {
           name: "سعودي كول",
           badge: "الاتصالات والأمن",
@@ -3101,7 +3113,7 @@ export const translations = {
         },
 
         mawad: {
-          name: "مواد",
+          name: "مواد الحفر",
           badge: "حلول النفط والغاز",
           address:
             "المدينة الصناعية الثانية بالدمام، شارع 144 تقاطع شارع 95، المملكة العربية السعودية",
@@ -3121,12 +3133,12 @@ export const translations = {
         },
 
         jovae: {
-          name: "جوفي",
+          name: "جوفية  الصناعية",
           badge: "منتجات التنظيف",
           address: "المملكة العربية السعودية - الدمام - المنطقة الصناعية",
           email: "m.parvez@jovae.com",
-          website: "https://britexksa.com/",
-          website2: "www.jovae.com/ar/",
+          website: "www.britexksa.com",
+          website2: "www.jovae.com/ar",
           workingHours: "الأحد - الخميس: 8:00 ص - 5:00 م",
         },
 
@@ -3134,6 +3146,14 @@ export const translations = {
           name: "وجد",
           badge: "إدارة العقارات والتشغيل والصيانة",
           address: "المملكة العربية السعودية - الدمام - المنطقة الصناعية",
+          workingHours: "الأحد - الخميس: 8:00 ص - 5:00 م",
+        },
+
+        salamStation: {
+          name: "سالم ستيشن",
+          badge: "البترول والطاقة",
+          address:
+            "طريق الملك فيصل العزيز، اليرموك، الخبر 34423، المملكة العربية السعودية",
           workingHours: "الأحد - الخميس: 8:00 ص - 5:00 م",
         },
       },
@@ -3191,7 +3211,7 @@ export const translations = {
 
       social: {
         twitter: "تويتر",
-        twitterUrl: "https://twitter.com/sadara",
+        twitterUrl: "https://www.twitter.com/sadara",
         linkedin: "لينكدإن",
         linkedinUrl:
           "https://www.linkedin.com/company/sadara-development-investment",
