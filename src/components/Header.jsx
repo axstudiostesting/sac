@@ -66,7 +66,7 @@ const HeaderHero = () => {
         image: "/images/media-hero.jpg",
         subtitleKey: "pages.media.subtitle",
       },
-      career: {
+      careers: {
         badgeKey: "pages.career.badge",
         titleKey: "pages.career.title",
         image: "/images/career-hero.jpg",

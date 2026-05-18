@@ -35,7 +35,15 @@ const Footer = () => {
       duration: 800,
       once: true,
       easing: "ease-out-cubic",
+      offset: 0,
     });
+
+    // Wait for full page layout to settle before recalculating positions
+    const timer = setTimeout(() => {
+      AOS.refreshHard();
+    }, 500);
+
+    return () => clearTimeout(timer);
   }, []);
 
   const linkBaseClass =

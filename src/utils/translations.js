@@ -296,11 +296,11 @@ export const translations = {
         title: "Discover Our Diverse Portfolio",
         subtitle: "Learn about our group of companies and their expertise",
       },
-      careers: {
-        badge: "Our Companies",
-        title: "Discover Our Diverse Portfolio",
-        subtitle: "Learn about our group of companies and their expertise",
-      },
+      // careers: {
+      //   badge: "Our Companies",
+      //   title: "Discover Our Diverse Portfolio",
+      //   subtitle: "Learn about our group of companies and their expertise",
+      // },
     },
     hero: {
       services: {
