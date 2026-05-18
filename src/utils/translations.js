@@ -1261,7 +1261,7 @@ export const translations = {
       services: "Services",
       companies: "Our Companies", // ADD THIS
       media: "Media", // ADD THIS
-      career: "Career", // ADD THIS
+      career: "Careers", // ADD THIS
       contact: "Contact Us",
       location: "Location",
       email: "Email",
@@ -1818,7 +1818,7 @@ export const translations = {
 
         team: {
           number: "+100",
-          label: "Expert Team",
+          label: "فريق الخبراء",
         },
       },
     },

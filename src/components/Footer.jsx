@@ -62,7 +62,7 @@ const Footer = () => {
     },
     {
       name: t("footer.info.careers") || t("pages.career.badge") || "Careers",
-      href: "/career",
+      href: "/careers",
     },
     { name: t("footer.info.blog") || "Blog", href: "/blog" },
     { name: t("footer.info.news") || "News", href: "/news" },
