@@ -19,10 +19,15 @@ const DownloadProfile = () => {
   }, []);
 
   const handleDownload = () => {
-    const pdfUrl = "/pdf/sadara-company-profile.pdf";
+    const pdfUrl = isRTL
+      ? "/pdf/sadara-company-profile-AR.pdf"
+      : "/pdf/sadara-company-profile-EN.pdf";
+    const fileName = isRTL
+      ? "Sadara-Company-Profile-AR.pdf"
+      : "Sadara-Company-Profile-EN.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "Sadara-Company-Profile.pdf";
+    link.download = fileName;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -72,7 +77,7 @@ const DownloadProfile = () => {
 
           <button
             onClick={handleDownload}
-            className="group bg-white text-primary px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-3 flex-shrink-0"
+            className="group bg-white text-primary px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-3 flex-shrink-0 cursor-pointer"
           >
             <FiDownload className="w-5 h-5" />
             <span>{t("download.button")}</span>
