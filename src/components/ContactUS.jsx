@@ -41,49 +41,49 @@ const ContactSection = () => {
     sadara: {
       key: "contact.companies.sadara",
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m18...",
+        "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3315.8323963573935!2d50.211102910646815!3d26.30615037691803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDE4JzIyLjEiTiA1MMKwMTInNDkuMyJF!5e1!3m2!1sen!2sin!4v1779064680093!5m2!1sen!2sin",
     },
 
     "salam-station": {
       key: "contact.companies.salamStation",
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m18...",
+        "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3315.8323963573935!2d50.211102910646815!3d26.30615037691803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDE4JzIyLjEiTiA1MMKwMTInNDkuMyJF!5e1!3m2!1sen!2sin!4v1779064680093!5m2!1sen!2sin",
     },
 
     "saudi-call": {
       key: "contact.companies.saudiCall",
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m18...",
+        "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3315.8323963573935!2d50.211102910646815!3d26.30615037691803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDE4JzIyLjEiTiA1MMKwMTInNDkuMyJF!5e1!3m2!1sen!2sin!4v1779064680093!5m2!1sen!2sin",
     },
 
     ebreez: {
       key: "contact.companies.ebreez",
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m18...",
+        "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3315.8323963573935!2d50.211102910646815!3d26.30615037691803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDE4JzIyLjEiTiA1MMKwMTInNDkuMyJF!5e1!3m2!1sen!2sin!4v1779064680093!5m2!1sen!2sin",
     },
 
     mawad: {
       key: "contact.companies.mawad",
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m18...",
+        "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3315.8323963573935!2d50.211102910646815!3d26.30615037691803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDE4JzIyLjEiTiA1MMKwMTInNDkuMyJF!5e1!3m2!1sen!2sin!4v1779064680093!5m2!1sen!2sin",
     },
 
     plastech: {
       key: "contact.companies.plastech",
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m18...",
+        "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3315.8323963573935!2d50.211102910646815!3d26.30615037691803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDE4JzIyLjEiTiA1MMKwMTInNDkuMyJF!5e1!3m2!1sen!2sin!4v1779064680093!5m2!1sen!2sin",
     },
 
     jovae: {
       key: "contact.companies.jovae",
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m18...",
+        "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3315.8323963573935!2d50.211102910646815!3d26.30615037691803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDE4JzIyLjEiTiA1MMKwMTInNDkuMyJF!5e1!3m2!1sen!2sin!4v1779064680093!5m2!1sen!2sin",
     },
 
     wajd: {
       key: "contact.companies.wajd",
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m18...",
+        "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3315.8323963573935!2d50.211102910646815!3d26.30615037691803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDE4JzIyLjEiTiA1MMKwMTInNDkuMyJF!5e1!3m2!1sen!2sin!4v1779064680093!5m2!1sen!2sin",
     },
   };
   const companyList = [
@@ -105,6 +105,25 @@ const ContactSection = () => {
       [e.target.name]: e.target.value,
     });
   };
+  const phone = t(`${currentCompany.key}.phone`);
+  const email = t(`${currentCompany.key}.email`);
+  const website = t(`${currentCompany.key}.website`);
+  const website2 = t(`${currentCompany.key}.website2`);
+
+  const hasPhone =
+    phone &&
+    !phone.includes(".phone");
+
+  const hasEmail =
+    email &&
+    !email.includes(".email");
+
+  const hasWebsite =
+    website &&
+    !website.includes(".website");
+  const hasWebsite2 =
+    website2 &&
+    !website2.includes(".website2");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -205,7 +224,7 @@ const ContactSection = () => {
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-5">
-                      <div>
+                      {hasEmail && (<div>
                         <label className="block text-gray-700 font-medium mb-2">
                           {t("contact.form.email")} *
                         </label>
@@ -222,8 +241,8 @@ const ContactSection = () => {
                           className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all text-primary"
                         />
                       </div>
-
-                      <div>
+                      )}
+                      {hasPhone && (<div>
                         <label className="block text-gray-700 font-medium mb-2">
                           {t("contact.form.phone")}
                         </label>
@@ -239,6 +258,8 @@ const ContactSection = () => {
                           className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all text-primary"
                         />
                       </div>
+
+                      )}
                     </div>
 
                     <div>
@@ -305,18 +326,19 @@ const ContactSection = () => {
         {/* Company Switcher */}
         <div data-aos="fade-up" data-aos-delay="100" className="mb-10">
           <div className="flex flex-wrap justify-center gap-3">
-            {companyList.map((company) => (
-              <button
-                key={company.id}
-                onClick={() => setActiveCompany(company.id)}
-                className={`px-5 py-2.5 rounded-full font-medium text-sm transition-all duration-300 ${activeCompany === company.id
-                  ? "bg-primary text-white shadow-lg"
-                  : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200"
-                  }`}
-              >
-                {t(company.key)}
-              </button>
-            ))}
+            {(isRTL ? [...companyList].reverse() : companyList).map(
+              (company) => (
+                <button
+                  key={company.id}
+                  onClick={() => setActiveCompany(company.id)}
+                  className={`px-5 py-2.5 rounded-full font-medium text-sm transition-all duration-300 ${activeCompany === company.id
+                    ? "bg-primary text-white shadow-lg"
+                    : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200"
+                    }`}
+                >
+                  {t(company.key)}
+                </button>
+              ))}
           </div>
         </div>
         {/* Contact Details + Map */}
@@ -340,7 +362,6 @@ const ContactSection = () => {
                   <div className={`w-full text-left`}>
                     <p className="text-xs text-gray-900 uppercase tracking-wider text-left">
                       {isRTL ? "العنوان" : "Address"}
-                      Address
                     </p>
                     <p className="text-gray-600 text-sm mt-1">
                       {t(`${currentCompany.key}.address`)}
@@ -348,60 +369,87 @@ const ContactSection = () => {
                   </div>
                 </div>
                 {/* Phone */}
-                <div className={`flex items-start gap-3 ${isRTL ? "flex-row-reverse" : ""}`}>                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <FiPhone className="w-5 h-5 text-primary" />
-                </div>
-                  <div>
-                    <p className="text-xs text-gray-900 uppercase tracking-wider text-left">
-                      {isRTL ? "الهاتف" : "Phone"}
-                    </p>
-                    <a
-                      href={`tel:${t(`${currentCompany.key}.phone`)}`}
-                      className="text-gray-600 text-sm hover:text-primary transition-colors"
-                    >
-                      {t(`${currentCompany.key}.phone`)}
-                    </a>
-                  </div>
-                </div>
+                {hasPhone && (
+                  <div
+                    className={`flex items-start gap-3 ${isRTL ? "flex-row-reverse" : ""
+                      }`}
+                  >              <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <FiPhone className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-900 uppercase tracking-wider text-left">
+                        {isRTL ? "الهاتف" : "Phone"}
+                      </p>
+                      <a
+                        href={`tel:${t(`${currentCompany.key}.phone`)}`}
+                        className="text-gray-600 text-sm hover:text-primary transition-colors"
+                      >
+                        {t(`${currentCompany.key}.phone`)}
+                      </a>
+                    </div>
+                  </div>)}
                 {/* Email */}
-                <div className={`flex items-start gap-3 ${isRTL ? "flex-row-reverse" : ""}`}>
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <FiMail className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-xs text-gray-900 uppercase tracking-wider text-left">
-                      {isRTL ? "البريد الإلكتروني" : "Email"}
+                {hasEmail && (
+                  <div className={`flex items-start gap-3 ${isRTL ? "flex-row-reverse" : ""}`}>
+                    <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <FiMail className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-900 uppercase tracking-wider text-left">
+                        {isRTL ? "البريد الإلكتروني" : "Email"}
 
-                    </p>
-                    <a
-                      href={`mailto:${t(`${currentCompany.key}.email`)}`}
-                      className="text-gray-600 text-sm hover:text-primary transition-colors break-all"
-                    >
-                      {t(`${currentCompany.key}.email`)}
-                    </a>
-                  </div>
-                </div>
+                      </p>
+                      <a
+                        href={`mailto:${t(`${currentCompany.key}.email`)}`}
+                        className="text-gray-600 text-sm hover:text-primary transition-colors break-all"
+                      >
+                        {t(`${currentCompany.key}.email`)}
+                      </a>
+                    </div>
+                  </div>)}
                 {/* Website */}
-                <div className={`flex items-start gap-3 ${isRTL ? "flex-row-reverse" : ""}`}>
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <FiGlobe className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-xs text-gray-900 uppercase tracking-wider text-left">
-                      {isRTL ? "الموقع الإلكتروني" : "Website"}
-                    </p>
-                    <a
-                      href={`https://${t(
-                        `${currentCompany.key}.website`
-                      )}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-600 text-sm hover:text-primary transition-colors"
-                    >
-                      {t(`${currentCompany.key}.website`)}
-                    </a>
-                  </div>
-                </div>
+                {hasWebsite && (
+                  <div className={`flex items-start gap-3 ${isRTL ? "flex-row-reverse" : ""}`}>
+                    <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <FiGlobe className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-900 uppercase tracking-wider text-left">
+                        {isRTL ? "الموقع الإلكتروني" : "Website"}
+                      </p>
+                      <a
+                        href={`https://${t(
+                          `${currentCompany.key}.website`
+                        )}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-600 text-sm hover:text-primary transition-colors"
+                      >
+                        {t(`${currentCompany.key}.website`)}
+                      </a>
+                    </div>
+                  </div>)}
+                {hasWebsite2 && (
+                  <div className={`flex items-start gap-3 ${isRTL ? "flex-row-reverse" : ""}`}>
+                    <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <FiGlobe className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-900 uppercase tracking-wider text-left">
+                        {isRTL ? "الموقع الإلكتروني" : "Website"}
+                      </p>
+                      <a
+                        href={`https://${t(
+                          `${currentCompany.key}.website2`
+                        )}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-600 text-sm hover:text-primary transition-colors"
+                      >
+                        {t(`${currentCompany.key}.website2`)}
+                      </a>
+                    </div>
+                  </div>)}
                 {/* Working Hours */}
                 <div className={`flex items-start gap-3 ${isRTL ? "flex-row-reverse" : ""}`}>                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
                   <FiClock className="w-5 h-5 text-primary" />

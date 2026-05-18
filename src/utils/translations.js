@@ -485,7 +485,7 @@ export const translations = {
           ],
           established: 1992,
           headquarters: "Al-Khobar, Saudi Arabia",
-          website: "www.sdi.com.sa",
+          website: "https://saudi-call.com/",
         },
         {
           id: "ebreez",
@@ -1050,9 +1050,6 @@ export const translations = {
           badge: "Petroleum and Energy",
           address:
             "King Faisal Al Aziz Road, Al Yarmouk, Al Khobar 34423, Saudi Arabia",
-          phone: "+966 59 673 5773",
-          email: "info@saudi-call.com",
-          website: "www.saudi-call.com",
           workingHours: "Sunday - Thursday: 8:00 AM - 5:00 PM",
         },
 
@@ -1061,7 +1058,6 @@ export const translations = {
           badge: "Telecom & Security",
           address:
             "King Faisal Al Aziz Road, Al Yarmouk, Al Khobar 34423, Saudi Arabia",
-          phone: "+966 59 673 5773",
           email: "info@saudi-call.com",
           website: "www.saudi-call.com",
           workingHours: "Sunday - Thursday: 8:00 AM - 5:00 PM",
@@ -1072,9 +1068,6 @@ export const translations = {
           badge: "Real Estate Development",
           address:
             "Prince Turkey Street, Alkurnaish, Al Khobar 34413, Kingdom of Saudi Arabia",
-          phone: "+966 13 123 4567",
-          email: "info@alshaikhsquare.com",
-          website: "www.ebreez.com",
           workingHours: "Sunday - Thursday: 8:00 AM - 5:00 PM",
         },
 
@@ -1083,7 +1076,6 @@ export const translations = {
           badge: "Oil & Gas Solutions",
           address:
             "Dammam 2nd Industrial City, St. 144 crossing St. 95, Kingdom of Saudi Arabia",
-          phone: "+966 13 812 4240",
           email: "info@mawad-drilling.com",
           website: "www.mawad-drilling.com",
           workingHours: "Sunday - Thursday: 8:00 AM - 5:00 PM",
@@ -1093,8 +1085,7 @@ export const translations = {
           name: "Plastech",
           badge: "Plastic Industries",
           address: "Saudi Arabia - Dammam - Industrial Area",
-          phone: "+966 50 884 4731",
-          email: "info@plastechfactory.com",
+          email: "info@plastech.com.sa",
           website: "www.plastech.com.sa/en/",
           workingHours: "Sunday - Thursday: 8:00 AM - 5:00 PM",
           contactPerson: "Mohamed Fawzi",
@@ -1104,9 +1095,9 @@ export const translations = {
           name: "Jovae",
           badge: "Cleaning Products",
           address: "Saudi Arabia - Dammam - Industrial Area",
-          phone: "+966 59 673 5773",
           email: "m.parvez@jovae.com",
           website: "www.jovae.com/ar/",
+          website2: "https://britexksa.com/",
           workingHours: "Sunday - Thursday: 8:00 AM - 5:00 PM",
         },
 
@@ -1114,9 +1105,6 @@ export const translations = {
           name: "Wajd",
           badge: "Property Management, Operations, Maintenance",
           address: "Saudi Arabia - Dammam - Industrial Area",
-          phone: "+966 59 673 5773",
-          email: "m.parvez@jovae.com",
-          website: "www.jovae.com/ar/",
           workingHours: "Sunday - Thursday: 8:00 AM - 5:00 PM",
         },
       },
@@ -2013,7 +2001,7 @@ export const translations = {
           ],
           established: 1992,
           headquarters: "الخبر، المملكة العربية السعودية",
-          website: "www.sdi.com.sa",
+          website: "https://saudi-call.com/",
         },
         {
           id: "ebreez",
@@ -3091,9 +3079,6 @@ export const translations = {
           badge: "البترول والطاقة",
           address:
             "طريق الملك فيصل العزيز، اليرموك، الخبر 34423، المملكة العربية السعودية",
-          phone: "+966 59 673 5773",
-          email: "info@saudi-call.com",
-          website: "www.saudi-call.com",
           workingHours: "الأحد - الخميس: 8:00 ص - 5:00 م",
         },
 
@@ -3102,7 +3087,6 @@ export const translations = {
           badge: "الاتصالات والأمن",
           address:
             "طريق الملك فيصل العزيز، اليرموك، الخبر 34423، المملكة العربية السعودية",
-          phone: "+966 59 673 5773",
           email: "info@saudi-call.com",
           website: "www.saudi-call.com",
           workingHours: "الأحد - الخميس: 8:00 ص - 5:00 م",
@@ -3113,9 +3097,6 @@ export const translations = {
           badge: "التطوير العقاري",
           address:
             "شارع الأمير تركي، الكورنيش، الخبر 34413، المملكة العربية السعودية",
-          phone: "+966 13 123 4567",
-          email: "info@alshaikhsquare.com",
-          website: "www.ebreez.com",
           workingHours: "الأحد - الخميس: 8:00 ص - 5:00 م",
         },
 
@@ -3124,7 +3105,6 @@ export const translations = {
           badge: "حلول النفط والغاز",
           address:
             "المدينة الصناعية الثانية بالدمام، شارع 144 تقاطع شارع 95، المملكة العربية السعودية",
-          phone: "+966 13 812 4240",
           email: "info@mawad-drilling.com",
           website: "www.mawad-drilling.com",
           workingHours: "الأحد - الخميس: 8:00 ص - 5:00 م",
@@ -3134,8 +3114,7 @@ export const translations = {
           name: "بلاستك",
           badge: "الصناعات البلاستيكية",
           address: "المملكة العربية السعودية - الدمام - المنطقة الصناعية",
-          phone: "+966 50 884 4731",
-          email: "info@plastechfactory.com",
+          email: "info@plastech.com.sa",
           website: "www.plastech.com.sa/en/",
           workingHours: "الأحد - الخميس: 8:00 ص - 5:00 م",
           contactPerson: "محمد فوزي",
@@ -3145,9 +3124,9 @@ export const translations = {
           name: "جوفي",
           badge: "منتجات التنظيف",
           address: "المملكة العربية السعودية - الدمام - المنطقة الصناعية",
-          phone: "+966 59 673 5773",
           email: "m.parvez@jovae.com",
-          website: "www.jovae.com/ar/",
+          website: "https://britexksa.com/",
+          website2: "www.jovae.com/ar/",
           workingHours: "الأحد - الخميس: 8:00 ص - 5:00 م",
         },
 
@@ -3155,9 +3134,6 @@ export const translations = {
           name: "وجد",
           badge: "إدارة العقارات والتشغيل والصيانة",
           address: "المملكة العربية السعودية - الدمام - المنطقة الصناعية",
-          phone: "+966 59 673 5773",
-          email: "m.parvez@jovae.com",
-          website: "www.jovae.com/ar/",
           workingHours: "الأحد - الخميس: 8:00 ص - 5:00 م",
         },
       },
