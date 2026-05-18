@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useTranslation } from "@/hooks/useTranslation";
@@ -28,7 +28,18 @@ const iconMap = {
 const AboutFounders = () => {
   const { isRTL, language } = useLanguage();
   const { t } = useTranslation();
+  const [particles, setParticles] = useState([]);
 
+  useEffect(() => {
+    setParticles(
+      [...Array(15)].map(() => ({
+        top: `${Math.random() * 100}%`,
+        left: `${Math.random() * 100}%`,
+        duration: `${5 + Math.random() * 10}s`,
+        delay: `${Math.random() * 5}s`,
+      }))
+    );
+  }, []);
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -90,15 +101,15 @@ const AboutFounders = () => {
 
         {/* Floating Particles */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {[...Array(15)].map((_, i) => (
+          {particles.map((p, i) => (
             <div
               key={i}
               className="absolute w-1 h-1 bg-white/30 rounded-full"
               style={{
-                top: `${Math.random() * 100}%`,
-                left: `${Math.random() * 100}%`,
-                animation: `float ${5 + Math.random() * 10}s linear infinite`,
-                animationDelay: `${Math.random() * 5}s`,
+                top: p.top,
+                left: p.left,
+                animation: `float ${p.duration} linear infinite`,
+                animationDelay: p.delay,
               }}
             />
           ))}
