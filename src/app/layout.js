@@ -10,7 +10,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import HeaderHero from "@/components/Header";
 export const metadata = {
   title:
-    "Sadara Development Investment Company | شركة سدارى للتنمية والاستثمار | صرح استثماري متعدد القطاعات",
+    "Sadara Development Investment Company | شركة صدارة  للتنمية والاستثمار | صرح استثماري متعدد القطاعات",
   description:
     "شركة سدارى للتنمية والاستثمار - كيان قابض موحد يدير محفظة متنوعة من الشركات الرائدة في الاتصالات، العقار، النفط والغاز، التصنيع، والخدمات البترولية. نعمل من الخبر بالمنطقة الشرقية لدعم رؤية السعودية 2030 من خلال التميز التشغيلي والحوكمة.",
   keywords: [

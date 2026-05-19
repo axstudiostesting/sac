@@ -322,7 +322,7 @@ export const translations = {
         image: "/hero/sadara4.png",
         desc: "A diversified holding company overseeing subsidiaries across vital sectors in Saudi Arabia",
         cta: "Discover Sadara",
-        link: "/companies/about",
+        link: "/about",
       },
       slide2: {
         id: "saudi-call",
@@ -351,7 +351,7 @@ export const translations = {
       slide5: {
         id: "plastech",
         image: "/hero/plastech2.png",
-        title: "Plastech\nPlastic Industries",
+        title: "Plastech",
         desc: "Leading manufacturer of high-quality plastic products serving GCC markets",
         link: "/companies/plastech",
         cta: "Explore Plastech",
@@ -374,11 +374,11 @@ export const translations = {
       },
       slide8: {
         id: "salam",
-        title: "Salam Station",
-        image: "/hero/salam.jpg",
+        title: "Salam Roads Petroleum Services",
+        image: "/hero/salam.png",
         desc: "Salam Roads Petroleum Services Company specializes in petroleum, energy, and support services, serving as a strategic arm bridging energy and transportation sectors",
         link: "/companies/salam",
-        cta: "Discover Salam Station",
+        cta: "Discover Salam Roads Petroleum Services",
       },
     },
     clients: {
@@ -679,7 +679,7 @@ export const translations = {
         {
           id: "salam-station",
           slug: "salam-station",
-          name: "Salam Station",
+          name: "Salam Roads Petroleum Services",
           logo: "/companies/salam.png",
           shortDescription:
             "Petroleum and energy support services bridging energy and transportation sectors.",
@@ -750,7 +750,7 @@ export const translations = {
         mawad: "Mawad",
         plastech: "Plastech",
         jovae: "Jovae Industrial",
-        salamStation: "Salam Station",
+        salamStation: "Salam Roads Petroleum Services",
       },
     },
     aboutFounders: {
@@ -1049,7 +1049,7 @@ export const translations = {
           name: "Sadara Development Investment Company",
           badge: "Holding Company",
           address:
-            "Khobar Gate Tower, King Fahd Road, Al Bandariyah, Al Khobar 34424",
+            "9199 King Fahd Bin Abdulaziz Road - Al Bandariyah, Al Khobar 34424, Saudi Arabia",
           phone: "+966 59 673 5773",
           email: "info@sdi.com.sa",
           website: "www.sdi.com.sa",
@@ -1110,7 +1110,7 @@ export const translations = {
           workingHours: "Sunday - Thursday: 8:00 AM - 5:00 PM",
         },
         salamStation: {
-          name: "Salam Station",
+          name: "Salam Roads Petroleum Services",
           badge: "Petroleum and Energy",
           address:
             "King Faisal Al Aziz Road, Al Yarmouk, Al Khobar 34423, Saudi Arabia",
@@ -1493,7 +1493,7 @@ export const translations = {
 
       companies: {
         title: "Our Companies",
-        salamStation: "Salam Station",
+        salamStation: "Salam Roads Petroleum Services",
         saudiCallHolding: "Saudi Call Holding",
         saudiCallTechnologies: "Saudi Call Technologies",
         saudiCallSolutions: "Saudi Call Solutions",
@@ -1790,9 +1790,9 @@ export const translations = {
     companyOverview: {
       badge: "نظرة عامة",
       title: "القوة الدافعة وراء",
-      titleHighlight: "مجموعة آل شيخ",
+      titleHighlight: "مجموعة آل الشيخ",
       description: {
-        p1: "شركة صدارة التنمية للاستثمار والاستثمار هي شركة قابضة متنوعة تعمل ككيان قانوني رسمي يشرف على جميع الشركات التابعة لمجموعة آل شيخ التجارية والصناعية.",
+        p1: "شركة صدارة التنمية للاستثمار والاستثمار هي شركة قابضة متنوعة تعمل ككيان قانوني رسمي يشرف على جميع الشركات التابعة لمجموعة آل الشيخ التجارية والصناعية.",
         p2: "تعمل صدارة من الخبر، المملكة العربية السعودية، وتشرف على محفظة متنوعة عبر قطاعات حيوية تشمل العقارات والنفط والغاز والاتصالات وأنظمة الأمن والتصنيع والخدمات التشغيلية.",
       },
       highlights: {
@@ -1874,15 +1874,15 @@ export const translations = {
       },
       slide1: {
         id: "sadara",
-        title: "صدارة للتنمية\nشركة استثمار",
+        title: "صدارة التنمية للإستثمار",
         desc: "شركة قابضة متنوعة تشرف على شركات تابعة في قطاعات حيوية في المملكة",
         cta: "اكتشف صدارة",
         image: "/hero/sadara4.png",
-        link: "/companies/about",
+        link: "/about",
       },
       slide2: {
         id: "saudi-call",
-        title: "سعودي كول\nالاتصالات والأمن",
+        title: "سعودي كول - الإتصالات والأمن",
         desc: "مزود رائد لحلول الاتصالات والأمن منذ عام 1992",
         cta: "استكشف سعودي كول",
         image: "/hero/saudicall2.png",
@@ -1890,7 +1890,7 @@ export const translations = {
       },
       slide3: {
         id: "ebreez",
-        title: "إبريز العربية\nتطوير العقارات",
+        title: "إبريز العربية - لتطوير العقارات",
         desc: "عقارات تجارية وسكنية فاخرة في مواقع استراتيجية",
         cta: "اكتشف إبريز",
         image: "/hero/abreez.jpeg",
@@ -1906,7 +1906,7 @@ export const translations = {
       },
       slide5: {
         id: "plastech",
-        title: "بلاستك\nالصناعات البلاستيكية",
+        title: "بلاستك",
         desc: "شركة رائدة في تصنيع المنتجات البلاستيكية عالية الجودة لخدمة أسواق الخليج",
         cta: "استكشف بلاستك",
         image: "/hero/plastech2.png",
@@ -1930,11 +1930,11 @@ export const translations = {
       },
       slide8: {
         id: "salam",
-        title: "سلام ستيشن",
-        image: "/hero/salam.jpg",
+        title: "سلام الطرق للخدمات البترولية",
+        image: "/hero/salam.png",
         desc: "خدمات دعم البترول والطاقة التي تربط قطاعي الطاقة والنقل.",
         link: "/companies/salam-station",
-        cta: "استكشف سالم ستيشن",
+        cta: "استكشف سلام الطرق للخدمات البترولية",
       },
     },
     clients: {
@@ -2141,7 +2141,8 @@ export const translations = {
           logo: "/companies/jovae.png",
           shortDescription:
             "شركة مصنعة لمنظفات منزلية عالية الأداء ومحاليل تعقيم تحت علامة برايتكس التجارية.",
-          description: `ينتج مصنع جوفية  - برايتكس للمنظفات حلولاً عالية الأداء للتنظيف المنزلي والتعقيم، يتم تصنيعها بأيدٍ سعودية وفق أعلى معايير الجودة الوطنية. تجمع برايتكس بين الجودة العالية والقدرة على تحمل التكاليف، مع الالتزام الكامل بمعايير SASO.`,
+          description:
+            "تنتج مصنع جوفية (برايتكس للمنظفات) حلول تنظيف وتعقيم منزلية عالية الأداء، تُصنع بأيادٍ سعودية وفق أعلى معايير الجودة الوطنية. تجمع برايتكس بين الجودة العالية والأسعار المناسبة، مع الالتزام الكامل بمعايير الهيئة السعودية للمواصفات والمقاييس والجودة (SASO).",
           images: [
             "/companies/jovae/1.jpeg",
             "/companies/jovae/2.jpeg",
@@ -2204,11 +2205,12 @@ export const translations = {
         {
           id: "salam-station",
           slug: "salam-station",
-          name: "سلام ستيشن",
+          name: "سلام الطرق للخدمات البترولية",
           logo: "/companies/salam.png",
           shortDescription:
             "خدمات دعم البترول والطاقة التي تربط قطاعي الطاقة والنقل.",
-          description: `تتخصص شركة سالم رودز للخدمات البترولية في خدمات البترول والطاقة والدعم، وتعمل كذراع استراتيجي يربط بين قطاعي الطاقة والنقل.`,
+          description:
+            "تتخصص شركة سلام الطرق للخدمات البترولية في تقديم خدمات البترول والطاقة والخدمات المساندة، حيث تمثل ذراعًا استراتيجيًا يربط بين قطاعي الطاقة والنقل.",
           metrics: [
             { value: "الطرق السريعة", label: "مواقع استراتيجية" },
             { value: "الشرقية", label: "المنطقة الرئيسية" },
@@ -2328,7 +2330,7 @@ export const translations = {
       subtitle: "بناء مستقبل متنوع للمملكة العربية السعودية",
       overviewTitle: "نظرة عامة",
       description:
-        "شركة صدارة للتنمية والاستثمار هي شركة قابضة متنوعة تعمل ككيان قانوني رسمي يشرف على جميع الشركات التابعة لمجموعة الشيخ التجارية والصناعية. تعمل صدارة من الخبر، المملكة العربية السعودية، وتشرف على محفظة متنوعة في قطاعات حيوية تشمل العقارات والنفط والغاز والاتصالات وأنظمة الأمن والتصنيع والخدمات التشغيلية. تهدف الشركة إلى تحقيق أقصى قيمة من خلال توسيع قاعدة استثماراتها وتنويع أنشطتها وجذب فرص واعدة محلياً وإقليمياً.",
+        "شركة صدارة للتنمية والاستثمار هي شركة قابضة متنوعة تعمل ككيان قانوني رسمي يشرف على جميع الشركات التابعة لمجموعة آل الشيخ التجارية والصناعية. تعمل الشركة من مدينة الخبر في المملكة العربية السعودية، وتشرف على محفظة متنوعة في قطاعات حيوية تشمل العقارات والنفط والغاز والاتصالات وأنظمة الأمن والتصنيع والخدمات التشغيلية. وتهدف الشركة إلى تعظيم خلق القيمة من خلال توسيع قاعدة استثماراتها وتنويع أنشطتها وجذب الفرص الواعدة محلياً وإقليمياً.",
       missionTitle: "رسالتنا",
       mission:
         "إدارة وتطوير محفظة استثمارية متنوعة قائمة على الحوكمة السليمة والابتكار والتميز التشغيلي - تمكين الشركات التابعة وتعظيم العوائد طويلة الأجل.",
@@ -2348,7 +2350,7 @@ export const translations = {
       subtitle:
         "شركة قابضة متنوعة تشكل مستقبل الاستثمار في المملكة العربية السعودية",
       description:
-        " شركة صدارة للتنمية والاستثمار هي شركة قابضة متنوعة تعمل ككيان قانوني رسمي يشرف على جميع الشركات التابعة لمجموعة الشيخ التجارية والصناعية. تعمل الشركة من مدينة الخبر في المملكة العربية السعودية، وتشرف على محفظة متنوعة في قطاعات حيوية تشمل العقارات والنفط والغاز والاتصالات وأنظمة الأمن والتصنيع والخدمات التشغيلية. وتهدف الشركة إلى تعظيم خلق القيمة من خلال توسيع قاعدة استثماراتها وتنويع أنشطتها وجذب الفرص الواعدة محلياً وإقليمياً",
+        "شركة صدارة للتنمية والاستثمار هي شركة قابضة متنوعة تعمل ككيان قانوني رسمي يشرف على جميع الشركات التابعة لمجموعة آل الشيخ التجارية والصناعية. تعمل الشركة من مدينة الخبر في المملكة العربية السعودية، وتشرف على محفظة متنوعة في قطاعات حيوية تشمل العقارات والنفط والغاز والاتصالات وأنظمة الأمن والتصنيع والخدمات التشغيلية. وتهدف الشركة إلى تعظيم خلق القيمة من خلال توسيع قاعدة استثماراتها وتنويع أنشطتها وجذب الفرص الواعدة محلياً وإقليمياً.",
       buttonText: "اقرأ المزيد",
     },
 
@@ -2941,7 +2943,8 @@ export const translations = {
       },
       oilgas: {
         title: "خدمات النفط والغاز",
-        shortDesc: "مواد الحفر كيميائية ودعم فني للحفر",
+        shortDesc:
+          "توفير المواد الكيميائية والخدمات الفنية المتخصصة في مجال الحفر",
         desc: "مواد الحفر كيميائية عالية الجودة، إضافات سوائل الحفر، ودعم فني لاستكشاف النفط والغاز. منتجاتنا تلبي معايير API ومصممة للآبار ذات الضغط العالي ودرجة الحرارة العالية مع دعم في الموقع.",
       },
       manufacturing: {
@@ -2960,7 +2963,7 @@ export const translations = {
           title: "خدمات الاتصالات، الكمبيوتر وتقنية المعلومات",
           image: "/h1b.jpg",
           description:
-            "تقدم صدارة حلول اتصالات وتقنية معلومات متطورة تشكل العمود الفقري للبنية التحتية الرقمية الحديثة. تشمل خدماتنا الشاملة نشر شبكات الألياف البصرية، تكامل الأنظمة، وتقنيات الاتصال المتقدمة. نحن متخصصون في تنفيذ OSP و FTTH/FTTR، الكابلات الأرضية والجوية، وربط الشبكات لمشغلي الاتصالات الرئيسيين. من تصميم الشبكات إلى التنفيذ والصيانة، نقدم حلولاً شاملة تمكن الشركات من البقاء على اتصال في عالم اليوم الرقمي سريع الخطى.",
+            "تقدم صدارة حلولًا متطورة في مجال الاتصالات وتقنية المعلومات تُشكل البنية الأساسية للبنية التحتية الرقمية الحديثة. وتشمل خدماتنا المتكاملة تنفيذ شبكات الألياف البصرية، وتكامل الأنظمة، وتقنيات الاتصالات المتقدمة. كما نتخصص في تنفيذ مشاريع شبكات OSP وFTTH/FTTR، وأعمال التمديدات الأرضية والهوائية، وربط الشبكات لمشغلي الاتصالات الرئيسيين. ومن تصميم الشبكات إلى التنفيذ والصيانة، نقدم حلولًا متكاملة وشاملة تُمكّن الشركات من البقاء على اتصال ومواكبة التطور في عالم رقمي سريع التغير.",
           metrics: [
             { value: "+1000", label: "كم ألياف بصرية" },
             { value: "+50", label: "مشروع شبكات" },
@@ -3003,7 +3006,7 @@ export const translations = {
             "تقدم صدارة حلولاً متكاملة لإدارة المرافق تضمن كفاءة تشغيلية مثالية وتميزاً في الصيانة. تشمل خدماتنا تشغيل المباني، إدارة الطاقة، أنظمة التهوية والتكييف، والصيانة الوقائية. نستخدم حلولاً متكاملة لإدارة الأصول لزيادة عمر المعدات وتقليل التكاليف التشغيلية.",
           metrics: [
             { value: "+100", label: "منشأة" },
-            { value: "99%", label: "وقت تشغيل" },
+            { value: "99%", label: "كفاءة التشغيل" },
             { value: "24/7", label: "دعم" },
           ],
           features: [
@@ -3020,7 +3023,7 @@ export const translations = {
           title: "خدمات النفط والغاز",
           image: "/h1b.jpg",
           description:
-            "تقدم صدارة مواد الحفر كيميائية عالية الجودة وخدمات دعم فني لصناعة النفط والغاز. منتجاتنا تلبي معايير API ومصممة للآبار ذات الضغط العالي ودرجة الحرارة العالية، مما يضمن أداءً مثالياً في ظروف الحفر الصعبة. نوفر إضافات سوائل الحفر، المعادن الصناعية، والمواد الكيميائية المتخصصة التي تعزز كفاءة وسلامة الحفر.",
+            "تقدم شركة صدارة مواد كيميائية عالية الجودة وخدمات دعم فني متخصصة لقطاع النفط والغاز. تتوافق منتجاتنا مع معايير API، وتم تصميمها خصيصًا للآبار ذات الضغط والحرارة العاليين (HPHT)، مما يضمن أداءً مثاليًا في ظروف الحفر الصعبة. كما نوفر إضافات سوائل الحفر، والمعادن الصناعية، والمواد الكيميائية المتخصصة التي تسهم في تعزيز كفاءة عمليات الحفر ومستويات السلامة.",
           metrics: [
             { value: "API 13A", label: "معتمد" },
             { value: "نيوم", label: "مشروع" },
@@ -3087,7 +3090,8 @@ export const translations = {
         sadara: {
           name: "شركة صدارة للتنمية والاستثمار",
           badge: "شركة قابضة",
-          address: "برج بوابة الخبر، طريق الملك فهد، البندرية، الخبر 34424",
+          address:
+            "9199 طريق الملك فهد بن عبد العزيز - البندرية، الخبر 34424، المملكة العربية السعودية",
           phone: "966596735773+",
           email: "info@sdi.com.sa",
           website: "www.sdi.com.sa",
@@ -3150,7 +3154,7 @@ export const translations = {
         },
 
         salamStation: {
-          name: "سالم ستيشن",
+          name: "سلام الطرق للخدمات البترولية",
           badge: "البترول والطاقة",
           address:
             "طريق الملك فيصل العزيز، اليرموك، الخبر 34423، المملكة العربية السعودية",
@@ -3204,9 +3208,9 @@ export const translations = {
       contact: {
         title: "اتصل بنا",
         email: "info@sdi.com.sa",
-        phone: "+966 59 673 5773",
-        fax: "+966 12 345 6789",
-        address: "برج بوابة الخبر، طريق الملك فهد، البندرية، الخبر ٣٤٤٢",
+        phone: "013 887 4122",
+        fax: "013 887 4122",
+        address: "برج خبار جيت، طريق الملك فهد، البندرية، الخبر 34424",
       },
 
       social: {
@@ -3504,38 +3508,7 @@ export const translations = {
     },
   },
 };
-export const toArabicNumerals = (text) =>
-  typeof text === "string" &&
-  !/^(\/|https?:\/\/)/.test(text) &&
-  !/\.(jpg|jpeg|png|gif|webp|svg|pdf)/i.test(text)
-    ? text.replace(
-        /\d/g,
-        (d) => ["٠", "١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩"][d],
-      )
-    : text;
-const EXCLUDED_KEYS = ["slug", "link", "image", "id"];
-
-const arabicDeep = (val, key = null) => {
-  if (typeof val === "string") {
-    if (EXCLUDED_KEYS.includes(key)) return val;
-    return toArabicNumerals(val);
-  }
-
-  if (Array.isArray(val)) {
-    return val.map((item) => arabicDeep(item));
-  }
-
-  if (val && typeof val === "object") {
-    const o = {};
-    for (const k in val) {
-      o[k] = arabicDeep(val[k], k); // pass key
-    }
-    return o;
-  }
-
-  return val;
-};
-
+// Helper function to get translation
 export const getTranslation = (key, language = "ar", params = {}) => {
   const keys = key.split(".");
   let translation = translations[language];
@@ -3544,24 +3517,26 @@ export const getTranslation = (key, language = "ar", params = {}) => {
     if (translation && translation[k]) {
       translation = translation[k];
     } else {
+      // Fallback to English if translation not found
       translation = translations.en;
       for (const fallbackKey of keys) {
         if (translation && translation[fallbackKey]) {
           translation = translation[fallbackKey];
         } else {
           console.warn(`Translation not found for key: ${key}`);
-          return key;
+          return key; // Return key if no translation found
         }
       }
       break;
     }
   }
 
+  // Replace parameters in translation
   if (typeof translation === "string") {
-    translation = translation.replace(/\{(\w+)\}/g, (m, p) => params[p] || m);
+    return translation.replace(/\{(\w+)\}/g, (match, param) => {
+      return params[param] || match;
+    });
   }
-
-  if (language === "ar") translation = arabicDeep(translation);
 
   return translation || key;
 };

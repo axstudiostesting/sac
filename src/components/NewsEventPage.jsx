@@ -313,7 +313,6 @@ const MediaSection = () => {
   const { t } = useTranslation();
   const [activeFilter, setActiveFilter] = useState("all");
   const [visibleItems, setVisibleItems] = useState(8);
-  const [items, setItems] = useState([]);
 
   useEffect(() => {
     AOS.init({
@@ -321,11 +320,9 @@ const MediaSection = () => {
       once: true,
       offset: 100,
     });
+  }, []);
 
-    // Load media data from translations
-    const mediaData = t("media.items") || [];
-    setItems(mediaData);
-  }, [locale]);
+  const items = t("media.items") || [];
 
   const filters = [
     { key: "all", label: t("media.filters.all") },
@@ -342,6 +339,11 @@ const MediaSection = () => {
 
   const loadMore = () => {
     setVisibleItems((prev) => prev + 4);
+  };
+
+  const handleFilterChange = (key) => {
+    setActiveFilter(key);
+    setVisibleItems(8);
   };
 
   return (
@@ -380,11 +382,10 @@ const MediaSection = () => {
                 setActiveFilter(filter.key);
                 setVisibleItems(8);
               }}
-              className={`px-6 py-2 rounded-full font-semibold text-sm md:text-base transition-all duration-300 ${
-                activeFilter === filter.key
-                  ? "bg-primary text-white shadow-lg"
-                  : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200"
-              }`}
+              className={`px-6 py-2 rounded-full font-semibold text-sm md:text-base transition-all duration-300 ${activeFilter === filter.key
+                ? "bg-primary text-white shadow-lg"
+                : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200"
+                }`}
             >
               {filter.label}
             </button>
@@ -408,11 +409,10 @@ const MediaSection = () => {
                 />
                 <div className="absolute top-3 right-3">
                   <span
-                    className={`text-xs font-semibold px-3 py-1 rounded-full ${
-                      item.type === "news"
-                        ? "bg-blue-500 text-white"
-                        : "bg-primary text-white"
-                    }`}
+                    className={`text-xs font-semibold px-3 py-1 rounded-full ${item.type === "news"
+                      ? "bg-blue-500 text-white"
+                      : "bg-primary text-white"
+                      }`}
                   >
                     {item.type === "news" ? t("media.news") : t("media.event")}
                   </span>
@@ -442,7 +442,7 @@ const MediaSection = () => {
                 </div>
 
                 <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors line-clamp-2">
-                  {item.title}
+                  {t(item.title)}
                 </h3>
 
                 <p className="text-gray-600 text-sm mb-4 line-clamp-2">

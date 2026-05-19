@@ -7,7 +7,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { FiArrowRight, FiUsers, FiBriefcase, FiAward } from "react-icons/fi";
 import SectionTitle from "./SectionTitle";
-import { toArabicNumerals } from "@/utils/translations";
 
 const ClientsSection = () => {
   const { isRTL } = useLanguage();
@@ -132,34 +131,22 @@ const ClientsSection = () => {
     {
       icon: FiUsers,
       value: hasAnimated
-        ? isRTL
-          ? toArabicNumerals(`+${counts.clients}`)
-          : `${counts.clients}+`
-        : isRTL
-          ? "٠+"
-          : "0+",
+        ? `${counts.clients}+`
+        : "0+",
       title: isRTL ? "عملاء سعداء" : "Happy Clients",
     },
     {
       icon: FiBriefcase,
       value: hasAnimated
-        ? isRTL
-          ? toArabicNumerals(`+${counts.projects}`)
-          : `${counts.projects}+`
-        : isRTL
-          ? "٠+"
-          : "0+",
+        ? `${counts.projects}+`
+        : "0+",
       title: isRTL ? "المشاريع المنجزة" : "Projects Completed",
     },
     {
       icon: FiAward,
-      value: hasAnimated
-        ? isRTL
-          ? toArabicNumerals(`+${counts.experience}`)
-          : `${counts.experience}+`
-        : isRTL
-          ? "٠+"
-          : "0+",
+      value: hasAnimated ?
+        `${counts.experience}+`
+        : "0+",
       title: isRTL ? "سنوات الخبرة" : "Years Experience",
     },
   ];

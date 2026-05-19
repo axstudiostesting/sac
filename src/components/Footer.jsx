@@ -72,8 +72,8 @@ const Footer = () => {
       name: t("footer.info.careers") || t("pages.career.badge") || "Careers",
       href: "/careers",
     },
-    { name: t("footer.info.blog") || "Blog", href: "/blog" },
-    { name: t("footer.info.news") || "News", href: "/news" },
+    // { name: t("footer.info.blog") || "Blog", href: "/blog" },
+    // { name: t("footer.info.news") || "News", href: "/news" },
   ];
 
   return (
@@ -283,7 +283,13 @@ const Footer = () => {
                     className={`flex items-start gap-3 text-gray-400 text-xs md:text-sm ${isRTL ? "flex-row-reverse" : ""}`}
                   >
                     <FaFax className="text-white/60 mt-0.5 flex-shrink-0" />
-                    <span>{t("footer.contact.fax") || "+966 12 345 6789"}</span>
+                    <a
+                      href={`tel:${t("footer.contact.phone") || "+966 59 673 5773"}`}
+                      className="hover:text-white transition-colors ltr-nums"
+                      dir="ltr"
+                    >
+                      {t("footer.contact.phone") || "+966 59 673 5773"}
+                    </a>
                   </div>
                   <div
                     className={`flex items-start gap-3 text-gray-400 text-xs md:text-sm ${isRTL ? "flex-row-reverse" : ""}`}
