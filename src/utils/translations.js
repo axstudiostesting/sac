@@ -377,7 +377,7 @@ export const translations = {
         title: "Salam Roads Petroleum Services",
         image: "/hero/salam.png",
         desc: "Salam Roads Petroleum Services Company specializes in petroleum, energy, and support services, serving as a strategic arm bridging energy and transportation sectors",
-        link: "/companies/salam",
+        link: "/companies/salam-station",
         cta: "Discover Salam Roads Petroleum Services",
       },
     },
@@ -1807,17 +1807,17 @@ export const translations = {
       },
       stats: {
         years: {
-          number: "+25",
+          number: "25+",
           label: "سنوات من التميز", // Years of Excellence
         },
 
         projects: {
-          number: "+50",
+          number: "50+",
           label: "مشاريع ناجحة", // Successful Projects
         },
 
         team: {
-          number: "+100",
+          number: "100+",
           label: "فريق الخبراء",
         },
       },
@@ -1979,9 +1979,9 @@ export const translations = {
             "/companies/saudi-call/6.jpg",
           ],
           metrics: [
-            { value: "+٤٠٠", label: "خبير تقني وإداري" },
-            { value: "١٩٩٢", label: "عام التأسيس" },
-            { value: "٣٠+", label: "عاماً من التميز" },
+            { value: "400+", label: "خبير تقني وإداري" },
+            { value: "1992", label: "عام التأسيس" },
+            { value: "30+", label: "عاماً من التميز" },
           ],
           services: [
             "البنية التحتية للاتصالات وشبكات الألياف الضوئية - تنفيذ OSP و FTTH/FTTR، الكابلات الأرضية والجوية",
@@ -2030,9 +2030,9 @@ export const translations = {
             "/companies/ebreez/7.jpeg",
           ],
           metrics: [
-            { value: "+١٠", label: "عقارات متميزة" },
+            { value: "10+", label: "عقارات متميزة" },
             { value: "الخبر", label: "الموقع الرئيسي" },
-            { value: "٢٠٢٦", label: "جاهز للملكية الأجنبية" },
+            { value: "2026", label: "جاهز للملكية الأجنبية" },
           ],
           services: [
             "عمليات عالمية المستوى - إدارة مرافق متقدمة وصيانة مستدامة",
@@ -2106,8 +2106,9 @@ export const translations = {
             "/companies/plastech/8.png",
           ],
           metrics: [
-            { value: "٣٠ لتر", label: "سعة الحاويات" },
-            { value: "١٠٠٠ لتر", label: "حاويات IBC" },
+            { value: "30L", label: "سعة الحاويات" },
+
+            { value: "1000L", label: "حاويات IBC" },
             { value: "GMP", label: "معتمدة منذ ٢٠٢٠" },
           ],
           services: [
@@ -2214,7 +2215,7 @@ export const translations = {
           metrics: [
             { value: "الطرق السريعة", label: "مواقع استراتيجية" },
             { value: "الشرقية", label: "المنطقة الرئيسية" },
-            { value: "٢٤/٧", label: "خدمات متاحة" },
+            { value: "24/7", label: "خدمات متاحة" },
           ],
           services: [
             "محطات الوقود والخدمات - محطات متكاملة تشمل التزود بالوقود والصيانة والدورات والمطاعم",
@@ -2302,7 +2303,7 @@ export const translations = {
       certifications: "الشهادات والمؤهلات",
       stats: [
         {
-          number: "40+",
+          number: "+40",
           label: "سنوات من التميز",
           icon: "trending",
         },
@@ -2312,7 +2313,7 @@ export const translations = {
           icon: "briefcase",
         },
         {
-          number: "1000+",
+          number: "+1000",
           label: "وظائف تم إنشاؤها",
           icon: "users",
         },
@@ -2917,7 +2918,7 @@ export const translations = {
       certifications: "الشهادات والمعايير",
       quickInfo: "معلومات سريعة",
       expertise: "الخبرة",
-      yearsExpertise: "15+ سنة خبرة",
+      yearsExpertise: "+15 سنة خبرة",
       coverage: "التغطية",
       nationwide: "جميع أنحاء المملكة",
       support: "الدعم",

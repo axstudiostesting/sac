@@ -8,7 +8,8 @@ import Services from "@/components/ServicesMain";
 // news/page.js or events/page.js
 
 export const metadata = {
-  title: "الأخبار والفعاليات | مركز أخبار سدارى - آخر المستجدات والإنجازات",
+  title:
+    "News and Events | Sadara News Center – Latest Updates and Achievements | الأخبار والفعاليات | مركز أخبار سدارى – آخر المستجدات والإنجازات",
   description:
     "تابع أحدث أخبار شركة سدارى للتنمية والاستثمار وشركاتها التابعة. ننشر آخر الإنجازات، المشاريع الجديدة، الشراكات الاستراتيجية، الشهادات، والفعاليات التي نشارك فيها. نسهم في رؤية السعودية 2030.",
   keywords: [

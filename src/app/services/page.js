@@ -10,7 +10,7 @@ import MinimalServicesSection from "@/components/ModernServicesSection";
 
 export const metadata = {
   title:
-    "خدماتنا | شركة سدارى للتنمية والاستثمار - محفظة استثمارية متنوعة في 8 قطاعات حيوية",
+    "Our Services | Sadara Development and Investment Company – A diversified investment portfolio across 8 vital sectors | خدماتنا | شركة سدارى للتنمية والاستثمار - محفظة استثمارية متنوعة في 8 قطاعات حيوية",
   description:
     "نشرف على محفظة استثمارية متنوعة تشمل الاتصالات، الأمن الصناعي، التطوير العقاري، النفط والغاز، الخدمات البترولية، الخدمات التشغيلية، إدارة المرافق، والتصنيع. اكتشف كيف نخلق القيمة من خلال شركاتنا التابعة.",
   keywords: [

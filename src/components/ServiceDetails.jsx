@@ -465,7 +465,7 @@ const ServiceDetail = ({ slug }) => {
                     {t("services.support")}
                   </div>
                   <div className="font-semibold">
-                    {isRTL ? "٢٤/٧" : "24/7"} {t("services.available")}
+                    {"24/7"} {t("services.available")}
                   </div>
                 </div>
               </div>

@@ -7,7 +7,8 @@ import MissionVision from "@/components/MissionVissionVal";
 // about/page.js or about/metadata.js
 
 export const metadata = {
-  title: "من نحن | شركة سدارى للتنمية والاستثمار - قصة التحول والتميز المؤسسي",
+  title:
+    "About Us | Sadara Development and Investment Company – The Story of Transformation and Institutional Excellence | من نحن | شركة سدارى للتنمية والاستثمار – قصة التحول والتميز المؤسسي",
   description:
     "تعرف على شركة سدارى للتنمية والاستثمار، الكيان القانوني الموحد لمجموعة آل الشيخ التجارية والصناعية. نعمل منذ 1992 على إدارة وتطوير محفظة استثمارية متنوعة من الخبر، المملكة العربية السعودية.",
   keywords: [

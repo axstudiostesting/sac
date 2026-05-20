@@ -181,9 +181,9 @@ const EnhancedServicesSection = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                   {/* Number Badge */}
-                  <div className="absolute top-4 right-4 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center text-primary font-bold text-lg shadow-lg transform transition-all duration-300 group-hover:scale-110 group-hover:bg-primary group-hover:text-white">
+                  {/* <div className="absolute top-4 right-4 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center text-primary font-bold text-lg shadow-lg transform transition-all duration-300 group-hover:scale-110 group-hover:bg-primary group-hover:text-white">
                     {String(idx + 1).padStart(2, "0")}
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Content Section */}

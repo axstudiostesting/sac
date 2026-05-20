@@ -7,7 +7,7 @@ import HeroService from "@/components/HeroService";
 
 export const metadata = {
   title:
-    "الوظائف والتوظيف | انضم إلى فريق سدارى للتنمية والاستثمار - فرص عمل في السعودية",
+    "Jobs and Employment | Join the Sadara Development and Investment Company team – Job opportunities in Saudi Arabia | الوظائف والتوظيف | انضم إلى فريق سدارى للتنمية والاستثمار – فرص عمل في السعودية",
   description:
     "انضم إلى فريق شركة سدارى للتنمية والاستثمار وشركاتها التابعة. نبحث عن المواهب في قطاعات: الاتصالات، الهندسة، العقار، النفط والغاز، التصنيع، المبيعات، والإدارة. مقر العمل: الخبر والمنطقة الشرقية.",
   keywords: [

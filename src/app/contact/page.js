@@ -7,7 +7,7 @@ import HeroService from "@/components/HeroService";
 
 export const metadata = {
   title:
-    "اتصل بنا | شركة سدارى للتنمية والاستثمار - المقر الرئيسي الخبر المملكة العربية السعودية",
+    "Contact Us | Sadara Development and Investment Company – Main Headquarters Al Khobar, Kingdom of Saudi Arabia | اتصل بنا | شركة سدارى للتنمية والاستثمار - المقر الرئيسي الخبر المملكة العربية السعودية",
   description:
     "تواصل مع فريق شركة سدارى للتنمية والاستثمار. مقرنا الرئيسي في برج الخبر جيت، طريق الملك فهد، حي البندرية، الخبر. للاستفسارات حول الاستثمار، الشراكات، أو فرص الأعمال. info@sdi.com.sa",
   keywords: [
