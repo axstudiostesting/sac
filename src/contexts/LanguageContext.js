@@ -12,8 +12,9 @@ const LanguageContext = createContext();
 
 export const useLanguage = () => {
   const context = useContext(LanguageContext);
-  if (!context)
+  if (!context) {
     throw new Error("useLanguage must be used within a LanguageProvider");
+  }
   return context;
 };
 
@@ -21,7 +22,6 @@ export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState("en");
   const [isRTL, setIsRTL] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
-
   const pathname = usePathname();
   const baseTitles = useRef({});
   const isInitialMount = useRef(true);

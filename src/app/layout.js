@@ -9,14 +9,13 @@ import Script from "next/script";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import HeaderHero from "@/components/Header";
 export const metadata = {
-  title:
-    "Sadara Development Investment Company | شركة صدارة للتنمية والاستثمار | صرح استثماري متعدد القطاعات",
+  title: "Sadara Development Investment Company | صدارة التنمية للإستثمار",
   description:
-    "شركة سدارى للتنمية والاستثمار - كيان قابض موحد يدير محفظة متنوعة من الشركات الرائدة في الاتصالات، العقار، النفط والغاز، التصنيع، والخدمات البترولية. نعمل من الخبر بالمنطقة الشرقية لدعم رؤية السعودية 2030 من خلال التميز التشغيلي والحوكمة.",
+    "شركة صدارة التنمية للإستثمار - كيان قابض موحد يدير محفظة متنوعة من الشركات الرائدة في الاتصالات، العقار، النفط والغاز، التصنيع، والخدمات البترولية. نعمل من الخبر بالمنطقة الشرقية لدعم رؤية السعودية 2030 من خلال التميز التشغيلي والحوكمة.",
   keywords: [
     // Company identity
     "Sadara Development",
-    "شركة سدارى للتنمية والاستثمار",
+    "شركة صدارة التنمية للإستثمار",
     "Sadara Investment Company",
     "Al-Sheikh Group",
     "شركة القابضة",
@@ -99,8 +98,7 @@ export const metadata = {
   publisher: "Sadara Development Investment Company",
 
   openGraph: {
-    title:
-      "Sadara Development | شركة سدارى للتنمية والاستثمار - كيان قابض موحد",
+    title: "Sadara Development | شركة صدارة التنمية للإستثمار - كيان قابض موحد",
     description:
       "نحن الكيان القانوني الموحد لمجموعة آل الشيخ التجارية والصناعية. نشرف على محفظة استثمارية متنوعة في قطاعات الاتصالات، النفط والغاز، العقار، التصنيع، والأمن الصناعي. مقرنا الخبر، المملكة العربية السعودية.",
     url: "https://www.sdi.com.sa",
@@ -110,7 +108,7 @@ export const metadata = {
         url: "/sadara-og-image.jpg", // Replace with actual Sadara OG image path
         width: 1200,
         height: 630,
-        alt: "Sadara Development Investment Company - شركة سدارى للتنمية والاستثمار",
+        alt: "Sadara Development Investment Company - شركة صدارة التنمية للإستثمار",
       },
     ],
     type: "website",
@@ -148,7 +146,7 @@ export const metadata = {
       "@context": "https://schema.org",
       "@type": "Corporation",
       name: "Sadara Development Investment Company",
-      alternateName: "شركة سدارى للتنمية والاستثمار",
+      alternateName: "شركة صدارة التنمية للإستثمار",
       url: "https://www.sdi.com.sa",
       logo: "https://www.sdi.com.sa/sadara-logo.png",
       description:

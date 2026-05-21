@@ -307,10 +307,11 @@ const ContactSection = () => {
           <div data-aos="fade-left" data-aos-duration="800">
             <div className="relative h-full min-h-[400px] rounded-3xl overflow-hidden shadow-xl">
               <Image
-                src="/contact.png"
+                src="/contact.jpeg"
                 alt="Contact Us"
                 fill
                 className="object-cover"
+                style={{ objectPosition: '8% center' }}
               />
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />

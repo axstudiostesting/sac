@@ -215,7 +215,7 @@ const CompanyOverview = () => {
 
                 {/* Floating Info Card with Animation */}
                 <div className="absolute bottom-6 left-6 right-6 animate-slide-up">
-                  <div className="bg-white/95 backdrop-blur-xl rounded-2xl p-5 shadow-2xl border border-white/30 transform transition-all duration-500 hover:scale-105">
+                  <div className="bg-white/95 backdrop-blur-xl rounded-2xl p-5 shadow-2xl border border-white/30 transform transition-all duration-500 hover:scale-105 no-rtl-transform">
                     <div className="flex items-center gap-4">
                       <div className="relative">
                         <div className="absolute inset-0 bg-primary/30 blur-lg rounded-xl" />
@@ -224,12 +224,15 @@ const CompanyOverview = () => {
                         </div>
                       </div>
                       <div>
-                        <h4 className="text-xl font-bold text-gray-900">
+                        <h4 className="text-xl font-bold text-gray-900" dir={isRTL ? "rtl" : "ltr"}>
                           {t("companyOverview.card.title")}
                         </h4>
-                        <div className="flex items-center gap-2 mt-1">
+                        <div
+                          className="flex items-center gap-2 mt-1"
+                          dir={isRTL ? "rtl" : "ltr"}
+                        >
                           <FaGlobe className="text-primary text-xs" />
-                          <p className="text-sm text-gray-600">
+                          <p className="text-sm text-gray-600" dir={isRTL ? "rtl" : "ltr"}>
                             {t("companyOverview.card.subtitle")}
                           </p>
                         </div>
@@ -247,7 +250,7 @@ const CompanyOverview = () => {
                         <div className="w-2 h-2 bg-green-500 rounded-full absolute inset-0 animate-ping" />
                       </div>
                       <span className="text-xs font-bold text-gray-700">
-                        {isRTL ? "تأسست عام ١٩٩٢" : "Est. 1992"}                      </span>
+                        {isRTL ? "تأسست عام 1992" : "Est. 1992"}                      </span>
                     </div>
                   </div>
                 </div>
@@ -391,6 +394,21 @@ const CompanyOverview = () => {
 
         .animate-pulse-ring {
           animation: pulse-ring 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        /* RTL override for card transform and Arabic text */
+        [dir="rtl"] .no-rtl-transform {
+          transform: none !important;
+        }
+
+        [dir="rtl"] .no-rtl-transform:hover {
+          transform: scale(1.05) !important;
+        }
+
+        [dir="rtl"] .no-rtl-transform h4,
+        [dir="rtl"] .no-rtl-transform p {
+          direction: rtl !important;
+          unicode-bidi: isolate !important;
         }
 
         /* Smooth AOS Overrides */

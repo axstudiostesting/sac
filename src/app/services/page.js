@@ -10,7 +10,7 @@ import MinimalServicesSection from "@/components/ModernServicesSection";
 
 export const metadata = {
   title:
-    "Our Services | Sadara Development and Investment Company – A diversified investment portfolio across 8 vital sectors | خدماتنا | شركة سدارى للتنمية والاستثمار - محفظة استثمارية متنوعة في 8 قطاعات حيوية",
+    "Our Services | Sadara Development and Investment Company – A diversified investment portfolio across 8 vital sectors | خدماتنا | شركة صدارة التنمية للإستثمار - محفظة استثمارية متنوعة في 8 قطاعات حيوية",
   description:
     "نشرف على محفظة استثمارية متنوعة تشمل الاتصالات، الأمن الصناعي، التطوير العقاري، النفط والغاز، الخدمات البترولية، الخدمات التشغيلية، إدارة المرافق، والتصنيع. اكتشف كيف نخلق القيمة من خلال شركاتنا التابعة.",
   keywords: [
@@ -128,7 +128,7 @@ export const metadata = {
   publisher: "Sadara Development Investment Company",
 
   openGraph: {
-    title: "خدماتنا | شركة سدارى للتنمية والاستثمار - 8 قطاعات استثمارية رائدة",
+    title: "خدماتنا | شركة صدارة التنمية للإستثمار - 8 قطاعات استثمارية رائدة",
     description:
       "نشرف على محفظة استثمارية متنوعة تشمل الاتصالات وتقنية المعلومات، الأمن الصناعي، التطوير العقاري، النفط والغاز، الخدمات البترولية، الخدمات التشغيلية، إدارة المرافق، والتصنيع. جميع خدماتنا مدعومة بأعلى معايير الجودة والكفاءة التشغيلية.",
     url: "https://www.sdi.com.sa/services",

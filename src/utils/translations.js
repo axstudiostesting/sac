@@ -761,36 +761,58 @@ export const translations = {
       messageSignature:
         "Abdullah & Ibrahim Al-Sheikh | Co-Founders, Sadara Group",
       experience: "Experience & Expertise",
+      nationalExperience: "Leadership Roles & National Positions",
+      corporateExperience: "Leadership Roles & Corporate Positions",
+      internalExperience:
+        "International Partnerships, Economic Councils & Community Initiatives",
       certifications: "Certifications & Qualifications",
+      currentPositions: "Current Positions",
       founders: [
         {
           name: "Ibrahim Al-Sheikh",
           title: "Chairman & Executive Director",
           image: "/owners/owner1.png",
-          experience: [
-            "Over 18 years of experience in operations and business transformation",
-            "Pioneered digital transformation initiatives across group companies",
-            "Expert in organizational excellence and quality management",
+          nationalExperience: [
+            "Member of the Industrial Council chaired by H.E. the Minister of Industry and Mineral Resources",
+            "Chairman of the National Industrial Committee at the Federation of Saudi Chambers",
+            "Executive Committee Member of the Saudi-Syrian Business Council",
+            "Chairman of the Industry and Energy Committee at Asharqia Chamber during the terms (2018–2021) and (2022–2023)",
+            "Board Member of the Eastern Province Chamber of Commerce & Industry during the terms (2014–2017) and (2018–2021)",
+            "Chairman of the Communications and Information Technology Committee at the Eastern Province Chamber of Commerce & Industry (2014–2018)",
+          ],
+          corporateExperience: [
+            "Chairman of the Board: Saudi Cool, Ebrez Arabia, and Drilling Materials.",
+            "Chairman of the Board of Managers: Sadara Development, Jofiah Industrial, Plastic Technologies, Ebrez Real Estate, Rafid Polymers, Kimya Al Sharq, Zajoul Al Sharq, Arrow Solutions, and Tire Solutions.",
+            "Board Member: Musharaka Financial Company.",
+          ],
+          internalExperience: [
+            "Member of the Board of Trustees of the Private Chambers Association.",
+            "Executive Committee Member of the Saudi-Syrian Business Council.",
+            "Member of the Arab-British Chamber of Commerce.",
+            "Member of the Saudi-Italian Business Council.",
+            "Chairman of Manarat Al-Ataa Foundation – a non-profit development organization.",
+            "Member of the Advisory Council of Dammam Community College.",
           ],
           certifications: [
-            "MSc - Operations Management",
-            "Certified Business Excellence Professional",
-            "Digital Transformation Leadership - MIT",
+            "Bachelor’s Degree in Information Technology – Arab Academy for Science, Technology & Maritime Transport",
+            "Diploma in Marketing – London Business School (LBS)",
+            "Executive Leadership Program for Global Institutions – Certified Executive Program from IMD",
           ],
         },
         {
           name: "Abdullah Al-Sheikh",
           title: "Co-Founder & Managing Director",
           image: "/owners/owner2.png",
-          experience: [
-            "Over 20 years of experience in business development and investment management",
-            "Led multiple successful ventures across real estate, technology, and industrial sectors",
-            "Expert in strategic planning and corporate governance",
+          currentPositions: [
+            "Board Member since 2021 to present.",
+            "Vice Chairman – Abraz Arabia Co. (Closed Joint Stock Company operating in real estate) since 2021 to present.",
+            "Vice Chairman – Saudi Cool Co. (Closed Joint Stock Company operating in telecommunications) since 2013 to present.",
+            "Executive Vice President – Plastic Industry Technology Co. (Limited Liability Company operating in manufacturing) since 2013 to present.",
+            "Founding Partner – Juwaifa Solutions Co. (Limited Liability Company operating in manufacturing) since 2013 to present.",
           ],
-          certifications: [
-            "MBA - International Business",
-            "Certified Investment Manager",
-            "Strategic Leadership Certificate - Harvard Business School",
+          experience: [
+            "Manager – Saudi Cool Contracting Co. (Limited Liability Company operating in contracting) from 2011 to 2019.",
+            "Manager – Saudi Car Establishment (Sole Proprietorship operating in automotive sector) from 2004 to 2010.",
           ],
         },
       ],
@@ -1807,17 +1829,17 @@ export const translations = {
       },
       stats: {
         years: {
-          number: "25+",
+          number: "+25",
           label: "سنوات من التميز", // Years of Excellence
         },
 
         projects: {
-          number: "50+",
+          number: "+50",
           label: "مشاريع ناجحة", // Successful Projects
         },
 
         team: {
-          number: "100+",
+          number: "+100",
           label: "فريق الخبراء",
         },
       },
@@ -1828,7 +1850,7 @@ export const translations = {
     pages: {
       about: {
         badge: "من نحن",
-        title: "عن شركة صدارة للتنمية والاستثمار",
+        title: "عن شركة صدارة التنمية للإستثمار",
         subtitle: "تعرف على رؤيتنا ورسالتنا ورحلتنا",
       },
       contact: {
@@ -1858,7 +1880,7 @@ export const translations = {
       },
     },
     static: {
-      title: "شركة صدارة للتنمية والاستثمار",
+      title: "شركة صدارة التنمية للإستثمار",
       desc: "شركة قابضة متنوعة تشرف على شركات تابعة في قطاعات حيوية في المملكة",
       cta: "اعرف المزيد عنا",
     },
@@ -2264,43 +2286,66 @@ export const translations = {
       badge: "مؤسسونا",
       messageLabel: "رسالة المؤسسين",
       message:
-        "نحن إبراهيم وعبدالله ابنا محمد الشيخ، نقدم شركة صدارة للتنمية والاستثمار - الكيان القانوني المستمر لمسيرتنا التجارية والصناعية التي تمتد لأكثر من أربعة عقود تحت مجموعة الشيخ التجارية والصناعية. رؤيتنا مدفوعة بإيمان راسخ بأن التكامل المؤسسي والجهود الموحدة هي حجر الزاوية لتحقيق النمو المستدام وبناء كيان استثماري قادر على المنافسة محلياً وإقليمياً وعالمياً. صدارة هي أكثر من كيان قانوني - إنها خطوة استراتيجية نحو تعزيز الكفاءة التشغيلية وتوسيع الشراكات وجذب استثمارات عالية القيمة تتماشى مع رؤية السعودية 2030.",
+        "نحن إبراهيم وعبدالله ابنا محمد الشيخ، نقدم شركة صدارة التنمية للإستثمار - الكيان القانوني المستمر لمسيرتنا التجارية والصناعية التي تمتد لأكثر من أربعة عقود تحت مجموعة الشيخ التجارية والصناعية. رؤيتنا مدفوعة بإيمان راسخ بأن التكامل المؤسسي والجهود الموحدة هي حجر الزاوية لتحقيق النمو المستدام وبناء كيان استثماري قادر على المنافسة محلياً وإقليمياً وعالمياً. صدارة هي أكثر من كيان قانوني - إنها خطوة استراتيجية نحو تعزيز الكفاءة التشغيلية وتوسيع الشراكات وجذب استثمارات عالية القيمة تتماشى مع رؤية السعودية 2030.",
       messageSignature:
         "عبدالله وإبراهيم الشيخ | المؤسسان المشاركان، مجموعة صدارة",
       founders: [
         {
-          name: "إبراهيم الشيخ",
+          name: "إبراهيم آل الشيخ",
           title: "رئيس مجلس الإدارة والمدير التنفيذي",
           image: "/owners/owner1.png",
-          experience: [
-            "أكثر من 18 عاماً من الخبرة في العمليات والتحول التجاري",
-            "قاد مبادرات التحول الرقمي عبر شركات المجموعة",
-            "خبير في التميز المؤسسي وإدارة الجودة",
+          nationalExperience: [
+            "	عضو المجلس الصناعي برئاسة معالي وزير الصناعة والثروة المعدنية",
+            "	رئيس اللجنة الوطنية الصناعية باتحاد الغرف السعودية.",
+            "	عضو اللجنة التنفيذية في مجلس الأعمال السعودي السوري.",
+            "	رئيس لجنة الصناعة والطاقة بغرفة الشرقية للفترتين (2018–2021) و(2022–2023).",
+            "	عضو مجلس إدارة الغرفة التجارية الصناعية بالمنطقة الشرقية للفترتين (2014–2017) و(2018–2021).",
+            "	رئيس لجنة الاتصالات وتقنية المعلومات بالغرفة التجارية الصناعية بالمنطقة الشرقية (2014–2018).",
+          ],
+          corporateExperience: [
+            "يتولى رئاسة وعضوية مجالس إدارة عدد من الشركات الرائدة في قطاعات متعددة، من أبرزها:",
+            "رئيس مجلس إدارة: سعودي كول، إبريز العربية، مواد الحفر.",
+            "رئيس مجلس المديرين: صدارة التنمية، جوفية للصناعة، تقنيات البلاستيك، إبريز العقارية، رفد اللدائن، كيميا الشرق، زجول الشرق، حلول السهم، حلول الإطارات.",
+            "عضو مجلس إدارة: مشاركة المالية.",
+          ],
+          internalExperience: [
+            "عضو مجلس الأمناء في جمعية غرف الأهلية.",
+            "عضو اللجنة التنفيذية في مجلس الأعمال السعودي السوري.",
+            "عضو الغرفة العربية البريطانية.",
+            "عضو مجلس الأعمال السعودي الإيطالي.",
+            "رئيس مجلس إدارة مؤسسة منارات العطاء – مؤسسة تنموية غير ربحية.",
+            "عضو المجلس الاستشاري لكلية المجتمع بالدمام.",
           ],
           certifications: [
-            "ماجستير العلوم - إدارة العمليات",
-            "محترف معتمد في التميز التجاري",
-            "قيادة التحول الرقمي - معهد ماساتشوستس للتكنولوجيا (MIT)",
+            "	بكالوريوس في تكنولوجيا المعلومات – الجامعة العربية للعلوم والتكنولوجيا والنقل البحري.",
+            "	دبلوم في التسويق – كلية لندن للأعمال (London Business School).",
+            "	خريج برنامج القيادة للمؤسسات العالمية – شهادة تنفيذية معتمدة من IMD",
           ],
         },
         {
-          name: "عبدالله الشيخ",
+          name: "عبد الله آل الشيخ",
           title: "المؤسس المشارك والمدير الإداري",
           image: "/owners/owner2.png",
-          experience: [
-            "أكثر من 20 عاماً من الخبرة في تطوير الأعمال وإدارة الاستثمارات",
-            "قاد العديد من المشاريع الناجحة في قطاعات العقارات والتكنولوجيا والصناعة",
-            "خبير في التخطيط الاستراتيجي وحوكمة الشركات",
+          currentPositions: [
+            " عضو مجلس إدارة الشركة منذ عام 2021م وحتى تاريخه.",
+            " نائب رئيس مجلس الإدارة – شركة أبرز العربية (شركة مساهمة مقفلة تعمل في مجال التطوير والاستثمار العقاري) منذ عام 2021م وحتى تاريخه.",
+            " نائب رئيس مجلس الإدارة – شركة سعودي كول (شركة مساهمة مقفلة تعمل في قطاع الاتصالات) منذ عام 2013م وحتى تاريخه.",
+            " نائب الرئيس التنفيذي – شركة تقنية صناعة البلاستيك (شركة ذات مسؤولية محدودة تعمل في مجال التصنيع) منذ عام 2013م وحتى تاريخه.",
+            " شريك مؤسس – شركة جويفة للحلول (شركة ذات مسؤولية محدودة تعمل في مجال التصنيع والحلول الصناعية) منذ عام 2013م وحتى تاريخه.",
           ],
-          certifications: [
-            "ماجستير إدارة الأعمال - الأعمال الدولية",
-            "مدير استثمار معتمد",
-            "شهادة القيادة الاستراتيجية - كلية هارفارد للأعمال",
+          experience: [
+            " مدير – شركة سعودي كول للمقاولات (شركة ذات مسؤولية محدودة تعمل في قطاع المقاولات) خلال الفترة من 2011م إلى 2019م.",
+            " مدير – مؤسسة سعودي كار (مؤسسة فردية تعمل في قطاع السيارات) خلال الفترة من 2004م إلى 2010م.",
           ],
         },
       ],
+      corporateExperience: "الأدوار القيادية والشركات",
       experience: "الخبرات والكفاءات",
+      nationalExperience: "الأدوار القيادية والمناصب الوطنية",
+      internalExperience:
+        "الشراكات الدولية والمجالس الاقتصادية والمبادرات المجتمعية",
       certifications: "الشهادات والمؤهلات",
+      currentPositions: "الوظائف الشاغرة",
       stats: [
         {
           number: "+40",
@@ -2327,11 +2372,11 @@ export const translations = {
 
     aboutSadara: {
       badge: "من نحن",
-      title: "شركة صدارة للتنمية والاستثمار",
+      title: "شركة صدارة التنمية للإستثمار",
       subtitle: "بناء مستقبل متنوع للمملكة العربية السعودية",
       overviewTitle: "نظرة عامة",
       description:
-        "شركة صدارة للتنمية والاستثمار هي شركة قابضة متنوعة تعمل ككيان قانوني رسمي يشرف على جميع الشركات التابعة لمجموعة آل الشيخ التجارية والصناعية. تعمل الشركة من مدينة الخبر في المملكة العربية السعودية، وتشرف على محفظة متنوعة في قطاعات حيوية تشمل العقارات والنفط والغاز والاتصالات وأنظمة الأمن والتصنيع والخدمات التشغيلية. وتهدف الشركة إلى تعظيم خلق القيمة من خلال توسيع قاعدة استثماراتها وتنويع أنشطتها وجذب الفرص الواعدة محلياً وإقليمياً.",
+        "شركة صدارة التنمية للإستثمار هي شركة قابضة متنوعة تعمل ككيان قانوني رسمي يشرف على جميع الشركات التابعة لمجموعة آل الشيخ التجارية والصناعية. تعمل الشركة من مدينة الخبر في المملكة العربية السعودية، وتشرف على محفظة متنوعة في قطاعات حيوية تشمل العقارات والنفط والغاز والاتصالات وأنظمة الأمن والتصنيع والخدمات التشغيلية. وتهدف الشركة إلى تعظيم خلق القيمة من خلال توسيع قاعدة استثماراتها وتنويع أنشطتها وجذب الفرص الواعدة محلياً وإقليمياً.",
       missionTitle: "رسالتنا",
       mission:
         "إدارة وتطوير محفظة استثمارية متنوعة قائمة على الحوكمة السليمة والابتكار والتميز التشغيلي - تمكين الشركات التابعة وتعظيم العوائد طويلة الأجل.",
@@ -2351,7 +2396,7 @@ export const translations = {
       subtitle:
         "شركة قابضة متنوعة تشكل مستقبل الاستثمار في المملكة العربية السعودية",
       description:
-        "شركة صدارة للتنمية والاستثمار هي شركة قابضة متنوعة تعمل ككيان قانوني رسمي يشرف على جميع الشركات التابعة لمجموعة آل الشيخ التجارية والصناعية. تعمل الشركة من مدينة الخبر في المملكة العربية السعودية، وتشرف على محفظة متنوعة في قطاعات حيوية تشمل العقارات والنفط والغاز والاتصالات وأنظمة الأمن والتصنيع والخدمات التشغيلية. وتهدف الشركة إلى تعظيم خلق القيمة من خلال توسيع قاعدة استثماراتها وتنويع أنشطتها وجذب الفرص الواعدة محلياً وإقليمياً.",
+        "شركة صدارة التنمية للإستثمار هي شركة قابضة متنوعة تعمل ككيان قانوني رسمي يشرف على جميع الشركات التابعة لمجموعة آل الشيخ التجارية والصناعية. تعمل الشركة من مدينة الخبر في المملكة العربية السعودية، وتشرف على محفظة متنوعة في قطاعات حيوية تشمل العقارات والنفط والغاز والاتصالات وأنظمة الأمن والتصنيع والخدمات التشغيلية. وتهدف الشركة إلى تعظيم خلق القيمة من خلال توسيع قاعدة استثماراتها وتنويع أنشطتها وجذب الفرص الواعدة محلياً وإقليمياً.",
       buttonText: "اقرأ المزيد",
     },
 
@@ -2780,13 +2825,13 @@ export const translations = {
       badge: "ملكية وإدارة موحدة تحت مظلة واحدة",
       title: {
         part1: "شركة",
-        part2: "صدارة للتنمية والاستثمار",
+        part2: "صدارة التنمية للإستثمار",
       },
       subtitle:
         "شركة قابضة متنوعة | أفضل الممارسات | كفاءة عالية بمعايير حوكمة الشركات",
       paragraph1: {
         part1:
-          "شركة صدارة للتنمية والاستثمار هي شركة قابضة متنوعة تعمل ككيان قانوني رسمي يشرف على جميع شركات",
+          "شركة صدارة التنمية للإستثمار هي شركة قابضة متنوعة تعمل ككيان قانوني رسمي يشرف على جميع شركات",
         highlight: "مجموعة آل الشيخ التجارية والصناعية",
         part2: ".",
       },
@@ -3089,7 +3134,7 @@ export const translations = {
       subtitle: "نحن هنا للمساعدة. تواصل معنا في أي وقت",
       companies: {
         sadara: {
-          name: "شركة صدارة للتنمية والاستثمار",
+          name: "شركة صدارة التنمية للإستثمار",
           badge: "شركة قابضة",
           address:
             "9199 طريق الملك فهد بن عبد العزيز - البندرية، الخبر 34424، المملكة العربية السعودية",
@@ -3184,8 +3229,8 @@ export const translations = {
     footer: {
       logoAlt: "شعار مجموعة صدارة",
       companyDescription:
-        "شركة صدارة للتنمية والاستثمار هي شركة قابضة متنوعة تشرف على شركات تابعة في قطاعات حيوية في المملكة العربية السعودية، وتقدم خدمات مبتكرة وموثوقة تمكن الشركات من الازدهار.",
-      copyright: "© {year} شركة صدارة للتنمية والاستثمار. جميع الحقوق محفوظة.",
+        "شركة صدارة التنمية للإستثمار هي شركة قابضة متنوعة تشرف على شركات تابعة في قطاعات حيوية في المملكة العربية السعودية، وتقدم خدمات مبتكرة وموثوقة تمكن الشركات من الازدهار.",
+      copyright: "© {year} شركة صدارة التنمية للإستثمار. جميع الحقوق محفوظة.",
       tagline: "بناء مستقبل متنوع للمملكة العربية السعودية",
 
       companies: {
@@ -3211,7 +3256,7 @@ export const translations = {
         email: "info@sdi.com.sa",
         phone: "013 887 4122",
         fax: "013 887 4122",
-        address: "برج خبار جيت، طريق الملك فهد، البندرية، الخبر 34424",
+        address: "برج بوابة الخبر طريق الملك فهد، البندرية، الخبر 34424 ",
       },
 
       social: {

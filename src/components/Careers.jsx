@@ -32,9 +32,9 @@ const CareersSection = () => {
   const jobs = [];
 
   const stats = [
-    { value: "500+", valueAr: "٥٠٠+", label: "Employees", labelAr: "موظف", icon: FiUsers },
-    { value: "15+", valueAr: "١٥+", label: "Nationalities", labelAr: "جنسية", icon: FiTrendingUp },
-    { value: "98%", valueAr: "٩٨٪", label: "Saudization", labelAr: "سعودة", icon: FiAward },
+    { value: "500+", valueAr: "500+", label: "Employees", labelAr: "موظف", icon: FiUsers },
+    { value: "15+", valueAr: "15+", label: "Nationalities", labelAr: "جنسية", icon: FiTrendingUp },
+    { value: "98%", valueAr: "98٪", label: "Saudization", labelAr: "سعودة", icon: FiAward },
   ];
 
   const handleSendCV = () => {

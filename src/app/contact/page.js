@@ -7,9 +7,9 @@ import HeroService from "@/components/HeroService";
 
 export const metadata = {
   title:
-    "Contact Us | Sadara Development and Investment Company – Main Headquarters Al Khobar, Kingdom of Saudi Arabia | اتصل بنا | شركة سدارى للتنمية والاستثمار - المقر الرئيسي الخبر المملكة العربية السعودية",
+    "Contact Us | Sadara Development and Investment Company – Main Headquarters Al Khobar, Kingdom of Saudi Arabia | اتصل بنا | شركة صدارة التنمية للإستثمار - المقر الرئيسي الخبر المملكة العربية السعودية",
   description:
-    "تواصل مع فريق شركة سدارى للتنمية والاستثمار. مقرنا الرئيسي في برج الخبر جيت، طريق الملك فهد، حي البندرية، الخبر. للاستفسارات حول الاستثمار، الشراكات، أو فرص الأعمال. info@sdi.com.sa",
+    "تواصل مع فريق شركة صدارة التنمية للإستثمار. مقرنا الرئيسي في برج الخبر جيت، طريق الملك فهد، حي البندرية، الخبر. للاستفسارات حول الاستثمار، الشراكات، أو فرص الأعمال. info@sdi.com.sa",
   keywords: [
     // Main contact keywords
     "اتصل بنا سدارى",
@@ -81,7 +81,7 @@ export const metadata = {
   publisher: "Sadara Development Investment Company",
 
   openGraph: {
-    title: "اتصل بنا | شركة سدارى للتنمية والاستثمار - المقر الرئيسي الخبر",
+    title: "اتصل بنا | شركة صدارة التنمية للإستثمار - المقر الرئيسي الخبر",
     description:
       "نسعد بتواصلكم معنا. مقرنا الرئيسي في برج الخبر جيت، طريق الملك فهد، الخبر. للاستفسارات الاستثمارية، فرص الشراكة، أو أي استفسارات أخرى، يرجى التواصل عبر البريد الإلكتروني info@sdi.com.sa.",
     url: "https://www.sdi.com.sa/contact",
@@ -137,7 +137,7 @@ export const metadata = {
       mainEntity: {
         "@type": "Corporation",
         name: "Sadara Development Investment Company",
-        alternateName: "شركة سدارى للتنمية والاستثمار",
+        alternateName: "شركة صدارة التنمية للإستثمار",
         url: "https://www.sdi.com.sa",
         email: "info@sdi.com.sa",
         telephone: "+966-XXX-XXXXXX", // Add actual phone number

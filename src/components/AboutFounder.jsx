@@ -195,51 +195,147 @@ const AboutFounders = () => {
                     </div>
                   </div>
 
-                  {/* Experience */}
-                  <div className="mb-5">
-                    <div
-                      className={`flex items-center gap-2 mb-3 ${isRTL ? "flex-row-reverse justify-end" : ""}`}
-                    >
-                      <FiBriefcase className="text-white/60 w-4 h-4" />
-                      <h3 className="text-white font-semibold text-sm uppercase tracking-wider">
-                        {t("aboutFounders.experience")}
-                      </h3>
-                    </div>
-                    <ul className="space-y-2">
-                      {founder.experience.map((exp, idx) => (
-                        <li
-                          key={idx}
-                          className={`flex items-start gap-2 text-white/80 text-sm ${isRTL ? "flex-row-reverse" : ""}`}
-                        >
-                          <FiCheckCircle className="text-white/40 w-3 h-3 mt-1 flex-shrink-0" />
-                          <span>{exp}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
 
+                  {/* National Experience */}
+                  {founder.nationalExperience && (
+                    <div className="mb-5">
+                      <div
+                        className={`flex items-center gap-2 mb-3 ${isRTL ? "flex-row-reverse justify-end" : ""}`}
+                      >
+                        <FiBriefcase className="text-white/60 w-4 h-4" />
+                        <h3 className="text-white font-semibold text-sm uppercase tracking-wider">
+                          {t("aboutFounders.nationalExperience")}
+                        </h3>
+                      </div>
+                      <ul className="space-y-2">
+                        {founder.nationalExperience.map((exp, idx) => (
+                          <li
+                            key={idx}
+                            className={`flex items-start gap-2 text-white/80 text-sm ${isRTL ? "flex-row-reverse" : ""}`}
+                          >
+                            <FiCheckCircle className="text-white/40 w-3 h-3 mt-1 flex-shrink-0" />
+                            <span>{exp}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>)}
+                  {/* Corporate Experience */}
+                  {founder.corporateExperience && (
+                    <div className="mb-5">
+                      <div
+                        className={`flex items-center gap-2 mb-3 ${isRTL ? "flex-row-reverse justify-end" : ""}`}
+                      >
+                        <FiBriefcase className="text-white/60 w-4 h-4" />
+                        <h3 className="text-white font-semibold text-sm uppercase tracking-wider">
+                          {t("aboutFounders.corporateExperience")}
+                        </h3>
+                      </div>
+                      <ul className="space-y-2">
+                        {founder.corporateExperience.map((exp, idx) => (
+                          <li
+                            key={idx}
+                            className={`flex items-start gap-2 text-white/80 text-sm ${isRTL ? "flex-row-reverse" : ""}`}
+                          >
+                            <FiCheckCircle className="text-white/40 w-3 h-3 mt-1 flex-shrink-0" />
+                            <span>{exp}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>)}
+                  {/* Internal Experience */}
+                  {founder.internalExperience && (
+                    <div className="mb-5">
+                      <div
+                        className={`flex items-center gap-2 mb-3 ${isRTL ? "flex-row-reverse justify-end" : ""}`}
+                      >
+                        <FiBriefcase className="text-white/60 w-4 h-4" />
+                        <h3 className="text-white font-semibold text-sm uppercase tracking-wider">
+                          {t("aboutFounders.internalExperience")}
+                        </h3>
+                      </div>
+                      <ul className="space-y-2">
+                        {founder.internalExperience.map((exp, idx) => (
+                          <li
+                            key={idx}
+                            className={`flex items-start gap-2 text-white/80 text-sm ${isRTL ? "flex-row-reverse" : ""}`}
+                          >
+                            <FiCheckCircle className="text-white/40 w-3 h-3 mt-1 flex-shrink-0" />
+                            <span>{exp}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>)}
+                  {/* Current Positions */}
+                  {founder.currentPositions && (
+                    <div className="mb-5">
+                      <div
+                        className={`flex items-center gap-2 mb-3 ${isRTL ? "flex-row-reverse justify-end" : ""}`}
+                      >
+                        <FiBriefcase className="text-white/60 w-4 h-4" />
+                        <h3 className="text-white font-semibold text-sm uppercase tracking-wider">
+                          {t("aboutFounders.currentPositions")}
+                        </h3>
+                      </div>
+                      <ul className="space-y-2">
+                        {founder.currentPositions.map((exp, idx) => (
+                          <li
+                            key={idx}
+                            className={`flex items-start gap-2 text-white/80 text-sm ${isRTL ? "flex-row-reverse" : ""}`}
+                          >
+                            <FiCheckCircle className="text-white/40 w-3 h-3 mt-1 flex-shrink-0" />
+                            <span>{exp}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>)}
+
+                  {/* Experience */}
+                  {founder.experience && (
+                    <div className="mb-5">
+                      <div
+                        className={`flex items-center gap-2 mb-3 ${isRTL ? "flex-row-reverse justify-end" : ""}`}
+                      >
+                        <FiBriefcase className="text-white/60 w-4 h-4" />
+                        <h3 className="text-white font-semibold text-sm uppercase tracking-wider">
+                          {t("aboutFounders.experience")}
+                        </h3>
+                      </div>
+                      <ul className="space-y-2">
+                        {founder.experience.map((exp, idx) => (
+                          <li
+                            key={idx}
+                            className={`flex items-start gap-2 text-white/80 text-sm ${isRTL ? "flex-row-reverse" : ""}`}
+                          >
+                            <FiCheckCircle className="text-white/40 w-3 h-3 mt-1 flex-shrink-0" />
+                            <span>{exp}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>)}
                   {/* Certifications */}
-                  <div>
-                    <div
-                      className={`flex items-center gap-2 mb-3 ${isRTL ? "flex-row-reverse justify-end" : ""}`}
-                    >
-                      <FiAward className="text-white/60 w-4 h-4" />
-                      <h3 className="text-white font-semibold text-sm uppercase tracking-wider">
-                        {t("aboutFounders.certifications")}
-                      </h3>
-                    </div>
-                    <ul className="space-y-2">
-                      {founder.certifications.map((cert, idx) => (
-                        <li
-                          key={idx}
-                          className={`flex items-start gap-2 text-white/80 text-sm ${isRTL ? "flex-row-reverse" : ""}`}
-                        >
-                          <FiStar className="text-white/40 w-3 h-3 mt-1 flex-shrink-0" />
-                          <span>{cert}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                  {founder.certifications && (
+                    <div>
+                      <div
+                        className={`flex items-center gap-2 mb-3 ${isRTL ? "flex-row-reverse justify-end" : ""}`}
+                      >
+                        <FiAward className="text-white/60 w-4 h-4" />
+                        <h3 className="text-white font-semibold text-sm uppercase tracking-wider">
+                          {t("aboutFounders.certifications")}
+                        </h3>
+                      </div>
+
+                      <ul className="space-y-2">
+                        {founder.certifications.map((cert, idx) => (
+                          <li
+                            key={idx}
+                            className={`flex items-start gap-2 text-white/80 text-sm ${isRTL ? "flex-row-reverse" : ""}`}
+                          >
+                            <FiStar className="text-white/40 w-3 h-3 mt-1 flex-shrink-0" />
+                            <span>{cert}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>)}
                 </div>
               </div>
             ))}

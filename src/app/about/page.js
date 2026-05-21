@@ -8,9 +8,9 @@ import MissionVision from "@/components/MissionVissionVal";
 
 export const metadata = {
   title:
-    "About Us | Sadara Development and Investment Company – The Story of Transformation and Institutional Excellence | من نحن | شركة سدارى للتنمية والاستثمار – قصة التحول والتميز المؤسسي",
+    "About Us | Sadara Development and Investment Company – The Story of Transformation and Institutional Excellence | من نحن | شركة صدارة التنمية للإستثمار – قصة التحول والتميز المؤسسي",
   description:
-    "تعرف على شركة سدارى للتنمية والاستثمار، الكيان القانوني الموحد لمجموعة آل الشيخ التجارية والصناعية. نعمل منذ 1992 على إدارة وتطوير محفظة استثمارية متنوعة من الخبر، المملكة العربية السعودية.",
+    "تعرف على شركة صدارة التنمية للإستثمار، الكيان القانوني الموحد لمجموعة آل الشيخ التجارية والصناعية. نعمل منذ 1992 على إدارة وتطوير محفظة استثمارية متنوعة من الخبر، المملكة العربية السعودية.",
   keywords: [
     // Company meaning
     "من نحن سدارى",
@@ -97,7 +97,7 @@ export const metadata = {
 
   openGraph: {
     title:
-      "من نحن | شركة سدارى للتنمية والاستثمار - الكيان القابض الموحد لمجموعة آل الشيخ",
+      "من نحن | شركة صدارة التنمية للإستثمار - الكيان القابض الموحد لمجموعة آل الشيخ",
     description:
       "نحن الكيان القانوني الموحد الذي يدير و يشرف على جميع شركات مجموعة آل الشيخ التجارية والصناعية. منذ 1992 ونحن نعمل على تطوير محفظة استثمارية متنوعة من مقرنا في الخبر، المملكة العربية السعودية، وفق أعلى معايير الحوكمة والكفاءة التشغيلية.",
     url: "https://www.sdi.com.sa/about",
@@ -119,7 +119,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "من نحن | Sadara Development - قصة التحول والتميز",
     description:
-      "تعرف على شركة سدارى للتنمية والاستثمار، الكيان الموحد لمجموعة آل الشيخ. نتميز بالحوكمة الرشيدة، الابتكار، والتميز التشغيلي. مقرنا الخبر، ونشرف على 6 شركات رائدة في السوق السعودي.",
+      "تعرف على شركة صدارة التنمية للإستثمار، الكيان الموحد لمجموعة آل الشيخ. نتميز بالحوكمة الرشيدة، الابتكار، والتميز التشغيلي. مقرنا الخبر، ونشرف على 6 شركات رائدة في السوق السعودي.",
     images: ["/sadara-about-twitter.jpg"],
     creator: "@SadaraDev",
     site: "@SadaraDev",
@@ -152,7 +152,7 @@ export const metadata = {
       about: {
         "@type": "Corporation",
         name: "Sadara Development Investment Company",
-        alternateName: "شركة سدارى للتنمية والاستثمار",
+        alternateName: "شركة صدارة التنمية للإستثمار",
         foundingDate: "1992",
         foundingLocation: {
           "@type": "Place",

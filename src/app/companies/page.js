@@ -5,7 +5,7 @@ import MinimalCompaniesSection from "@/components/MinimalCompanies";
 
 export const metadata = {
   title:
-    "شركاتنا | شركة سدارى للتنمية والاستثمار - محفظتنا الاستثمارية المتنوعة (6 شركات رائدة)",
+    "شركاتنا | شركة صدارة التنمية للإستثمار - محفظتنا الاستثمارية المتنوعة (6 شركات رائدة)",
   description:
     "تعرف على شركات سدارى التابعة: سعودي كول (الاتصالات والأمن الصناعي)، إبريز العربية (التطوير العقاري)، مواد الحفر (إضافات سوائل الحفر)، بلاستك (المنتجات البلاستيكية)، جوفاي (المنظفات المنزلية والصناعية)، ومحطة سلام (الخدمات البترولية).",
   keywords: [
@@ -166,7 +166,7 @@ export const metadata = {
       mainEntity: {
         "@type": "Corporation",
         name: "Sadara Development Investment Company",
-        alternateName: "شركة سدارى للتنمية والاستثمار",
+        alternateName: "شركة صدارة التنمية للإستثمار",
         url: "https://www.sdi.com.sa",
         logo: "https://www.sdi.com.sa/sadara-logo.png",
         parentOrganization: {

@@ -7,9 +7,9 @@ import HeroService from "@/components/HeroService";
 
 export const metadata = {
   title:
-    "Jobs and Employment | Join the Sadara Development and Investment Company team – Job opportunities in Saudi Arabia | الوظائف والتوظيف | انضم إلى فريق سدارى للتنمية والاستثمار – فرص عمل في السعودية",
+    "Jobs and Employment | Join the Sadara Development and Investment Company team – Job opportunities in Saudi Arabia | الوظائف والتوظيف | انضم إلى فريق صدارة التنمية للإستثمار – فرص عمل في السعودية",
   description:
-    "انضم إلى فريق شركة سدارى للتنمية والاستثمار وشركاتها التابعة. نبحث عن المواهب في قطاعات: الاتصالات، الهندسة، العقار، النفط والغاز، التصنيع، المبيعات، والإدارة. مقر العمل: الخبر والمنطقة الشرقية.",
+    "انضم إلى فريق شركة صدارة التنمية للإستثمار وشركاتها التابعة. نبحث عن المواهب في قطاعات: الاتصالات، الهندسة، العقار، النفط والغاز، التصنيع، المبيعات، والإدارة. مقر العمل: الخبر والمنطقة الشرقية.",
   keywords: [
     // Main careers keywords
     "وظائف سدارى",
@@ -141,7 +141,7 @@ export const metadata = {
       mainEntity: {
         "@type": "Organization",
         name: "Sadara Development Investment Company",
-        alternateName: "شركة سدارى للتنمية والاستثمار",
+        alternateName: "شركة صدارة التنمية للإستثمار",
         url: "https://www.sdi.com.sa",
         email: "careers@sdi.com.sa",
         hiring: {
