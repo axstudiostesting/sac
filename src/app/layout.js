@@ -9,7 +9,7 @@ import Script from "next/script";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import HeaderHero from "@/components/Header";
 export const metadata = {
-  title: "Sadara Development Investment Company | صدارة التنمية للإستثمار",
+  title: "Sadara Development Investment |صدارة التنمية للاستثمار",
   description:
     "شركة صدارة التنمية للإستثمار - كيان قابض موحد يدير محفظة متنوعة من الشركات الرائدة في الاتصالات، العقار، النفط والغاز، التصنيع، والخدمات البترولية. نعمل من الخبر بالمنطقة الشرقية لدعم رؤية السعودية 2030 من خلال التميز التشغيلي والحوكمة.",
   keywords: [
@@ -98,7 +98,7 @@ export const metadata = {
   publisher: "Sadara Development Investment Company",
 
   openGraph: {
-    title: "Sadara Development | شركة صدارة التنمية للإستثمار - كيان قابض موحد",
+    title: "Sadara Development Investment | صدارة التنمية للاستثمار",
     description:
       "نحن الكيان القانوني الموحد لمجموعة آل الشيخ التجارية والصناعية. نشرف على محفظة استثمارية متنوعة في قطاعات الاتصالات، النفط والغاز، العقار، التصنيع، والأمن الصناعي. مقرنا الخبر، المملكة العربية السعودية.",
     url: "https://www.sdi.com.sa",
