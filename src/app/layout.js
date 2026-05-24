@@ -8,7 +8,6 @@ import ScrollToTopButton from "@/components/ScrollToTop";
 import Script from "next/script";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import HeaderHero from "@/components/Header";
-import DynamicTitle from "@/components/DynamicTitle";
 export const metadata = {
   title: "Sadara Development Investment |صدارة التنمية للاستثمار",
   description:
@@ -296,10 +295,6 @@ export default function RootLayout({ children }) {
       </head>
       <body style={{ fontFamily: "'Somar Arabic', 'Madani', sans-serif" }}>
         <LanguageProvider>
-          <DynamicTitle
-            en="Sadara Development Investment"
-            ar="صدارة التنمية للاستثمار"
-          />
           <HeaderHero />
           <div className="">{children}</div>
           {/* <WhatsapBtn /> */}

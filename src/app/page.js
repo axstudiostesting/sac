@@ -46,10 +46,15 @@ import CoreValues from "@/components/CoreValues";
 import MediaSection from "@/components/NewsEventPage";
 import MediaSliderCarousel from "@/components/MediaCarousel";
 import CompanyOverview from "@/components/CompanyOverview";
+import DynamicTitle from "@/components/DynamicTitle";
 
 export default function Home() {
   return (
     <>
+      <DynamicTitle
+        en="Sadara Development Investment"
+        ar="صدارة التنمية للاستثمار"
+      />
       {/* <HeroSection /> */}
       {/* <AboutCompany /> */}
 
