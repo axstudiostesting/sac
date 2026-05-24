@@ -2,6 +2,7 @@ import ContactPage from "@/components/ContactUS";
 import ContactSection from "@/components/ContactUS";
 import ContactUs from "@/components/ContactUS";
 import HeroService from "@/components/HeroService";
+import DynamicTitle from "@/components/DynamicTitle";
 
 // contact/page.js or contact/metadata.js
 
@@ -223,6 +224,10 @@ export const metadata = {
 export default function Contact() {
   return (
     <>
+      <DynamicTitle
+        en="Contact Us | Sadara Development and Investment Company – Main Headquarters Al Khobar, Kingdom of Saudi Arabia"
+        ar="اتصل بنا | شركة صدارة التنمية للإستثمار - المقر الرئيسي الخبر المملكة العربية السعودية"
+      />
       {/* <HeroService image="/h1.jpg" title="contact.heroTitle" /> */}
 
       <ContactSection />

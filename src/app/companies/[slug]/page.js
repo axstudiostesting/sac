@@ -1,16 +1,41 @@
 import CompanyDetail from "@/components/CompanyDetails";
 import { translations } from "@/utils/translations";
+
 const COMPANIES_TITLES = {
-  sadara: "Sadara Development - Sadara Group | صدارة للتنمية - مجموعة صدارة",
-  "saudi-call": "Saudi Call - Sadara Group | سعودي كول - مجموعة صدارة",
-  ebreez: "Ebreez Arabia - Sadara Group | إبريز العربية - مجموعة صدارة",
-  mawad: "Mawad - Sadara Group - مواد - مجموعة صدارة",
-  plastech: "Plastech - Sadara Group | بلاستك - مجموعة صدارة",
-  jovae: "Jovae Industrial - Sadara Group | جوفاي الصناعية - مجموعة صدارة",
-  "salam-station":
-    "Salam Roads Petroleum Services - Sadara Group | سلام رودز لخدمات البترول - مجموعة صدارة",
-  wajd: "Wajd Management and Services | Wajd Management and Services | وجد للإدارة والخدمات | وجد للإدارة والخدمات",
+  sadara: {
+    en: "Sadara Development - Sadara Group",
+    ar: "صدارة للتنمية - مجموعة صدارة",
+  },
+  "saudi-call": {
+    en: "Saudi Call - Sadara Group",
+    ar: "سعودي كول - مجموعة صدارة",
+  },
+  ebreez: {
+    en: "Ebreez Arabia - Sadara Group",
+    ar: "إبريز العربية - مجموعة صدارة",
+  },
+  mawad: {
+    en: "Mawad - Sadara Group",
+    ar: "مواد - مجموعة صدارة",
+  },
+  plastech: {
+    en: "Plastech - Sadara Group",
+    ar: "بلاستك - مجموعة صدارة",
+  },
+  jovae: {
+    en: "Jovae Industrial - Sadara Group",
+    ar: "جوفاي الصناعية - مجموعة صدارة",
+  },
+  "salam-station": {
+    en: "Salam Roads Petroleum Services - Sadara Group",
+    ar: "سلام رودز لخدمات البترول - مجموعة صدارة",
+  },
+  wajd: {
+    en: "Wajd Management and Services",
+    ar: "وجد للإدارة والخدمات",
+  },
 };
+
 export async function generateStaticParams() {
   const companies = translations.en.companies.data;
   return companies.map((company) => ({
@@ -21,16 +46,21 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const company = translations.en.companies.data.find((c) => c.slug === slug);
+  const titles = COMPANIES_TITLES[slug];
 
   return {
-    // title: `${company?.name} | Sadara Group`,
-    title:
-      COMPANIES_TITLES[slug] ?? `${slug.replace(/-/g, " ")} | Sadara Group`,
+    title: titles
+      ? `${titles.en} | ${titles.ar}`
+      : `${slug.replace(/-/g, " ")} | Sadara Group`,
     description: company?.shortDescription,
   };
 }
 
 export default async function CompanyPage({ params }) {
   const { slug } = await params;
-  return <CompanyDetail slug={slug} />;
+  const titles = COMPANIES_TITLES[slug] || {
+    en: slug.replace(/-/g, " "),
+    ar: slug.replace(/-/g, " "),
+  };
+  return <CompanyDetail slug={slug} titleEn={titles.en} titleAr={titles.ar} />;
 }

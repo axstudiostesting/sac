@@ -245,6 +245,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useTranslation } from "@/hooks/useTranslation";
+import DynamicTitle from "@/components/DynamicTitle";
 import {
   FiArrowLeft,
   FiCheckCircle,
@@ -257,7 +258,7 @@ import {
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const ServiceDetail = ({ slug }) => {
+const ServiceDetail = ({ slug, titleEn, titleAr }) => {
   const { isRTL } = useLanguage();
   const { t } = useTranslation();
 
@@ -293,205 +294,210 @@ const ServiceDetail = ({ slug }) => {
   }
 
   return (
-    <section className="relative w-full py-12 md:py-16 overflow-hidden bg-gradient-to-b from-gray-50 via-white to-gray-50">
-      <div
-        className="absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage: `repeating-linear-gradient(45deg, #27374e 0px, #27374e 2px, transparent 2px, transparent 20px)`,
-        }}
-      />
-      <div
-        className="absolute inset-0 opacity-[0.03] pointer-events-none"
-        style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, #27374e 1px, transparent 0)`,
-          backgroundSize: "40px 40px",
-        }}
-      />
-
-      <div className="relative z-10 container mx-auto px-6 md:px-12 lg:px-20">
-        {/* Back Button */}
-        <div data-aos="fade-right" className="mb-8">
-          <Link href="/services">
-            <button className="inline-flex items-center gap-2 text-gray-500 hover:text-[#27374e] transition-colors">
-              {isRTL ? (
-                <FiArrowLeft className="w-5 h-5 rotate-180" />
-              ) : (
-                <FiArrowLeft className="w-5 h-5" />
-              )}
-              <span>{t("services.backToServices")}</span>
-            </button>
-          </Link>
-        </div>
-
-        {/* Hero Section */}
+    <>
+      {titleEn && titleAr && (
+        <DynamicTitle en={titleEn} ar={titleAr} />
+      )}
+      <section className="relative w-full py-12 md:py-16 overflow-hidden bg-gradient-to-b from-gray-50 via-white to-gray-50">
         <div
-          data-aos="fade-up"
-          className="relative rounded-3xl overflow-hidden mb-12"
-        >
-          <div className="relative h-[400px] md:h-[500px]">
-            <Image
-              src={service.image}
-              alt={service.title}
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
-          </div>
-          <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-              {service.title}
-            </h1>
-          </div>
-        </div>
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: `repeating-linear-gradient(45deg, #27374e 0px, #27374e 2px, transparent 2px, transparent 20px)`,
+          }}
+        />
+        <div
+          className="absolute inset-0 opacity-[0.03] pointer-events-none"
+          style={{
+            backgroundImage: `radial-gradient(circle at 1px 1px, #27374e 1px, transparent 0)`,
+            backgroundSize: "40px 40px",
+          }}
+        />
 
-        {/* Metrics Bar */}
-        {service.metrics && service.metrics.length > 0 && (
+        <div className="relative z-10 container mx-auto px-6 md:px-12 lg:px-20">
+          {/* Back Button */}
+          <div data-aos="fade-right" className="mb-8">
+            <Link href="/services">
+              <button className="inline-flex items-center gap-2 text-gray-500 hover:text-[#27374e] transition-colors">
+                {isRTL ? (
+                  <FiArrowLeft className="w-5 h-5 rotate-180" />
+                ) : (
+                  <FiArrowLeft className="w-5 h-5" />
+                )}
+                <span>{t("services.backToServices")}</span>
+              </button>
+            </Link>
+          </div>
+
+          {/* Hero Section */}
           <div
             data-aos="fade-up"
-            data-aos-delay="100"
-            className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12"
+            className="relative rounded-3xl overflow-hidden mb-12"
           >
-            {service.metrics.map((metric, idx) => (
-              <div
-                key={idx}
-                className="bg-white rounded-2xl p-5 text-center shadow-md hover:shadow-lg transition-all"
-              >
-                <div className="text-2xl md:text-3xl font-bold text-[#27374e]">
-                  {metric.value}
-                </div>
-                <div className="text-sm text-gray-500 mt-1">{metric.label}</div>
-              </div>
-            ))}
+            <div className="relative h-[400px] md:h-[500px]">
+              <Image
+                src={service.image}
+                alt={service.title}
+                fill
+                className="object-cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+                {service.title}
+              </h1>
+            </div>
           </div>
-        )}
 
-        <div className="grid lg:grid-cols-3 gap-12">
-          {/* Main Content */}
-          <div className="lg:col-span-2 space-y-8">
+          {/* Metrics Bar */}
+          {service.metrics && service.metrics.length > 0 && (
             <div
               data-aos="fade-up"
-              data-aos-delay="150"
-              className="bg-white rounded-2xl p-8 shadow-md"
+              data-aos-delay="100"
+              className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12"
             >
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                <span className="w-1 h-6 bg-[#27374e] rounded-full" />
-                {t("services.overview")}
-              </h2>
-              <p className="text-gray-600 leading-relaxed whitespace-pre-line">
-                {service.description}
-              </p>
+              {service.metrics.map((metric, idx) => (
+                <div
+                  key={idx}
+                  className="bg-white rounded-2xl p-5 text-center shadow-md hover:shadow-lg transition-all"
+                >
+                  <div className="text-2xl md:text-3xl font-bold text-[#27374e]">
+                    {metric.value}
+                  </div>
+                  <div className="text-sm text-gray-500 mt-1">{metric.label}</div>
+                </div>
+              ))}
             </div>
+          )}
 
-            {service.features && service.features.length > 0 && (
+          <div className="grid lg:grid-cols-3 gap-12">
+            {/* Main Content */}
+            <div className="lg:col-span-2 space-y-8">
               <div
                 data-aos="fade-up"
+                data-aos-delay="150"
+                className="bg-white rounded-2xl p-8 shadow-md"
+              >
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                  <span className="w-1 h-6 bg-[#27374e] rounded-full" />
+                  {t("services.overview")}
+                </h2>
+                <p className="text-gray-600 leading-relaxed whitespace-pre-line">
+                  {service.description}
+                </p>
+              </div>
+
+              {service.features && service.features.length > 0 && (
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                  className="bg-white rounded-2xl p-8 shadow-md"
+                >
+                  <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                    <span className="w-1 h-6 bg-[#27374e] rounded-full" />
+                    {t("services.keyFeatures")}
+                  </h2>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {service.features.map((feature, idx) => (
+                      <div
+                        key={idx}
+                        className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 transition"
+                      >
+                        <FiCheckCircle className="w-5 h-5 text-[#27374e] mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-600">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {service.certifications && service.certifications.length > 0 && (
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="250"
+                  className="bg-white rounded-2xl p-8 shadow-md"
+                >
+                  <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                    <span className="w-1 h-6 bg-[#27374e] rounded-full" />
+                    {t("services.certifications")}
+                  </h2>
+                  <div className="flex flex-wrap gap-3">
+                    {service.certifications.map((cert, idx) => (
+                      <span
+                        key={idx}
+                        className="flex items-center gap-2 px-4 py-2 bg-green-50 text-green-700 rounded-full text-sm"
+                      >
+                        <FiAward className="w-3 h-3" />
+                        {cert}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Sidebar */}
+            <div className="space-y-6">
+              <div
+                data-aos="fade-left"
                 data-aos-delay="200"
-                className="bg-white rounded-2xl p-8 shadow-md"
+                className="bg-gradient-to-br from-[#27374e] to-[#27374e]/90 rounded-2xl p-6 text-white sticky top-24"
               >
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                  <span className="w-1 h-6 bg-[#27374e] rounded-full" />
-                  {t("services.keyFeatures")}
-                </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {service.features.map((feature, idx) => (
-                    <div
-                      key={idx}
-                      className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 transition"
-                    >
-                      <FiCheckCircle className="w-5 h-5 text-[#27374e] mt-0.5 flex-shrink-0" />
-                      <span className="text-gray-600">{feature}</span>
+                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                  <FiBriefcase className="w-5 h-5" />
+                  {t("services.quickInfo")}
+                </h3>
+                <div className="space-y-3">
+                  <div className="border-b border-white/10 pb-3">
+                    <div className="text-sm text-white/70">
+                      {t("services.expertise")}
                     </div>
-                  ))}
+                    <div className="font-semibold">
+                      {t("services.yearsExpertise")}
+                    </div>
+                  </div>
+                  <div className="border-b border-white/10 pb-3">
+                    <div className="text-sm text-white/70">
+                      {t("services.coverage")}
+                    </div>
+                    <div className="font-semibold">
+                      {t("services.nationwide")}
+                    </div>
+                  </div>
+                  <div>
+                    <div className="text-sm text-white/70">
+                      {t("services.support")}
+                    </div>
+                    <div className="font-semibold">
+                      {"24/7"} {t("services.available")}
+                    </div>
+                  </div>
                 </div>
               </div>
-            )}
 
-            {service.certifications && service.certifications.length > 0 && (
               <div
-                data-aos="fade-up"
-                data-aos-delay="250"
-                className="bg-white rounded-2xl p-8 shadow-md"
+                data-aos="fade-left"
+                data-aos-delay="300"
+                className="bg-white rounded-2xl p-6 shadow-md text-center"
               >
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                  <span className="w-1 h-6 bg-[#27374e] rounded-full" />
-                  {t("services.certifications")}
-                </h2>
-                <div className="flex flex-wrap gap-3">
-                  {service.certifications.map((cert, idx) => (
-                    <span
-                      key={idx}
-                      className="flex items-center gap-2 px-4 py-2 bg-green-50 text-green-700 rounded-full text-sm"
-                    >
-                      <FiAward className="w-3 h-3" />
-                      {cert}
-                    </span>
-                  ))}
-                </div>
+                <h4 className="font-bold text-gray-900 mb-2">
+                  {t("services.needHelp")}
+                </h4>
+                <p className="text-sm text-gray-500 mb-4">
+                  {t("services.contactTeam")}
+                </p>
+                <Link href="/contact">
+                  <button className="w-full bg-[#27374e] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#27374e]/90 transition-all">
+                    {t("services.contactUs")}
+                  </button>
+                </Link>
               </div>
-            )}
-          </div>
-
-          {/* Sidebar */}
-          <div className="space-y-6">
-            <div
-              data-aos="fade-left"
-              data-aos-delay="200"
-              className="bg-gradient-to-br from-[#27374e] to-[#27374e]/90 rounded-2xl p-6 text-white sticky top-24"
-            >
-              <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                <FiBriefcase className="w-5 h-5" />
-                {t("services.quickInfo")}
-              </h3>
-              <div className="space-y-3">
-                <div className="border-b border-white/10 pb-3">
-                  <div className="text-sm text-white/70">
-                    {t("services.expertise")}
-                  </div>
-                  <div className="font-semibold">
-                    {t("services.yearsExpertise")}
-                  </div>
-                </div>
-                <div className="border-b border-white/10 pb-3">
-                  <div className="text-sm text-white/70">
-                    {t("services.coverage")}
-                  </div>
-                  <div className="font-semibold">
-                    {t("services.nationwide")}
-                  </div>
-                </div>
-                <div>
-                  <div className="text-sm text-white/70">
-                    {t("services.support")}
-                  </div>
-                  <div className="font-semibold">
-                    {"24/7"} {t("services.available")}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              data-aos="fade-left"
-              data-aos-delay="300"
-              className="bg-white rounded-2xl p-6 shadow-md text-center"
-            >
-              <h4 className="font-bold text-gray-900 mb-2">
-                {t("services.needHelp")}
-              </h4>
-              <p className="text-sm text-gray-500 mb-4">
-                {t("services.contactTeam")}
-              </p>
-              <Link href="/contact">
-                <button className="w-full bg-[#27374e] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#27374e]/90 transition-all">
-                  {t("services.contactUs")}
-                </button>
-              </Link>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

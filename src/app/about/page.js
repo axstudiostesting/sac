@@ -4,6 +4,7 @@ import AboutSadara from "@/components/AboutSadare";
 import AboutUs from "@/components/AboutUs";
 import HeroSection from "@/components/HeroSectionMain";
 import MissionVision from "@/components/MissionVissionVal";
+import DynamicTitle from "@/components/DynamicTitle";
 // about/page.js or about/metadata.js
 
 export const metadata = {
@@ -256,6 +257,10 @@ export const metadata = {
 export default function About() {
   return (
     <>
+      <DynamicTitle
+        en="About Us | Sadara Development Investment"
+        ar="من نحن | صدارة التنمية للاستثمار"
+      />
       {/* <div className="max-w-4xl mx-auto text-center mb-24">
         <div
           data-aos="fade-up"

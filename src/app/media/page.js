@@ -5,6 +5,8 @@ import DetailedServices from "@/components/DetailedServices";
 import HeroSection from "@/components/HeroSection";
 import NewsEventsSection from "@/components/NewsEventPage";
 import Services from "@/components/ServicesMain";
+import DynamicTitle from "@/components/DynamicTitle";
+
 // news/page.js or events/page.js
 
 export const metadata = {
@@ -199,6 +201,10 @@ export const metadata = {
 export default function Media() {
   return (
     <>
+      <DynamicTitle
+        en="News and Events | Sadara News Center – Latest Updates and Achievements"
+        ar="الأخبار والفعاليات | مركز أخبار سدارى – آخر المستجدات والإنجازات"
+      />
       <NewsEventsSection />
     </>
   );

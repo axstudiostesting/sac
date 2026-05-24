@@ -40,6 +40,7 @@ import {
   FaRocket,
 } from "react-icons/fa";
 import SectionTitle from "../../src/components/SectionTitle";
+import useDynamicTitle from "@/hooks/useDynamicTitle";
 
 const AboutHero = () => {
   const { isRTL } = useLanguage();
@@ -146,6 +147,11 @@ const AboutHero = () => {
       locationKey: "about.floatingCard.location",
     },
   ];
+  useDynamicTitle({
+    en: "About Us | Sadara Development Investment",
+    ar: "من نحن | صدارة التنمية للاستثمار",
+  });
+
 
   return (
     <section className="relative pt-20 lg:pt-28 pb-16 bg-white overflow-hidden">

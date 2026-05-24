@@ -3,6 +3,8 @@ import ContactPage from "@/components/ContactUS";
 import ContactSection from "@/components/ContactUS";
 import ContactUs from "@/components/ContactUS";
 import HeroService from "@/components/HeroService";
+import DynamicTitle from "@/components/DynamicTitle";
+
 // careers/page.js or careers/metadata.js
 
 export const metadata = {
@@ -232,6 +234,10 @@ export const metadata = {
 export default function Careers() {
   return (
     <>
+      <DynamicTitle
+        en="Jobs and Employment | Join the Sadara Development and Investment Company team – Job opportunities in Saudi Arabia"
+        ar="الوظائف والتوظيف | انضم إلى فريق صدارة التنمية للإستثمار – فرص عمل في السعودية"
+      />
       {/* <HeroService image="/h1.jpg" title="contact.heroTitle" /> */}
 
       <CareersSection />

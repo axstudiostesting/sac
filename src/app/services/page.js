@@ -6,6 +6,8 @@ import ServicesSection from "@/components/ServicesHero";
 import Services from "@/components/ServicesMain";
 import ModernServicesSection from "@/components/ModernServicesSection";
 import MinimalServicesSection from "@/components/ModernServicesSection";
+import DynamicTitle from "@/components/DynamicTitle";
+
 // services/page.js or services/metadata.js
 
 export const metadata = {
@@ -360,6 +362,10 @@ export const metadata = {
 export default function Service() {
   return (
     <>
+      <DynamicTitle
+        en="Our Services | Sadara Development and Investment Company – A diversified investment portfolio across 8 vital sectors"
+        ar="خدماتنا | شركة صدارة التنمية للإستثمار - محفظة استثمارية متنوعة في 8 قطاعات حيوية"
+      />
       {/* <Services />
       <DetailedServices /> */}
       <MinimalServicesSection />

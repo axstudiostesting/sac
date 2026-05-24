@@ -1,15 +1,32 @@
 import ServiceDetail from "@/components/ServiceDetails";
+
 const SERVICE_TITLES = {
-  "telecom-it":
-    "Telecom & IT - Sadara Group | الاتصالات وتقنية المعلومات - مجموعة صدارة",
-  "industrial-security":
-    "Industrial Security - Sadara Group | الأمن الصناعي - مجموعة صدارة",
-  "facility-management":
-    "Facility Management - Sadara Group | إدارة المرافق - مجموعة صدارة",
-  "oil-gas": "Oil & Gas - Sadara Group | النفط والغاز - مجموعة صدارة",
-  manufacturing: "Manufacturing - Sadara Group | التصنيع - مجموعة صدارة",
-  "real-estate": "Real Estate - Sadara Group | العقارات - مجموعة صدارة",
+  "telecom-it": {
+    en: "Telecom & IT - Sadara Group",
+    ar: "الاتصالات وتقنية المعلومات - مجموعة صدارة",
+  },
+  "industrial-security": {
+    en: "Industrial Security - Sadara Group",
+    ar: "الأمن الصناعي - مجموعة صدارة",
+  },
+  "facility-management": {
+    en: "Facility Management - Sadara Group",
+    ar: "إدارة المرافق - مجموعة صدارة",
+  },
+  "oil-gas": {
+    en: "Oil & Gas - Sadara Group",
+    ar: "النفط والغاز - مجموعة صدارة",
+  },
+  manufacturing: {
+    en: "Manufacturing - Sadara Group",
+    ar: "التصنيع - مجموعة صدارة",
+  },
+  "real-estate": {
+    en: "Real Estate - Sadara Group",
+    ar: "العقارات - مجموعة صدارة",
+  },
 };
+
 export async function generateStaticParams() {
   const services = [
     { slug: "telecom-it" },
@@ -24,8 +41,11 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
+  const titles = SERVICE_TITLES[slug];
   return {
-    title: SERVICE_TITLES[slug] ?? `${slug.replace(/-/g, " ")} | Sadara Group`,
+    title: titles
+      ? `${titles.en} | ${titles.ar}`
+      : `${slug.replace(/-/g, " ")} | Sadara Group`,
     description:
       "Professional services by Sadara Development Investment Company",
   };
@@ -33,5 +53,9 @@ export async function generateMetadata({ params }) {
 
 export default async function ServicePage({ params }) {
   const { slug } = await params;
-  return <ServiceDetail slug={slug} />;
+  const titles = SERVICE_TITLES[slug] || {
+    en: slug.replace(/-/g, " "),
+    ar: slug.replace(/-/g, " "),
+  };
+  return <ServiceDetail slug={slug} titleEn={titles.en} titleAr={titles.ar} />;
 }

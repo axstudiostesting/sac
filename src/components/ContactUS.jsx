@@ -388,6 +388,7 @@ const ContactSection = () => {
                       </p>
                       <a
                         href={`tel:${t(`${currentCompany.key}.phone`)}`}
+                        dir="ltr"
                         className="text-gray-600 text-sm hover:text-primary transition-colors"
                       >
                         {t(`${currentCompany.key}.phone`)}

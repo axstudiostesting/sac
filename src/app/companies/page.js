@@ -1,5 +1,6 @@
 import CompaniesSection from "@/components/CompaniesSection";
 import MinimalCompaniesSection from "@/components/MinimalCompanies";
+import DynamicTitle from "@/components/DynamicTitle";
 
 // companies/page.js or subsidiaries/page.js
 
@@ -179,5 +180,13 @@ export const metadata = {
 };
 
 export default function CompaniesPage() {
-  return <MinimalCompaniesSection />;
+  return (
+    <>
+      <DynamicTitle
+        en="Our Companies | Sadara Development Investment Company - Diversified Investment Portfolio (6 Leading Companies)"
+        ar="شركاتنا | شركة صدارة التنمية للإستثمار - محفظتنا الاستثمارية المتنوعة (6 شركات رائدة)"
+      />
+      <MinimalCompaniesSection />
+    </>
+  );
 }
