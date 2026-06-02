@@ -674,7 +674,7 @@ export const translations = {
             "ISO 45001 - Health & Safety",
           ],
           established: 2020,
-          headquarters: "Riyadh, Saudi Arabia",
+          headquarters: "Al-Khobar, Saudi Arabia",
         },
         {
           id: "salam-station",
@@ -2223,7 +2223,7 @@ export const translations = {
             "ISO 45001 – الصحة والسلامة",
           ],
           established: 2020,
-          headquarters: "الرياض، المملكة العربية السعودية",
+          headquarters: "الخبر، المملكة العربية السعودية",
         },
         {
           id: "salam-station",
