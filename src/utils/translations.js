@@ -781,8 +781,8 @@ export const translations = {
             "Chairman of the Communications and Information Technology Committee at the Eastern Province Chamber of Commerce & Industry (2014–2018)",
           ],
           corporateExperience: [
-            "Chairman of the Board: Saudi Cool, Ebrez Arabia, and Drilling Materials.",
-            "Chairman of the Board of Managers: Sadara Development, Jofiah Industrial, Plastic Technologies, Ebrez Real Estate, Rafid Polymers, Kimya Al Sharq, Zajoul Al Sharq, Arrow Solutions, and Tire Solutions.",
+            "Chairman of the Board: Saudi Call, Ebreez Arabia, and Mawad Drilling Materials.",
+            "Chairman of the Board of Managers: Sadara Development, Jovae Industrial, Plastic Technologies, Ebreez Real Estate, Rafd Polymers, Kimya Al Sharq, Zajoul Al Sharq, Arrow Solutions, and Tire Solutions",
             "Board Member: Musharaka Financial Company.",
           ],
           internalExperience: [
@@ -805,13 +805,13 @@ export const translations = {
           image: "/owners/owner2.png",
           currentPositions: [
             "Board Member since 2021 to present.",
-            "Vice Chairman – Abraz Arabia Co. (Closed Joint Stock Company operating in real estate) since 2021 to present.",
-            "Vice Chairman – Saudi Cool Co. (Closed Joint Stock Company operating in telecommunications) since 2013 to present.",
-            "Executive Vice President – Plastic Industry Technology Co. (Limited Liability Company operating in manufacturing) since 2013 to present.",
-            "Founding Partner – Juwaifa Solutions Co. (Limited Liability Company operating in manufacturing) since 2013 to present.",
+            "Vice Chairman – Ebreez Arabia Co. (Closed Joint Stock Company operating in real estate)  since 2021 to present.",
+            "Vice Chairman – Saudi Call Co. (Closed Joint Stock Company operating in telecommunications) since 2013 to present.",
+            "Executive Vice President – Plastic Industry Technologies Co. (Limited Liability Company operating in manufacturing) since 2013 to present",
+            "Founding Partner – Jovae Industrial Co. (Limited Liability Company operating in manufacturing) since 2013 to present.",
           ],
           experience: [
-            "Manager – Saudi Cool Contracting Co. (Limited Liability Company operating in contracting) from 2011 to 2019.",
+            "Manager – Saudi Call Contracting Co from 2011 to 2019.",
             "Manager – Saudi Car Establishment (Sole Proprietorship operating in automotive sector) from 2004 to 2010.",
           ],
         },
