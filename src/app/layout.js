@@ -279,13 +279,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ar" dir="rtl">
+    <html lang="ar" dir="rtl" translate="no">
       <head>
         {/* Brand fonts: Somar Arabic (Arabic) and Madani (English) are loaded via @font-face in globals.css */}
         {/* Font files should be placed in /public/fonts/ directory */}
 
         <link href="/sadara.png" type="image/png" rel="icon" sizes="32x32" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google" content="notranslate" />
 
         <Script
           strategy="afterInteractive"
