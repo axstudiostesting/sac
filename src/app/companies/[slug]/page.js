@@ -24,11 +24,11 @@ const COMPANIES_TITLES = {
   },
   jovae: {
     en: "Jovae Industrial - Sadara Group",
-    ar: "جوفاي الصناعية - مجموعة صدارة",
+    ar: " جوفية الصناعية - مجموعة صدارة",
   },
   "salam-station": {
     en: "Salam Roads Petroleum Services - Sadara Group",
-    ar: "سلام رودز لخدمات البترول - مجموعة صدارة",
+    ar: "سلام الطرق للخدمات البترولية - مجموعة صدارة",
   },
   wajd: {
     en: "Wajd Management and Services",
