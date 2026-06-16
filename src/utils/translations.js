@@ -1936,9 +1936,9 @@ export const translations = {
       },
       slide6: {
         id: "jovae",
-        title: "  جوفية  الصناعية",
+        title: "جوفية الصناعية",
         desc: "مصنع لمنظفات منزلية عالية الأداء ومحاليل تعقيم تحت علامة برايتكس التجارية",
-        cta: "استكشف جوفية ",
+        cta: "استكشف جوفية",
         image: "/hero/jovae2.png",
         link: "/companies/jovae",
       },
