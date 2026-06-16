@@ -15,8 +15,8 @@ const COMPANIES_TITLES = {
     ar: "إبريز العربية - مجموعة صدارة",
   },
   mawad: {
-    en: "Mawad - Sadara Group",
-    ar: "مواد - مجموعة صدارة",
+    en: "Mawad Drilling - Sadara Group",
+    ar: "مواد الحفر - مجموعة صدارة",
   },
   plastech: {
     en: "Plastech - Sadara Group",
@@ -31,8 +31,8 @@ const COMPANIES_TITLES = {
     ar: "سلام الطرق للخدمات البترولية - مجموعة صدارة",
   },
   wajd: {
-    en: "Wajd Management and Services",
-    ar: "وجد للإدارة والخدمات",
+    en: "Wajd - Sadara Group",
+    ar: "وجد - مجموعة صدارة",
   },
 };
 

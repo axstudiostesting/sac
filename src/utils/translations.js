@@ -2190,7 +2190,7 @@ export const translations = {
           established: 2018,
           headquarters: "الدمام، المملكة العربية السعودية",
           website: "britexksa.com",
-          website2: "www.jovae.com/ar",
+          website2: "jovae.com",
         },
         {
           id: "wajd",
@@ -2216,6 +2216,7 @@ export const translations = {
             "الإدارة القانونية والمؤسسية – الامتثال والإشراف وحماية حقوق الملكية",
             "الاستشارات ودراسات الجدوى – تقييم العقارات وخطط التطوير والاستشارات الاستثمارية",
           ],
+          website: "wajdfm.com",
           clients: [],
           certifications: [
             "ISO 9001 – إدارة الجودة",
