@@ -72,10 +72,10 @@ const HeaderHero = () => {
         image: "/images/career-hero.jpg",
         subtitleKey: "pages.career.subtitle",
       },
-      services: {
+      sectors: {
         badgeKey: "pages.services.badge",
         titleKey: "pages.services.title",
-        image: "/images/services-hero.jpg",
+        image: "/images/sectors-hero.jpg",
         subtitleKey: "pages.services.subtitle",
       },
       companies: {
@@ -166,27 +166,27 @@ const HeaderHero = () => {
   const servicesItems = [
     {
       labelKey: "hero.services.telecom",
-      href: "/services/telecom-it",
+      href: "/sectors/telecom-it",
     },
     {
       labelKey: "hero.services.security",
-      href: "/services/industrial-security",
+      href: "/sectors/industrial-security",
     },
     {
       labelKey: "hero.services.facility",
-      href: "/services/facility-management",
+      href: "/sectors/facility-management",
     },
     {
       labelKey: "hero.services.oilgas",
-      href: "/services/oil-gas",
+      href: "/sectors/oil-gas",
     },
     {
       labelKey: "hero.services.manufacturing",
-      href: "/services/manufacturing",
+      href: "/sectors/manufacturing",
     },
     {
       labelKey: "hero.services.realestate",
-      href: "/services/real-estate",
+      href: "/sectors/real-estate",
     },
   ];
   const companiesData = t("companies.data", { returnObjects: true });

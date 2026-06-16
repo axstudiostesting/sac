@@ -39,7 +39,7 @@ import PortfolioSection from "@/components/PortfoilioSection";
 import ServicesSection from "@/components/ServicesHero";
 import PartnersSection from "@/components/PartnersNew";
 import DownloadProfile from "@/components/DownloadProfile";
-import Service from "./services/page";
+import Service from "./sectors/page";
 import SectorsSection from "@/components/DiversePortfolioSection";
 import InvestmentSectors from "@/components/InvestmentSectors";
 import CoreValues from "@/components/CoreValues";

@@ -316,7 +316,7 @@ const ServiceDetail = ({ slug, titleEn, titleAr }) => {
         <div className="relative z-10 container mx-auto px-6 md:px-12 lg:px-20">
           {/* Back Button */}
           <div data-aos="fade-right" className="mb-8">
-            <Link href="/services">
+            <Link href="/sectors">
               <button className="inline-flex items-center gap-2 text-gray-500 hover:text-[#27374e] transition-colors">
                 {isRTL ? (
                   <FiArrowLeft className="w-5 h-5 rotate-180" />

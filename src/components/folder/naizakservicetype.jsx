@@ -36,37 +36,37 @@ const ServicesSection = () => {
       titleKey: "services.telecom.title",
       descKey: "services.telecom.shortDesc",
       image: "/h1b.jpg",
-      link: "/services/telecom-it",
+      link: "/sectors/telecom-it",
     },
     {
       titleKey: "services.security.title",
       descKey: "services.security.shortDesc",
       image: "/img2.jpg",
-      link: "/services/industrial-security",
+      link: "/sectors/industrial-security",
     },
     {
       titleKey: "services.facility.title",
       descKey: "services.facility.shortDesc",
       image: "/img3.jpg",
-      link: "/services/facility-management",
+      link: "/sectors/facility-management",
     },
     {
       titleKey: "services.oilgas.title",
       descKey: "services.oilgas.shortDesc",
       image: "/h1b.jpg",
-      link: "/services/oil-gas",
+      link: "/sectors/oil-gas",
     },
     {
       titleKey: "services.manufacturing.title",
       descKey: "services.manufacturing.shortDesc",
       image: "/img2.jpg",
-      link: "/services/manufacturing",
+      link: "/sectors/manufacturing",
     },
     {
       titleKey: "services.realestate.title",
       descKey: "services.realestate.shortDesc",
       image: "/img3.jpg",
-      link: "/services/real-estate",
+      link: "/sectors/real-estate",
     },
   ];
 
@@ -202,11 +202,10 @@ const ServicesSection = () => {
                 />
 
                 <div
-                  className={`absolute inset-0 transition-all duration-500 ${
-                    isActive
+                  className={`absolute inset-0 transition-all duration-500 ${isActive
                       ? "bg-gradient-to-t from-black/85 via-black/50 to-black/30"
                       : "bg-black/70 group-hover:bg-black/60"
-                  }`}
+                    }`}
                 />
 
                 <div className="relative z-10 p-8 transition-all duration-500 w-full">

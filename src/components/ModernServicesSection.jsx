@@ -26,37 +26,37 @@ const EnhancedServicesSection = () => {
       titleKey: "services.telecom.title",
       descKey: "services.telecom.shortDesc",
       image: "/telecom.webp",
-      link: "/services/telecom-it",
+      link: "/sectors/telecom-it",
     },
     {
       titleKey: "services.security.title",
       descKey: "services.security.shortDesc",
       image: "/security.jpg",
-      link: "/services/industrial-security",
+      link: "/sectors/industrial-security",
     },
     {
       titleKey: "services.facility.title",
       descKey: "services.facility.shortDesc",
       image: "/facility.webp",
-      link: "/services/facility-management",
+      link: "/sectors/facility-management",
     },
     {
       titleKey: "services.oilgas.title",
       descKey: "services.oilgas.shortDesc",
       image: "/oil.webp",
-      link: "/services/oil-gas",
+      link: "/sectors/oil-gas",
     },
     {
       titleKey: "services.manufacturing.title",
       descKey: "services.manufacturing.shortDesc",
       image: "/manufactoring.webp",
-      link: "/services/manufacturing",
+      link: "/sectors/manufacturing",
     },
     {
       titleKey: "services.realestate.title",
       descKey: "services.realestate.shortDesc",
       image: "/hero3.jpg",
-      link: "/services/real-estate",
+      link: "/sectors/real-estate",
     },
   ];
 

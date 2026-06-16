@@ -35,55 +35,55 @@ const SectorsSection = () => {
       titleKey: "sectors.telecom.title",
       descKey: "sectors.telecom.desc",
       icon: FiRadio,
-      link: "/services/telecom-it",
+      link: "/sectors/telecom-it",
     },
     {
       titleKey: "sectors.security.title",
       descKey: "sectors.security.desc",
       icon: FiShield,
-      link: "/services/industrial-security",
+      link: "/sectors/industrial-security",
     },
     {
       titleKey: "sectors.realestate.title",
       descKey: "sectors.realestate.desc",
       icon: FiHome,
-      link: "/services/real-estate",
+      link: "/sectors/real-estate",
     },
     {
       titleKey: "sectors.oilgas.title",
       descKey: "sectors.oilgas.desc",
       icon: FiDroplet,
-      link: "/services/oil-gas",
+      link: "/sectors/oil-gas",
     },
     {
       titleKey: "sectors.petroleum.title",
       descKey: "sectors.petroleum.desc",
       icon: FiTruck,
-      link: "/services/petroleum-services",
+      link: "/sectors/petroleum-services",
     },
     {
       titleKey: "sectors.operational.title",
       descKey: "sectors.operational.desc",
       icon: FiSettings,
-      link: "/services/operational-services",
+      link: "/sectors/operational-services",
     },
     {
       titleKey: "sectors.facility.title",
       descKey: "sectors.facility.desc",
       icon: FiTool,
-      link: "/services/facility-management",
+      link: "/sectors/facility-management",
     },
     {
       titleKey: "sectors.manufacturing.title",
       descKey: "sectors.manufacturing.desc",
       icon: FiBox,
-      link: "/services/manufacturing",
+      link: "/sectors/manufacturing",
     },
     {
       titleKey: "sectors.plastic.title",
       descKey: "sectors.plastic.desc",
       icon: FiPackage,
-      link: "/services/plastic-industries",
+      link: "/sectors/plastic-industries",
     },
   ];
 
@@ -136,11 +136,10 @@ const SectorsSection = () => {
                   <div className="relative h-full bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
                     {/* Top gradient line */}
                     <div
-                      className={`absolute top-[2px] left-4 right-4 h-[2px]b${
-                        isRTL
+                      className={`absolute top-[2px] left-4 right-4 h-[2px]b${isRTL
                           ? "bg-gradient-to-l from-transparent via-[#27374e]/80 to-transparent"
                           : "bg-gradient-to-r from-transparent via-[#27374e]/80 to-transparent"
-                      }`}
+                        }`}
                     />
 
                     {/* Background subtle pattern */}

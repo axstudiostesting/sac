@@ -287,7 +287,7 @@ export const translations = {
         subtitle: "Join our team and be part of Saudi Arabia's growth story",
       },
       services: {
-        badge: "Our Services",
+        badge: "Our Sectors",
         title: "Comprehensive Solutions For Your Business",
         subtitle: "Explore our wide range of professional services",
       },
@@ -870,12 +870,12 @@ export const translations = {
       viewAll: "View All Sectors",
     },
     services: {
-      badge: "Our Services",
+      badge: "Our Sectors",
       title: "Professional",
       highlightedText: "Services",
       subtitle: "Comprehensive solutions tailored to meet your business needs",
       readMore: "Read More",
-      backToServices: "Back to Services",
+      backToServices: "Back to Sectors",
       overview: "Overview",
       keyFeatures: "Key Features",
       certifications: "Certifications & Standards",
@@ -1280,7 +1280,7 @@ export const translations = {
     nav: {
       home: "Home",
       about: "About",
-      services: "Services",
+      services: "Sectors",
       companies: "Our Companies", // ADD THIS
       media: "Media", // ADD THIS
       career: "Careers", // ADD THIS
@@ -1869,7 +1869,7 @@ export const translations = {
         subtitle: "انضم إلى فريقنا وكن جزءًا من قصة نمو المملكة",
       },
       services: {
-        badge: "خدماتنا",
+        badge: "القطاعات",
         title: "حلول شاملة لعملك",
         subtitle: "استكشف مجموعتنا الواسعة من الخدمات المهنية",
       },
@@ -2571,7 +2571,7 @@ export const translations = {
     nav: {
       home: "الرئيسية",
       about: "من نحن",
-      services: "الخدمات",
+      services: "القطاعات",
       companies: "شركاتنا", // ADD THIS
       media: "وسائل الإعلام", // ADD THIS
       career: "وظائف", // ADD THIS
@@ -2951,12 +2951,12 @@ export const translations = {
       },
     },
     services: {
-      badge: "خدماتنا",
+      badge: "القطاعات",
       title: "خدمات",
       highlightedText: "احترافية",
       subtitle: "حلول شاملة مصممة خصيصًا لتلبية احتياجات عملك",
       readMore: "اقرأ المزيد",
-      backToServices: "العودة إلى الخدمات",
+      backToServices: "العودة إلى القطاعات",
       overview: "نظرة عامة",
       keyFeatures: "المميزات الرئيسية",
       certifications: "الشهادات والمعايير",
