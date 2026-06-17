@@ -8,6 +8,7 @@ import ScrollToTopButton from "@/components/ScrollToTop";
 import Script from "next/script";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import HeaderHero from "@/components/Header";
+const GA_ID = "G-6VJXJ3N9ZP";
 export const metadata = {
   title: "Sadara Development Investment |صدارة التنمية للاستثمار",
   description:
@@ -288,9 +289,24 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google" content="notranslate" />
 
+        {/* Google Analytics GA4 */}
         <Script
           strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-2M3GGNHL7P"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${GA_ID}', {
+          page_path: window.location.pathname,
+        });
+      `,
+          }}
         />
         {/* Preload Madani fonts */}
       </head>

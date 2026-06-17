@@ -1548,8 +1548,7 @@ export const translations = {
         twitter: "Twitter",
         twitterUrl: "https://www.twitter.com/sadara",
         linkedin: "LinkedIn",
-        linkedinUrl:
-          "https://www.linkedin.com/company/sadara-development-investment",
+        linkedinUrl: "https://www.linkedin.com/company/al-sheikh-group-ksa",
         instagram: "Instagram",
         instagramUrl: "https://instagram.com/sadara",
       },
@@ -3263,8 +3262,7 @@ export const translations = {
         twitter: "تويتر",
         twitterUrl: "https://www.twitter.com/sadara",
         linkedin: "لينكدإن",
-        linkedinUrl:
-          "https://www.linkedin.com/company/sadara-development-investment",
+        linkedinUrl: "https://www.linkedin.com/company/al-sheikh-group-ksa",
         facebook: "فيسبوك",
         facebookUrl:
           "https://www.facebook.com/people/sadaraholding/100084901930975/",
