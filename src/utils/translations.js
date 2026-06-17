@@ -675,6 +675,7 @@ export const translations = {
           ],
           established: 2020,
           headquarters: "Al-Khobar, Saudi Arabia",
+          website: "www.wajdfm.com/",
         },
         {
           id: "salam-station",
@@ -2189,8 +2190,8 @@ export const translations = {
           certifications: ["معايير SASO", "معتمدة GMP", "متوافقة مع ISO"],
           established: 2018,
           headquarters: "الدمام، المملكة العربية السعودية",
-          website: "britexksa.com",
-          website2: "jovae.com",
+          website: "www.britexksa.com",
+          website2: "www.jovae.com/ar",
         },
         {
           id: "wajd",
@@ -2216,7 +2217,7 @@ export const translations = {
             "الإدارة القانونية والمؤسسية – الامتثال والإشراف وحماية حقوق الملكية",
             "الاستشارات ودراسات الجدوى – تقييم العقارات وخطط التطوير والاستشارات الاستثمارية",
           ],
-          website: "wajdfm.com",
+          website: "www.wajdfm.com/",
           clients: [],
           certifications: [
             "ISO 9001 – إدارة الجودة",
