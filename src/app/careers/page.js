@@ -225,7 +225,9 @@ export const metadata = {
       potentialAction: {
         "@type": "ApplyAction",
         name: "Apply for a job",
-        target: "https://www.sdi.com.sa/careers/apply",
+        // Fixed: /careers/apply doesn't exist as a route. Pointing to the
+        // real careers page itself instead.
+        target: "https://www.sdi.com.sa/careers",
         query: "job-title",
       },
     }),

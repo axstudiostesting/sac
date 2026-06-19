@@ -8,7 +8,212 @@ import ScrollToTopButton from "@/components/ScrollToTop";
 import Script from "next/script";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import HeaderHero from "@/components/Header";
+
 const GA_ID = "G-6VJXJ3N9ZP";
+
+// ═══════════════════════════════════════════════════════════════════════
+// ORGANIZATION SCHEMA (JSON-LD)
+// ⚠️ telephone is UNVERIFIED — confirm the +966-13 area code is correct
+// before this goes live. Everything else below has been confirmed.
+// ═══════════════════════════════════════════════════════════════════════
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Corporation",
+  "@id": "https://www.sdi.com.sa/#organization",
+
+  name: "Sadara Development Investment Company",
+  alternateName: [
+    "شركة صدارة التنمية للإستثمار",
+    "SDI",
+    "Sadara Investment",
+    "صدارة",
+  ],
+
+  url: "https://www.sdi.com.sa",
+  logo: {
+    "@type": "ImageObject",
+    url: "https://www.sdi.com.sa/sadara.png",
+  },
+  image: "https://www.sdi.com.sa/sadara.png",
+
+  description:
+    "Sadara Development Investment Company is a diversified holding company — the official unified legal entity for Al-Sheikh Commercial and Industrial Group — overseeing subsidiaries in telecommunications, real estate, oil & gas, manufacturing, and petroleum services across Saudi Arabia.",
+
+  foundingDate: "1992",
+  foundingLocation: {
+    "@type": "Place",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Al-Khobar",
+      addressRegion: "Eastern Province",
+      addressCountry: "SA",
+    },
+  },
+
+  address: {
+    "@type": "PostalAddress",
+    streetAddress:
+      "Al-Khobar Gate Tower, King Fahd Road, Al-Bandariyah District",
+    addressLocality: "Al-Khobar",
+    postalCode: "3422",
+    addressCountry: "SA",
+  },
+
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      telephone: "+966-13-887-4122",
+      contactType: "customer service",
+      areaServed: "SA",
+      availableLanguage: ["English", "Arabic"],
+    },
+  ],
+  email: "info@sdi.com.sa",
+  telephone: "+966-13-887-4122",
+
+  sameAs: ["https://www.linkedin.com/company/al-sheikh-group-ksa"],
+
+  numberOfEmployees: {
+    "@type": "QuantitativeValue",
+    value: "400",
+    unitText: "Professionals",
+  },
+
+  areaServed: {
+    "@type": "Country",
+    name: "Saudi Arabia",
+  },
+
+  parentOrganization: {
+    "@type": "Organization",
+    name: "Al-Sheikh Commercial and Industrial Group",
+  },
+
+  subOrganization: [
+    {
+      "@type": "Corporation",
+      name: "Saudi Call",
+      alternateName: "Al-Sheikh Telecommunications Company",
+      url: "https://www.saudi-call.com",
+      foundingDate: "1992",
+    },
+    {
+      "@type": "Organization",
+      name: "Mawad Drilling",
+      alternateName: "Drilling Materials Company",
+      url: "https://www.drilling-materials.com",
+      foundingDate: "2013",
+    },
+    {
+      "@type": "Corporation",
+      name: "Plastech",
+      url: "https://www.plastech.com.sa/en/",
+      foundingDate: "2015",
+    },
+    {
+      "@type": "Corporation",
+      name: "Jovae Industrial",
+      alternateName: "Britex Detergents Factory",
+      url: "https://www.britexksa.com",
+      foundingDate: "2018",
+    },
+    {
+      "@type": "Organization",
+      name: "Wajd",
+      url: "https://www.wajdfm.com/",
+      foundingDate: "2020",
+    },
+    {
+      "@type": "RealEstateAgent",
+      name: "Ebreez Arabia",
+      foundingDate: "2010",
+    },
+    {
+      "@type": "Organization",
+      name: "Salam Roads Petroleum Services",
+      foundingDate: "2020",
+    },
+  ],
+
+  knowsAbout: [
+    "Telecommunications infrastructure",
+    "Fiber optic networks",
+    "FTTH solutions",
+    "Industrial security systems",
+    "Real estate development",
+    "Drilling fluid additives",
+    "Oil and gas services",
+    "Plastic manufacturing",
+    "PET preforms",
+    "Industrial cleaning products",
+    "Petroleum services",
+    "Facility management",
+    "Saudi Vision 2030",
+  ],
+
+  hasCertification: [
+    { "@type": "Certification", name: "ISO 9001:2015" },
+    { "@type": "Certification", name: "ISO 45001:2018" },
+    { "@type": "Certification", name: "ISO 14001:2015" },
+    { "@type": "Certification", name: "HCIS Approved" },
+    { "@type": "Certification", name: "GMP Certified" },
+    { "@type": "Certification", name: "API 13A" },
+  ],
+
+  industry: [
+    "Holding Company",
+    "Telecommunications",
+    "Real Estate",
+    "Oil & Gas",
+    "Manufacturing",
+    "Petroleum Services",
+    "Security Systems",
+    "Facility Management",
+  ],
+
+  slogan: "Unified ownership and management under one umbrella",
+  mission:
+    "Manage and develop a diversified investment portfolio founded on sound governance, innovation, and operational excellence—empowering subsidiaries and maximizing long-term returns.",
+  vision:
+    "To maximize value creation through expanding investment base, diversifying activities, and attracting promising opportunities locally and regionally.",
+  values: [
+    "Excellence",
+    "Transparency",
+    "Empowerment",
+    "Innovation",
+    "Responsibility",
+  ],
+};
+
+// ═══════════════════════════════════════════════════════════════════════
+// WEBSITE SCHEMA (JSON-LD)
+// This is what controls the site name Google shows above the URL
+// in search results (e.g. "Sadara Development Investment" label).
+// Without this, Google just shows the raw domain (sdi.com.sa).
+// ═══════════════════════════════════════════════════════════════════════
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://www.sdi.com.sa/#website",
+  name: "Sadara Development Investment",
+  alternateName: "صدارة التنمية للاستثمار",
+  url: "https://www.sdi.com.sa",
+  description:
+    "Sadara Development Investment Company — diversified holding company managing a portfolio of leading subsidiaries across telecom, real estate, oil & gas, manufacturing, and petroleum services in Saudi Arabia.",
+  inLanguage: ["ar-SA", "en-US"],
+  publisher: {
+    "@id": "https://www.sdi.com.sa/#organization",
+  },
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "https://www.sdi.com.sa/?s={search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
+  },
+};
+
 export const metadata = {
   title: "Sadara Development Investment |صدارة التنمية للاستثمار",
   description:
@@ -92,6 +297,66 @@ export const metadata = {
     "security systems HCIS",
     "petroleum services",
     "commercial towers Khobar",
+
+    // ── Client-approved keywords (English) — from Sadara_Website_seo.xlsx ──
+    "Sadara",
+    "Sadara Investment",
+    "Sadara Company",
+    "Sadara Development Investment",
+    "SDI Saudi Arabia",
+    "Saudi Investment Company",
+    "Investment Holding Company",
+    "Investment Management",
+    "Strategic Investments",
+    "Business Development",
+    "Project Development",
+    "Investment Opportunities",
+    "Corporate Investments",
+    "Private Investment Company",
+    "Asset Management",
+    "Investment Advisory",
+    "Strategic Partnerships",
+    "Business Growth Solutions",
+    "Economic Development",
+    "Saudi Vision 2030",
+    "Investment Solutions",
+    "Commercial Investments",
+    "Sustainable Investments",
+    "Saudi Business Investments",
+    "Investment Portfolio Management",
+    "Business Expansion",
+    "Investment Consulting",
+    "Development Investments",
+
+    // ── Client-approved keywords (Arabic) — from Sadara_Website_seo.xlsx ──
+    "صدارة",
+    "صدارة للاستثمار",
+    "شركة صدارة",
+    "صدارة التنمية للاستثمار",
+    "شركة صدارة التنمية للاستثمار",
+    "شركة استثمار سعودية",
+    "شركة استثمار قابضة",
+    "إدارة الاستثمارات",
+    "الاستثمارات الاستراتيجية",
+    "تطوير الأعمال",
+    "تطوير المشاريع",
+    "الفرص الاستثمارية",
+    "الاستثمار المؤسسي",
+    "إدارة الأصول",
+    "الاستشارات الاستثمارية",
+    "الشراكات الاستراتيجية",
+    "تنمية الأعمال",
+    "التنمية الاقتصادية",
+    "رؤية السعودية 2030",
+    "الحلول الاستثمارية",
+    "الاستثمار التجاري",
+    "الاستثمار المستدام",
+    "الاستثمار في المملكة العربية السعودية",
+    "إدارة المحافظ الاستثمارية",
+    "توسيع الأعمال",
+    "تطوير الفرص الاستثمارية",
+    "الاستثمارات التنموية",
+    "الخدمات الاستثمارية",
   ].join(", "),
   robots: "index, follow",
   authors: [{ name: "Sadara Development Investment Company" }],
@@ -138,143 +403,12 @@ export const metadata = {
   category: "business",
   classification: "Holding Company | Investment Development",
   verification: {
-    // Add if you have Google Search Console etc.
-    // google: "your-google-verification-code",
+    google: "nXhMcXK-Z4Beqdbwev7yymXXnLmfF5kOc_h-eK55NLY",
   },
-
-  other: {
-    "application/ld+json": JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Corporation",
-      name: "Sadara Development Investment Company",
-      alternateName: "شركة صدارة التنمية للإستثمار",
-      url: "https://www.sdi.com.sa",
-      logo: "https://www.sdi.com.sa/sadara-logo.png",
-      description:
-        "Sadara Development Investment Company is a diversified holding company serving as the official legal entity overseeing all subsidiaries of the Al-Sheikh Commercial and Industrial Group.",
-      foundingDate: "1992",
-      foundingLocation: {
-        "@type": "Place",
-        address: {
-          "@type": "PostalAddress",
-          addressLocality: "Al-Khobar",
-          addressRegion: "Eastern Province",
-          addressCountry: "SA",
-        },
-      },
-      address: {
-        "@type": "PostalAddress",
-        streetAddress:
-          "Al-Khobar Gate Tower, King Fahd Road, Al-Bandariyah District",
-        addressLocality: "Al-Khobar",
-        postalCode: "3422",
-        addressCountry: "SA",
-      },
-      email: "info@sdi.com.sa",
-      telephone: "+966-XXX-XXXXXX", // Add actual phone number if available
-      numberOfEmployees: {
-        "@type": "QuantitativeValue",
-        value: "400+",
-        unitText: "Professionals",
-      },
-      areaServed: {
-        "@type": "Country",
-        name: "Saudi Arabia",
-      },
-      parentOrganization: {
-        "@type": "Organization",
-        name: "Al-Sheikh Commercial and Industrial Group",
-      },
-      subsidiaries: [
-        {
-          "@type": "Corporation",
-          name: "Saudi Call (Al-Sheikh Telecommunications Company)",
-          foundingDate: "1992",
-        },
-        {
-          "@type": "RealEstateAgent",
-          name: "Ebreez Arabia",
-        },
-        {
-          "@type": "Corporation",
-          name: "Mawad Drilling (Drilling Materials Company)",
-          foundingDate: "2013",
-        },
-        {
-          "@type": "Corporation",
-          name: "Plastech (Plastic Ultimate Quality Plastic Products)",
-        },
-        {
-          "@type": "Corporation",
-          name: "Jovae (Britex Detergents Factory)",
-        },
-        {
-          "@type": "Organization",
-          name: "Salam Roads Petroleum Services Company",
-        },
-      ],
-      knowsAbout: [
-        "Telecommunications infrastructure",
-        "Fiber optic networks",
-        "Industrial security systems",
-        "Real estate development",
-        "Drilling fluid additives",
-        "Oil and gas services",
-        "Plastic manufacturing",
-        "Industrial cleaning products",
-        "Petroleum services",
-        "Facility management",
-        "Digital infrastructure",
-      ],
-      hasCertification: [
-        {
-          "@type": "Certification",
-          name: "ISO 9001:2015",
-        },
-        {
-          "@type": "Certification",
-          name: "ISO 45001:2018",
-        },
-        {
-          "@type": "Certification",
-          name: "ISO 14001:2015",
-        },
-        {
-          "@type": "Certification",
-          name: "HCIS Approved",
-        },
-        {
-          "@type": "Certification",
-          name: "GMP Certified",
-        },
-        {
-          "@type": "Certification",
-          name: "API 13A",
-        },
-      ],
-      industry: [
-        "Holding Company",
-        "Telecommunications",
-        "Real Estate",
-        "Oil & Gas",
-        "Manufacturing",
-        "Petroleum Services",
-        "Security Systems",
-        "Facility Management",
-      ],
-      slogan: "Unified ownership and management under one umbrella",
-      mission:
-        "Manage and develop a diversified investment portfolio founded on sound governance, innovation, and operational excellence—empowering subsidiaries and maximizing long-term returns.",
-      vision:
-        "To maximize value creation through expanding investment base, diversifying activities, and attracting promising opportunities locally and regionally.",
-      values: [
-        "Excellence",
-        "Transparency",
-        "Empowerment",
-        "Innovation",
-        "Responsibility",
-      ],
-    }),
+  icons: {
+    icon: "/sadara.png",
+    shortcut: "/sadara.png",
+    apple: "/sadara.png",
   },
 };
 
@@ -288,6 +422,16 @@ export default function RootLayout({ children }) {
         <link href="/sadara.png" type="image/png" rel="icon" sizes="32x32" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google" content="notranslate" />
+
+        {/* Organization + WebSite Schema (JSON-LD) */}
+        {/* Organization tells Google this is a real verified business */}
+        {/* WebSite tells Google what name to show above the URL in search results */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([organizationSchema, websiteSchema]),
+          }}
+        />
 
         {/* Google Analytics GA4 */}
         <Script

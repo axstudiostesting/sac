@@ -110,7 +110,7 @@ export const metadata = {
     title: "الأخبار والفعاليات | مركز أخبار سدارى - آخر الإنجازات والمستجدات",
     description:
       "تابع أحدث أخبار سدارى. نشارككم إنجازاتنا، مشاريعنا الجديدة، شراكاتنا الاستراتيجية، والفعاليات التي نشارك فيها. نسهم في تحقيق رؤية السعودية 2030.",
-    url: "https://www.sdi.com.sa/news",
+    url: "https://www.sdi.com.sa/media",
     siteName: "Sadara Development Investment Company",
     images: [
       {
@@ -136,10 +136,10 @@ export const metadata = {
   },
 
   alternates: {
-    canonical: "https://www.sdi.com.sa/news",
+    canonical: "https://www.sdi.com.sa/media",
     languages: {
-      ar: "https://www.sdi.com.sa/ar/news",
-      en: "https://www.sdi.com.sa/en/news",
+      ar: "https://www.sdi.com.sa/ar/media",
+      en: "https://www.sdi.com.sa/en/media",
     },
   },
 
@@ -153,7 +153,7 @@ export const metadata = {
       name: "Sadara Development - News & Events Center",
       description:
         "Latest news, press releases, announcements, and events from Sadara Development Investment Company and its subsidiaries",
-      url: "https://www.sdi.com.sa/news",
+      url: "https://www.sdi.com.sa/media",
       isPartOf: {
         "@type": "WebSite",
         name: "Sadara Development Investment Company",
@@ -163,36 +163,14 @@ export const metadata = {
         "@type": "ItemList",
         name: "News Articles",
         description: "Recent news and events from Sadara",
-        numberOfItems: "10", // dynamic
-        itemListElement: [
-          // Example news items - replace with dynamic data
-          // {
-          //   "@type": "ListItem",
-          //   position: 1,
-          //   item: {
-          //     "@type": "NewsArticle",
-          //     headline: "مثال: سدارى تحصل على شهادة ISO 45001",
-          //     datePublished: "2024-01-15",
-          //     dateModified: "2024-01-15",
-          //     author: { "@type": "Organization", name: "Sadara Development" },
-          //     publisher: { "@type": "Organization", name: "Sadara Development", logo: "https://www.sdi.com.sa/logo.png" },
-          //     description: "حصلت شركة سدارى على شهادة الأيزو في الصحة والسلامة المهنية",
-          //     url: "https://www.sdi.com.sa/news/iso-45001",
-          //     articleSection: "شهادات وجوائز",
-          //   },
-          // },
-        ],
+        numberOfItems: "10",
+        itemListElement: [],
       },
       publisher: {
         "@type": "Organization",
         name: "Sadara Development Investment Company",
         logo: "https://www.sdi.com.sa/sadara-logo.png",
         url: "https://www.sdi.com.sa",
-      },
-      potentialAction: {
-        "@type": "SubscribeAction",
-        name: "Subscribe to Newsletter",
-        target: "https://www.sdi.com.sa/newsletter",
       },
     }),
   },

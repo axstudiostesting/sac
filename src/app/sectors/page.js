@@ -176,9 +176,9 @@ export const metadata = {
       "@type": "ItemList",
       name: "Sadara Development Investment Company Services",
       description:
-        "A diversified investment portfolio spanning 8 vital sectors",
+        "A diversified investment portfolio spanning 6 vital sectors",
       url: "https://www.sdi.com.sa/sectors",
-      numberOfItems: 8,
+      numberOfItems: 6,
       itemListElement: [
         {
           "@type": "ListItem",
@@ -186,7 +186,7 @@ export const metadata = {
           name: "Telecommunications & IT",
           description:
             "Advanced digital infrastructure, fiber-optic networks, and systems integration",
-          url: "https://www.sdi.com.sa/sectors/telecom",
+          url: "https://www.sdi.com.sa/sectors/telecom-it",
           provider: {
             "@type": "Corporation",
             name: "Saudi Call (Al-Sheikh Telecommunications Company)",
@@ -231,30 +231,6 @@ export const metadata = {
         {
           "@type": "ListItem",
           position: 5,
-          name: "Petroleum Services",
-          description:
-            "Roadside stations and petroleum operations supporting logistics infrastructure",
-          url: "https://www.sdi.com.sa/sectors/petroleum",
-          provider: {
-            "@type": "Organization",
-            name: "Salam Roads Petroleum Services Company",
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 6,
-          name: "Operational Services",
-          description:
-            "High-efficiency field services for infrastructure, industrial, and energy projects",
-          url: "https://www.sdi.com.sa/sectors/operational",
-          provider: {
-            "@type": "Organization",
-            name: "Sadara Development",
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 7,
           name: "Facility Management",
           description:
             "Operating and maintaining buildings with integrated asset management solutions",
@@ -266,7 +242,7 @@ export const metadata = {
         },
         {
           "@type": "ListItem",
-          position: 8,
+          position: 6,
           name: "Manufacturing",
           description:
             "Consumer and industrial products including plastics and cleaning solutions",
@@ -319,22 +295,6 @@ export const metadata = {
                 "@type": "Service",
                 name: "Drilling Chemicals",
                 category: "Oil & Gas",
-              },
-            },
-            {
-              "@type": "Offer",
-              itemOffered: {
-                "@type": "Service",
-                name: "Fuel Stations",
-                category: "Petroleum Services",
-              },
-            },
-            {
-              "@type": "Offer",
-              itemOffered: {
-                "@type": "Service",
-                name: "Field Services",
-                category: "Operational Services",
               },
             },
             {

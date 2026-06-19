@@ -141,7 +141,7 @@ export const metadata = {
         alternateName: "شركة صدارة التنمية للإستثمار",
         url: "https://www.sdi.com.sa",
         email: "info@sdi.com.sa",
-        telephone: "+966-XXX-XXXXXX", // Add actual phone number
+        telephone: "+966-13-887-4122",
         address: {
           "@type": "PostalAddress",
           streetAddress:

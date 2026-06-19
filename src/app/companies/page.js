@@ -124,7 +124,7 @@ export const metadata = {
           name: "Ebreez Arabia",
           description:
             "Real estate development and asset management in Al-Khobar - commercial towers and mixed-use complexes",
-          url: "https://www.sdi.com.sa/companies/ebreez-arabia",
+          url: "https://www.sdi.com.sa/companies/ebreez",
           image: "https://www.sdi.com.sa/logos/ebreez-logo.png",
         },
         {
@@ -133,7 +133,7 @@ export const metadata = {
           name: "Mawad Drilling (Drilling Materials Company)",
           description:
             "Drilling fluid additives and industrial minerals manufacturing - API certified for HPHT wells",
-          url: "https://www.sdi.com.sa/companies/mawad-drilling",
+          url: "https://www.sdi.com.sa/companies/mawad",
           image: "https://www.sdi.com.sa/logos/mawad-logo.png",
         },
         {

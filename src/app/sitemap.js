@@ -41,9 +41,19 @@ export default function sitemap() {
     priority: 0.6,
   }));
 
-  // ── Dynamic: Sectors (from translations.en.services.detail keys) ───────
-  const sectorDetails = translations?.en?.services?.detail || {};
-  const sectorRoutes = Object.keys(sectorDetails).map((slug) => ({
+  // ── Dynamic: Sectors ─────────────────────────────────────────────────
+  // NOTE: sectors/[slug]/page.js uses hyphenated slugs (e.g. "telecom-it"),
+  // which differ from the underscored keys in translations.js services.detail
+  // (e.g. "telecom_it"). Hardcoded here to match the REAL routes that exist.
+  const sectorSlugs = [
+    "telecom-it",
+    "industrial-security",
+    "facility-management",
+    "oil-gas",
+    "manufacturing",
+    "real-estate",
+  ];
+  const sectorRoutes = sectorSlugs.map((slug) => ({
     url: `${baseUrl}/sectors/${slug}`,
     lastModified,
     changeFrequency: "monthly",

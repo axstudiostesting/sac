@@ -234,21 +234,15 @@ export const metadata = {
         email: "info@sdi.com.sa",
         url: "https://www.sdi.com.sa",
       },
+      // Fixed: /subsidiaries, /leadership, /strategy did not exist as real routes.
+      // Only /companies is a real page; leadership and strategy pages don't
+      // currently exist on the site, so those two links were removed rather
+      // than pointed at the wrong place.
       significantLinks: [
         {
           "@type": "LinkRole",
-          name: "Our Subsidiaries",
-          target: "https://www.sdi.com.sa/subsidiaries",
-        },
-        {
-          "@type": "LinkRole",
-          name: "Our Leadership",
-          target: "https://www.sdi.com.sa/leadership",
-        },
-        {
-          "@type": "LinkRole",
-          name: "Investment Strategy",
-          target: "https://www.sdi.com.sa/strategy",
+          name: "Our Companies",
+          target: "https://www.sdi.com.sa/companies",
         },
       ],
     }),
@@ -261,63 +255,6 @@ export default function About() {
         en="About Us | Sadara Development Investment"
         ar="من نحن | صدارة التنمية للاستثمار"
       />
-      {/* <div className="max-w-4xl mx-auto text-center mb-24">
-        <div
-          data-aos="fade-up"
-          data-aos-duration="800"
-          className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full mb-6"
-        >
-          <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-          <span className="text-primary font-semibold text-sm uppercase tracking-wider">
-            {t("aboutCompany.badge")}
-          </span>
-        </div>
-
-        <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            {t("aboutCompany.title")}{" "}
-            <span className="text-primary relative inline-block">
-              {t("aboutCompany.highlightedText")}
-              <svg
-                className="absolute -bottom-2 left-0 w-full h-3 text-primary/20"
-                preserveAspectRatio="none"
-                viewBox="0 0 100 10"
-              >
-                <path
-                  d="M0 5 Q25 0 50 5 T100 5"
-                  stroke="currentColor"
-                  fill="none"
-                  strokeWidth="2"
-                />
-              </svg>
-            </span>
-          </h2>
-        </div>
-
-        <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-          <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
-            {t("aboutCompany.description")}
-          </p>
-        </div>
-
-        <div
-          data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-delay="300"
-          className="mt-8"
-        >
-          <Link href="/about">
-            <button className="group inline-flex items-center gap-2 px-8 py-3 bg-primary text-white rounded-full font-semibold hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-              <span>{t("aboutCompany.buttonText")}</span>
-              {isRTL ? (
-                <FiChevronRight className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
-              ) : (
-                <FiArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              )}
-            </button>
-          </Link>
-        </div> */}
-      {/* </div> */}
       <AboutHero />
 
       <AboutFounder />
