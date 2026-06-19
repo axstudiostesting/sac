@@ -422,6 +422,7 @@ export default function RootLayout({ children }) {
         <link href="/sadara.png" type="image/png" rel="icon" sizes="32x32" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google" content="notranslate" />
+<meta name="google-site-verification" content="nh35F21_MqhMflkuMnvNRmOTdxcSqKa_gAZW2loCnok" />
 
         {/* Organization + WebSite Schema (JSON-LD) */}
         {/* Organization tells Google this is a real verified business */}
