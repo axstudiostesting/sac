@@ -416,6 +416,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl" translate="no">
       <head>
+<title>Sadara Development Investment Company</title>
         {/* Brand fonts: Somar Arabic (Arabic) and Madani (English) are loaded via @font-face in globals.css */}
         {/* Font files should be placed in /public/fonts/ directory */}
 
